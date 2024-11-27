@@ -1,0 +1,267 @@
+CompOversizedWeapon:
+// Decompiled with JetBrains decompiler
+// Type: CompOversizedWeapon.CompOversizedWeapon
+// Assembly: CompOversizedWeapon, Version=1.4.1.0, Culture=neutral, PublicKeyToken=null
+// Assembly location: C:\Users\HP\Downloads\CompOversizedWeapon.dll
+
+using HarmonyLib;
+using System;
+using System.Collections.Generic;
+using Verse;
+
+#nullable disable
+namespace CompOversizedWeapon
+{
+  public class CompOversizedWeapon : ThingComp
+  {
+    private Func<bool> compDeflectorIsAnimatingNow = new Func<bool>(CompOversizedWeapon.CompOversizedWeapon.AlwaysFalse);
+    private static readonly Type compDeflectorType = GenTypes.GetTypeInAnyAssembly("CompDeflector.CompDeflector", (string) null);
+
+    public CompProperties_OversizedWeapon Props => this.props as CompProperties_OversizedWeapon;
+
+    private static bool AlwaysFalse() => false;
+
+    public bool CompDeflectorIsAnimatingNow => this.compDeflectorIsAnimatingNow();
+
+    public bool IsOnGround => this.ParentHolder is Map;
+
+    public virtual void PostPostMake()
+    {
+      base.PostPostMake();
+      this.CacheComps();
+    }
+
+    public virtual void PostExposeData()
+    {
+      base.PostExposeData();
+      if (Scribe.mode != 2)
+        return;
+      this.CacheComps();
+    }
+
+    private void CacheComps()
+    {
+      if (!(CompOversizedWeapon.CompOversizedWeapon.compDeflectorType != (Type) null))
+        return;
+      List<ThingComp> allComps = this.parent.AllComps;
+      int index = 0;
+      for (int count = allComps.Count; index < count; ++index)
+      {
+        ThingComp target = allComps[index];
+        Type type = target.GetType();
+        if (CompOversizedWeapon.CompOversizedWeapon.compDeflectorType.IsAssignableFrom(type))
+        {
+          this.compDeflectorIsAnimatingNow = (Func<bool>) AccessTools.PropertyGetter(type, "IsAnimatingNow").CreateDelegate(typeof (Func<bool>), (object) target);
+          break;
+        }
+      }
+    }
+  }
+}
+
+====================================================
+
+CompOversizedWeaponUtility:
+// Decompiled with JetBrains decompiler
+// Type: CompOversizedWeapon.CompOversizedWeaponUtility
+// Assembly: CompOversizedWeapon, Version=1.4.1.0, Culture=neutral, PublicKeyToken=null
+// Assembly location: C:\Users\HP\Downloads\CompOversizedWeapon.dll
+
+using System.Collections.Generic;
+using Verse;
+
+#nullable disable
+namespace CompOversizedWeapon
+{
+  public static class CompOversizedWeaponUtility
+  {
+    public static CompOversizedWeapon.CompOversizedWeapon GetCompOversizedWeapon(
+      this ThingWithComps thing)
+    {
+      List<ThingComp> allComps = thing.AllComps;
+      int index = 0;
+      for (int count = allComps.Count; index < count; ++index)
+      {
+        if (allComps[index] is CompOversizedWeapon.CompOversizedWeapon compOversizedWeapon)
+          return compOversizedWeapon;
+      }
+      return (CompOversizedWeapon.CompOversizedWeapon) null;
+    }
+
+    public static CompOversizedWeapon.CompOversizedWeapon TryGetCompOversizedWeapon(this Thing thing)
+    {
+      return !(thing is ThingWithComps thing1) ? (CompOversizedWeapon.CompOversizedWeapon) null : thing1.GetCompOversizedWeapon();
+    }
+  }
+}
+
+====================================================
+
+CompProperties_OversizedWeapon:
+// Decompiled with JetBrains decompiler
+// Type: CompOversizedWeapon.CompProperties_OversizedWeapon
+// Assembly: CompOversizedWeapon, Version=1.4.1.0, Culture=neutral, PublicKeyToken=null
+// Assembly location: C:\Users\HP\Downloads\CompOversizedWeapon.dll
+
+using UnityEngine;
+using Verse;
+
+#nullable disable
+namespace CompOversizedWeapon
+{
+  public class CompProperties_OversizedWeapon : CompProperties
+  {
+    public Vector3 northOffset = new Vector3(0.0f, 0.0f, 0.0f);
+    public Vector3 eastOffset = new Vector3(0.0f, 0.0f, 0.0f);
+    public Vector3 southOffset = new Vector3(0.0f, 0.0f, 0.0f);
+    public Vector3 westOffset = new Vector3(0.0f, 0.0f, 0.0f);
+    public bool verticalFlipOutsideCombat;
+    public bool verticalFlipNorth;
+    public bool isDualWeapon;
+    public float angleAdjustmentEast;
+    public float angleAdjustmentWest;
+    public float angleAdjustmentNorth;
+    public float angleAdjustmentSouth;
+    public GraphicData groundGraphic;
+
+    public CompProperties_OversizedWeapon() => this.compClass = typeof (CompOversizedWeapon.CompOversizedWeapon);
+
+    public float NonCombatAngleAdjustment(Rot4 rotation)
+    {
+      if (Rot4.op_Equality(rotation, Rot4.North))
+        return this.angleAdjustmentNorth;
+      if (Rot4.op_Equality(rotation, Rot4.East))
+        return this.angleAdjustmentEast;
+      return Rot4.op_Equality(rotation, Rot4.West) ? this.angleAdjustmentWest : this.angleAdjustmentSouth;
+    }
+
+    public Vector3 OffsetFromRotation(Rot4 rotation)
+    {
+      if (Rot4.op_Equality(rotation, Rot4.North))
+        return this.northOffset;
+      if (Rot4.op_Equality(rotation, Rot4.East))
+        return this.eastOffset;
+      return Rot4.op_Equality(rotation, Rot4.West) ? this.westOffset : this.southOffset;
+    }
+  }
+}
+
+====================================================
+
+HarmonyCompOversizedWeapon:
+// Decompiled with JetBrains decompiler
+// Type: CompOversizedWeapon.HarmonyCompOversizedWeapon
+// Assembly: CompOversizedWeapon, Version=1.4.1.0, Culture=neutral, PublicKeyToken=null
+// Assembly location: C:\Users\HP\Downloads\CompOversizedWeapon.dll
+
+using HarmonyLib;
+using RimWorld;
+using System;
+using System.Reflection;
+using UnityEngine;
+using Verse;
+
+#nullable disable
+namespace CompOversizedWeapon
+{
+  [StaticConstructorOnStartup]
+  internal static class HarmonyCompOversizedWeapon
+  {
+    static HarmonyCompOversizedWeapon()
+    {
+      Harmony harmony = new Harmony("jecstools.jecrell.comps.oversized");
+      Type type = typeof (HarmonyCompOversizedWeapon);
+      harmony.Patch((MethodBase) AccessTools.Method(typeof (PawnRenderer), "DrawEquipmentAiming", (Type[]) null, (Type[]) null), new HarmonyMethod(type, "DrawEquipmentAimingPreFix", (Type[]) null), (HarmonyMethod) null, (HarmonyMethod) null, (HarmonyMethod) null);
+      harmony.Patch((MethodBase) AccessTools.PropertyGetter(typeof (Thing), "DefaultGraphic"), (HarmonyMethod) null, new HarmonyMethod(type, "get_DefaultGraphic_PostFix", (Type[]) null), (HarmonyMethod) null, (HarmonyMethod) null);
+    }
+
+    public static bool DrawEquipmentAimingPreFix(
+      Pawn ___pawn,
+      Thing eq,
+      Vector3 drawLoc,
+      float aimAngle)
+    {
+      CompOversizedWeapon.CompOversizedWeapon compOversizedWeapon = eq.TryGetCompOversizedWeapon();
+      if (compOversizedWeapon == null)
+        return true;
+      if (compOversizedWeapon.CompDeflectorIsAnimatingNow)
+        return false;
+      bool flag1 = false;
+      bool flag2 = false;
+      float num1 = aimAngle - 90f;
+      float num2;
+      if ((double) aimAngle > 20.0 && (double) aimAngle < 160.0)
+        num2 = num1 + eq.def.equippedAngleOffset;
+      else if ((double) aimAngle > 200.0 && (double) aimAngle < 340.0)
+      {
+        flag2 = true;
+        num2 = num1 - 180f - eq.def.equippedAngleOffset;
+      }
+      else
+      {
+        num2 = num1 + eq.def.equippedAngleOffset;
+        flag1 = true;
+      }
+      CompProperties_OversizedWeapon props = compOversizedWeapon.Props;
+      Rot4 rotation = ((Thing) ___pawn).Rotation;
+      if (props != null && !PawnUtility.IsFighting(___pawn))
+      {
+        if (flag1 && props.verticalFlipOutsideCombat)
+          num2 += 180f;
+        if (props.verticalFlipNorth && Rot4.op_Equality(rotation, Rot4.North))
+          num2 += 180f;
+        num2 += props.NonCombatAngleAdjustment(rotation);
+      }
+      float num3 = num2 % 360f;
+      Material material = eq.Graphic is Graphic_StackCount graphic ? graphic.SubGraphicForStackCount(1, eq.def).MatSingle : eq.Graphic.MatSingle;
+      Vector3 vector3_1;
+      // ISSUE: explicit constructor call
+      ((Vector3) ref vector3_1).\u002Ector(eq.def.graphicData.drawSize.x, 1f, eq.def.graphicData.drawSize.y);
+      Vector3 vector3_2 = props != null ? props.OffsetFromRotation(rotation) : Vector3.zero;
+      Matrix4x4 matrix4x4 = Matrix4x4.TRS(Vector3.op_Addition(drawLoc, vector3_2), Quaternion.AngleAxis(num3, Vector3.up), vector3_1);
+      Graphics.DrawMesh(flag2 ? MeshPool.plane10Flip : MeshPool.plane10, matrix4x4, material, 0);
+      if (props != null && props.isDualWeapon)
+      {
+        // ISSUE: explicit constructor call
+        ((Vector3) ref vector3_2).\u002Ector(-1f * vector3_2.x, vector3_2.y, vector3_2.z);
+        if (Rot4.op_Equality(rotation, Rot4.North) || Rot4.op_Equality(rotation, Rot4.South))
+        {
+          num3 = (num3 + 135f) % 360f;
+        }
+        else
+        {
+          // ISSUE: explicit constructor call
+          ((Vector3) ref vector3_2).\u002Ector(vector3_2.x, vector3_2.y - 0.1f, vector3_2.z + 0.15f);
+          flag2 = !flag2;
+        }
+        ((Matrix4x4) ref matrix4x4).SetTRS(Vector3.op_Addition(drawLoc, vector3_2), Quaternion.AngleAxis(num3, Vector3.up), vector3_1);
+        Graphics.DrawMesh(flag2 ? MeshPool.plane10 : MeshPool.plane10Flip, matrix4x4, material, 0);
+      }
+      return false;
+    }
+
+    public static void get_DefaultGraphic_PostFix(
+      Thing __instance,
+      Graphic ___graphicInt,
+      ref Graphic __result)
+    {
+      if (___graphicInt == null || __instance.ParentHolder is Pawn)
+        return;
+      CompOversizedWeapon.CompOversizedWeapon compOversizedWeapon = __instance.TryGetCompOversizedWeapon();
+      if (compOversizedWeapon == null)
+        return;
+      GraphicData groundGraphic = compOversizedWeapon.Props?.groundGraphic;
+      if (groundGraphic != null && compOversizedWeapon.IsOnGround)
+      {
+        Graphic graphic = groundGraphic.GraphicColoredFor(__instance);
+        if (graphic != null)
+        {
+          graphic.drawSize = groundGraphic.drawSize;
+          __result = graphic;
+          return;
+        }
+      }
+      __result.drawSize = __instance.def.graphicData.drawSize;
+    }
+  }
+}

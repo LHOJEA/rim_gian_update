@@ -1,0 +1,310 @@
+Source/EnableOversizedWeapons/EnableOversizedWeaponsMod.cs:
+using UnityEngine;
+using Verse;
+
+namespace EnableOversizedWeapons
+{
+    public class EnableOversizedWeaponsMod : Mod
+    {
+        EnableOversizedWeaponsModSettings enableOversizedWeaponsModSettings;
+        public EnableOversizedWeaponsMod(ModContentPack content) : base(content)
+        {
+            enableOversizedWeaponsModSettings = GetSettings<EnableOversizedWeaponsModSettings>();
+        }
+        public override void DoSettingsWindowContents(Rect inRect)
+        {
+            Listing_Standard listingStandard = new Listing_Standard();
+            listingStandard.Begin(inRect);
+            listingStandard.CheckboxLabeled("Remove drawOffsetNorth from equipment on the ground (NEEDS GAME RESTART!!!)", ref enableOversizedWeaponsModSettings.removeNorthDrawOffsetFromEquipment, "Remove drawOffsetNorth from equipment on the ground");
+            listingStandard.End();
+        }
+
+        public override string SettingsCategory()
+        {
+            return "Enable Oversized Weapons";
+        }
+    }
+}
+
+====================================================
+
+Source/EnableOversizedWeapons/EnableOversizedWeaponsModSettings.cs:
+using Verse;
+
+namespace EnableOversizedWeapons
+{
+    public class EnableOversizedWeaponsModSettings : ModSettings
+    {
+        public bool removeNorthDrawOffsetFromEquipment = true;
+
+        public override void ExposeData()
+        {
+            base.ExposeData();
+            Scribe_Values.Look<bool>(ref removeNorthDrawOffsetFromEquipment, "removeNorthDrawOffsetFromEquipment", true, false);
+        }
+    }
+}
+
+====================================================
+
+Source/EnableOversizedWeapons/HarmonyPatch.cs:
+using HarmonyLib;
+using System.Collections.Generic;
+using System.Reflection.Emit;
+using UnityEngine;
+using Verse;
+
+namespace EnableOversizedWeapons
+{
+    [StaticConstructorOnStartup]
+    static class HarmonyPatch
+    {
+        static HarmonyPatch()
+        {
+            var harmony = new Harmony("rimworld.carnysenpai.enableoversizedweapons");
+            harmony.Patch(AccessTools.Method(typeof(PawnRenderUtility), "DrawEquipmentAiming"), new HarmonyMethod(typeof(HarmonyPatch).GetMethod("Prefix_Drawloc")), null, null);
+            if (LoadedModManager.GetMod<EnableOversizedWeaponsMod>().GetSettings<EnableOversizedWeaponsModSettings>().removeNorthDrawOffsetFromEquipment)
+            {
+                harmony.Patch(AccessTools.Method(typeof(Graphic), "Print"), null, null, new HarmonyMethod(typeof(HarmonyPatch).GetMethod("Transpiler_Print")));
+            }
+        }
+
+        [HarmonyPrefix]
+        public static bool Prefix_Drawloc(Thing eq, ref Vector3 drawLoc)
+        {
+            Pawn pawn = null;
+            CompEquippable compEquippable = eq.TryGetComp<CompEquippable>();
+            if (compEquippable != null)
+            {
+                ThingWithComps parent = compEquippable.parent;
+                Pawn_EquipmentTracker pawn_EquipmentTracker = ((parent != null) ? parent.ParentHolder : null) as Pawn_EquipmentTracker;
+                if (pawn_EquipmentTracker != null)
+                {
+                    if (pawn_EquipmentTracker.pawn == null)
+                    {
+                        return true;
+                    }
+                    else
+                    {
+                        pawn = pawn_EquipmentTracker.pawn;
+                    }
+                }
+            }
+            if (eq.StyleDef != null && eq.StyleDef.graphicData != null)
+            {
+                drawLoc += eq.StyleDef.graphicData.DrawOffsetForRot(pawn.Rotation);
+            }
+            else
+            {
+                drawLoc += eq.def.graphicData.DrawOffsetForRot(pawn.Rotation);
+            }
+            return true;
+        }
+
+        [HarmonyTranspiler]
+        public static IEnumerable<CodeInstruction> Transpiler_Print(IEnumerable<CodeInstruction> instructions)
+        {
+            List<CodeInstruction> codes = new List<CodeInstruction>(instructions);
+            int firstDrawOffset = -1;
+            for (int i = 0; i < codes.Count; i++)
+            {
+                if (codes[i].operand.ToStringSafe().Contains("DrawOffset")) // searching ankerpoint "DrawOffset"
+                {
+                    firstDrawOffset = i;
+                    break;
+                }
+            }
+            for (int i = 0; i < firstDrawOffset + 3; i++) // return until (including) IL_00C5
+            {
+                yield return codes[i];
+            }
+            // stack: -
+
+            // replaces mesh with a modified mesh which uses the drawSize as a factor
+            yield return new CodeInstruction(OpCodes.Ldloc_3); // stack: Vector3
+            yield return new CodeInstruction(OpCodes.Ldarg_2); // stack: Vector3, thing
+            yield return new CodeInstruction(OpCodes.Ldarg_0); // stack: Vector3, thing, graphic
+            yield return new CodeInstruction(OpCodes.Call, AccessTools.Method(typeof(PatchUtility), "RemoveNorthDrawOffsetFromEquipment"));  // stack: Vector3
+            yield return new CodeInstruction(OpCodes.Stloc_3); // stack: -
+
+            for (int i = firstDrawOffset + 3; i < codes.Count; i++) // return everything after call
+            {
+                yield return codes[i];
+            }
+        }
+    }
+}
+
+====================================================
+
+Source/EnableOversizedWeapons/PatchUtility.cs:
+using System.Collections.Generic;
+using UnityEngine;
+using Verse;
+
+namespace EnableOversizedWeapons
+{
+    static class PatchUtility
+    {
+        public static Vector3 GetDrawOffset(Vector3 drawLoc, Thing thing, Pawn pawn)
+        {
+            if (thing.StyleDef != null && thing.StyleDef.graphicData != null)
+            {
+                return drawLoc + thing.StyleDef.graphicData.DrawOffsetForRot(pawn.Rotation);
+            }
+            else
+            {
+                return drawLoc + thing.def.graphicData.DrawOffsetForRot(pawn.Rotation);
+            }
+        }
+
+        public static Vector3 RemoveNorthDrawOffsetFromEquipment(Vector3 drawLoc, Thing thing, Graphic graphic)
+        {
+            if (thing.Rotation == Rot4.North && thing.def.equipmentType == EquipmentType.Primary) drawLoc -= graphic.DrawOffset(thing.Rotation);
+            return drawLoc;
+        }
+    }
+}
+
+====================================================
+
+Source/EnableOversizedWeapons/EnableOversizedWeapons.csproj:
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{001130C5-B031-4715-A655-433281C32C30}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EnableOversizedWeapons</RootNamespace>
+    <AssemblyName>EnableOversizedWeapons</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>false</DebugSymbols>
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>G:\SteamLibrary\steamapps\common\RimWorld\Mods\Enable Oversized Weapons\1.5\Assemblies\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="0Harmony, Version=2.3.1.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Lib.Harmony.2.3.1.1\lib\net472\0Harmony.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>G:\SteamLibrary\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UnityEngine">
+      <HintPath>G:\SteamLibrary\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>G:\SteamLibrary\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EnableOversizedWeaponsMod.cs" />
+    <Compile Include="EnableOversizedWeaponsModSettings.cs" />
+    <Compile Include="HarmonyPatch.cs" />
+    <Compile Include="PatchUtility.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
+
+====================================================
+
+Source/EnableOversizedWeapons/EnableOversizedWeapons.sln:
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31424.327
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnableOversizedWeapons", "EnableOversizedWeapons.csproj", "{001130C5-B031-4715-A655-433281C32C30}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{001130C5-B031-4715-A655-433281C32C30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{001130C5-B031-4715-A655-433281C32C30}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{001130C5-B031-4715-A655-433281C32C30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{001130C5-B031-4715-A655-433281C32C30}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9F7728E8-ED9B-4E4E-A33C-87993A3DBDBD}
+	EndGlobalSection
+EndGlobal
+
+====================================================
+
+Source/EnableOversizedWeapons/Properties/AssemblyInfo.cs:
+using System.Reflection;
+using System.Runtime.CompilerServices;
+using System.Runtime.InteropServices;
+
+// General Information about an assembly is controlled through the following
+// set of attributes. Change these attribute values to modify the information
+// associated with an assembly.
+[assembly: AssemblyTitle("EnableOversizedWeapons")]
+[assembly: AssemblyDescription("")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("EnableOversizedWeapons")]
+[assembly: AssemblyCopyright("Copyright ©  2021")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]
+
+// Setting ComVisible to false makes the types in this assembly not visible
+// to COM components.  If you need to access a type in this assembly from
+// COM, set the ComVisible attribute to true on that type.
+[assembly: ComVisible(false)]
+
+// The following GUID is for the ID of the typelib if this project is exposed to COM
+[assembly: Guid("001130c5-b031-4715-a655-433281c32c30")]
+
+// Version information for an assembly consists of the following four values:
+//
+//      Major Version
+//      Minor Version
+//      Build Number
+//      Revision
+//
+// You can specify all the values or you can default the Build and Revision Numbers
+// by using the '*' as shown below:
+// [assembly: AssemblyVersion("1.0.*")]
+[assembly: AssemblyVersion("1.0.0.0")]
+[assembly: AssemblyFileVersion("1.0.0.0")]
