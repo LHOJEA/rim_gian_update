@@ -55,8 +55,8 @@
         <li>(4000, 1000)</li>
       </points>
     </raidLootValueFromPointsCurve>
-	<allowedCultures><!--1.3추가-->
-	  <li>Corunan</li>
+    <allowedCultures><!--1.3추가-->
+      <li>Corunan</li>
     </allowedCultures>
   </FactionDef>
   
@@ -69,13 +69,13 @@
     <settlementGenerationWeight>1</settlementGenerationWeight>
     <requiredCountAtGameStart>1</requiredCountAtGameStart>
     <canMakeRandomly>true</canMakeRandomly>
-	<canStageAttacks>true</canStageAttacks>
+	  <canStageAttacks>true</canStageAttacks>
     <factionIconPath>Icon/SG_Icon</factionIconPath>
     <geneticVariance>0.5</geneticVariance>
     <factionNameMaker>NamerFactionTribal</factionNameMaker>
     <settlementNameMaker>NamerSettlementTribal</settlementNameMaker>
     <techLevel>Neolithic</techLevel>
-	<backstoryFilters>
+	  <backstoryFilters>
       <li>
         <categories>
           <li>Tribal</li>

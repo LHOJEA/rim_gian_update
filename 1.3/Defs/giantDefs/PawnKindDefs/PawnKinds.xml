@@ -4,12 +4,15 @@
 
   <PawnKindDef Name="GIBasePawnKind" Abstract="True">
     <race>HC_Giant</race>
-	<combatPower>180</combatPower>
+	  <combatPower>180</combatPower>
+    <canBeSapper>true</canBeSapper> 
     <isFighter>true</isFighter>
+    <minGenerationAge>20</minGenerationAge>
+    <maxGenerationAge>60</maxGenerationAge>
     <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
     <forceNormalGearQuality>true</forceNormalGearQuality>
-	<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
-	<initialWillRange>0~1</initialWillRange>
+	  <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+	  <initialWillRange>0~1</initialWillRange>
     <initialResistanceRange>10~17</initialResistanceRange>
   </PawnKindDef>
 
