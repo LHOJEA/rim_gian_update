@@ -6,6 +6,9 @@
     <description>It's a giant creature with an average height of 5 meters. While intelligence is low and requires a lot of food, the power of thick leather and mass is beyond imagination.</description>
     <alienRace>
       <generalSettings>
+        <reproduction>
+        
+        </reproduction>
         <minAgeForAdulthood>14</minAgeForAdulthood>
         <maleGenderProbability>0.5</maleGenderProbability>
         <immuneToAge>true</immuneToAge>
