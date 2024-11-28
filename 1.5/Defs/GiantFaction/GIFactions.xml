@@ -55,8 +55,8 @@
         <li>(4000, 1000)</li>
       </points>
     </raidLootValueFromPointsCurve>
-	<allowedCultures><!--1.3추가-->
-	  <li>Corunan</li>
+    <allowedCultures><!--1.3추가-->
+      <li>Corunan</li>
     </allowedCultures>
   </FactionDef>
   
@@ -69,13 +69,13 @@
     <settlementGenerationWeight>1</settlementGenerationWeight>
     <requiredCountAtGameStart>1</requiredCountAtGameStart>
     <canMakeRandomly>true</canMakeRandomly>
-	<canStageAttacks>true</canStageAttacks>
+	  <canStageAttacks>true</canStageAttacks>
     <factionIconPath>Icon/SG_Icon</factionIconPath>
     <geneticVariance>0.5</geneticVariance>
     <factionNameMaker>NamerFactionTribal</factionNameMaker>
     <settlementNameMaker>NamerSettlementTribal</settlementNameMaker>
     <techLevel>Neolithic</techLevel>
-	<backstoryFilters>
+	  <backstoryFilters>
       <li>
         <categories>
           <li>Tribal</li>
@@ -117,12 +117,12 @@
         <kindDef>Combat</kindDef>
         <commonality>100</commonality>
         <options>
-		  <Gi_Slave>8</Gi_Slave>
-		  <Gi_Warrior>5</Gi_Warrior>
-		  <Gi_Thrower>5</Gi_Thrower>
-		  <Gi_ExpertWarrior>3</Gi_ExpertWarrior>
-		  <Gi_ExpertThrower>3</Gi_ExpertThrower>
-		  <Gi_Champion>1</Gi_Champion>
+        <Gi_Slave>8</Gi_Slave>
+        <Gi_Warrior>5</Gi_Warrior>
+        <Gi_Thrower>5</Gi_Thrower>
+        <Gi_ExpertWarrior>3</Gi_ExpertWarrior>
+        <Gi_ExpertThrower>3</Gi_ExpertThrower>
+        <Gi_Champion>1</Gi_Champion>
         </options>
       </li>
 	  <li>
@@ -177,13 +177,13 @@
       <li>
         <kindDef>Settlement</kindDef>
         <options>
-		  <HC_WoollyMammoth>8</HC_WoollyMammoth>
-		  <Gi_Slave>8</Gi_Slave>
-		  <Gi_Warrior>6</Gi_Warrior>
-		  <Gi_Thrower>6</Gi_Thrower>
-		  <Gi_ExpertWarrior>4</Gi_ExpertWarrior>
-		  <Gi_ExpertThrower>4</Gi_ExpertThrower>
-		  <Gi_Champion>3</Gi_Champion>
+          <HC_WoollyMammoth>8</HC_WoollyMammoth>
+          <Gi_Slave>8</Gi_Slave>
+          <Gi_Warrior>6</Gi_Warrior>
+          <Gi_Thrower>6</Gi_Thrower>
+          <Gi_ExpertWarrior>4</Gi_ExpertWarrior>
+          <Gi_ExpertThrower>4</Gi_ExpertThrower>
+          <Gi_Champion>3</Gi_Champion>
         </options>
       </li>
     </pawnGroupMakers>
