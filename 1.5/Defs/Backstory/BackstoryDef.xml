@@ -1,31 +1,22 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <AlienRace.BackstoryDef Name="GiantBackStory" Abstract="True">
+  <AlienRace.AlienBackstoryDef Name="GiantBackStory" Abstract="True">
     <bodyTypeMale>GiantM</bodyTypeMale>
     <bodyTypeFemale>GiantF</bodyTypeFemale>
-  </AlienRace.BackstoryDef>
+  </AlienRace.AlienBackstoryDef>
 
   <!-- 유년기 -->
-    <AlienRace.BackstoryDef ParentName="GiantBackStory">
+    <AlienRace.AlienBackstoryDef ParentName="GiantBackStory">
         <defName>Giant_CheesemakerChild</defName>
 		<title>Giant Cheesemaker Child</title>
 		<titleShort>cheesemaker child</titleShort>
-		<baseDescription>[PAWN_nameDef] is a child of a cheese craftsman who grew up caring for mammoths.</baseDescription>
+		<description>[PAWN_nameDef] is a child of a cheese craftsman who grew up caring for mammoths.</description>
 		<slot>Childhood</slot>
 		<skillGains>
-			<li>
-				<defName>Mining</defName>
-				<amount>-1</amount>
-			</li>
-			<li>
-				<defName>Plants</defName>
-				<amount>-1</amount>
-			</li>
-			<li>
-				<defName>Animals</defName>
-				<amount>2</amount>
-			</li>
+			<Mining>-1</Mining>
+			<Plants>-1</Plants>
+			<Animals>2</Animals>
 		</skillGains>
 		<workDisables>
 			<li>Caring</li>
@@ -38,46 +29,28 @@
 			<li>GiantHunter</li>
 			<li>GiantChampion</li>
 		</spawnCategories>
-	</AlienRace.BackstoryDef>
+	</AlienRace.AlienBackstoryDef>
 	
-	<AlienRace.BackstoryDef ParentName="GiantBackStory">
+	<AlienRace.AlienBackstoryDef ParentName="GiantBackStory">
 		<defName>Giant_SlothhunterChild</defName>
 		<title>Giant Slothhunter Child</title>
 		<titleShort>slothhunter child</titleShort>
-		<baseDescription>[PAWN_nameDef] A grew up following his parents and learning how to hunt powerful mega sloths.</baseDescription>
+		<description>[PAWN_nameDef] A grew up following his parents and learning how to hunt powerful mega sloths.</description>
 		<slot>Childhood</slot>
 		<skillGains>
-			<li>
-				<defName>Shooting</defName>
-				<amount>2</amount>
-			</li>
-			<li>
-				<defName>Melee</defName>
-				<amount>1</amount>
-			</li>
-			<li>
-				<defName>Social</defName>
-				<amount>-2</amount>
-			</li>
-			<li>
-				<defName>Animals</defName>
-				<amount>1</amount>
-			</li>
-			<li>
-			    <defName>Crafting</defName>
-				<amount>-4</amount>
-			</li>
-			<li>
-			    <defName>Cooking</defName>
-				<amount>-4</amount>
-			</li>
+			<Shooting>2</Shooting>
+			<Melee>1</Melee>
+			<Social>-2</Social>
+			<Animals>1</Animals>
+			<Crafting>-4</Crafting>
+			<Cooking>-4</Cooking>
 		</skillGains>
-		<forcedTraits>
+		<forcedTraitsChance>
 			<li>
 				<defName>NightOwl</defName>
 				<chance>65</chance>
 			</li>
-		</forcedTraits>
+		</forcedTraitsChance>
 		<workDisables>
 			<li>PlantWork</li>
 			<li>Mining</li>
@@ -90,46 +63,28 @@
 			<li>GiantHunter</li>
 			<li>GiantChampion</li>
 		</spawnCategories>
-	</AlienRace.BackstoryDef>
+	</AlienRace.AlienBackstoryDef>
 	
-	<AlienRace.BackstoryDef ParentName="GiantBackStory">
+	<AlienRace.AlienBackstoryDef ParentName="GiantBackStory">
 		<defName>Giant_SlaveGiant</defName>
 		<title>Giant Slave Giant</title>
 		<titleShort>slave giant</titleShort>
-		<baseDescription>[PAWN_nameDef] is unfortunate fate began with the capture of small people.</baseDescription>
+		<description>[PAWN_nameDef] is unfortunate fate began with the capture of small people.</description>
 		<slot>Childhood</slot>
 		<skillGains>
-			<li>
-				<defName>Shooting</defName>
-				<amount>-2</amount>
-			</li>
-			<li>
-				<defName>Melee</defName>
-				<amount>-2</amount>
-			</li>
-			<li>
-				<defName>Mining</defName>
-				<amount>2</amount>
-			</li>
-			<li>
-				<defName>Plants</defName>
-				<amount>3</amount>
-			</li>
-			<li>
-				<defName>Construction</defName>
-				<amount>2</amount>
-			</li>
-			<li>
-			    <defName>Crafting</defName>
-				<amount>-2</amount>
-			</li>
+			<Shooting>-2</Shooting>
+			<Melee>-2</Melee>
+			<Mining>2</Mining>
+			<Plants>3</Plants>
+			<Construction>2</Construction>
+			<Crafting>-2</Crafting>
 		</skillGains>
-		<forcedTraits>
+		<forcedTraitsChance>
 			<li>
 				<defName>Wimp</defName>
 				<chance>90</chance>
 			</li>
-		</forcedTraits>
+		</forcedTraitsChance>
 		<workDisables>
 			<li>Caring</li>
 			<li>Intellectual</li>
@@ -142,43 +97,27 @@
 			<li>GiantHunter</li>
 			<li>GiantChampion</li>
 		</spawnCategories>
-	</AlienRace.BackstoryDef>
+	</AlienRace.AlienBackstoryDef>
 	
-	<AlienRace.BackstoryDef ParentName="GiantBackStory">
+	<AlienRace.AlienBackstoryDef ParentName="GiantBackStory">
 		<defName>Giant_NomadicGiantsChild</defName>
 		<title>Giant Nomadic Giants Child</title>
 		<titleShort>nomadic giants child</titleShort>
-		<baseDescription>[PAWN_nameDef] was born in a small nomadic tribe and learned how to hunt raw things.</baseDescription>
+		<description>[PAWN_nameDef] was born in a small nomadic tribe and learned how to hunt raw things.</description>
 		<slot>Childhood</slot>
 		<skillGains>
-			<li>
-				<defName>Shooting</defName>
-				<amount>3</amount>
-			</li>
-			<li>
-				<defName>Melee</defName>
-				<amount>1</amount>
-			</li>
-			<li>
-				<defName>Mining</defName>
-				<amount>-2</amount>
-			</li>
-			<li>
-				<defName>Construction</defName>
-				<amount>2</amount>
-			</li>
-			<li>
-			    <defName>Cooking</defName>
-				<amount>-4</amount>
-			</li>
+			<Shooting>3</Shooting>
+			<Melee>1</Melee>
+			<Mining>-2</Mining>
+			<Construction>2</Construction>
+			<Cooking>-4</Cooking>
 		</skillGains>
-		<forcedTraits>
+		<forcedTraitsChance>
 			<li>
-				<defName>Nerves</defName>
-				<degree>1</degree>
+				<defName Degree="1">Nerves</defName>
 				<chance>75</chance>
 			</li>
-		</forcedTraits>
+		</forcedTraitsChance>
 		<workDisables>
 			<li>PlantWork</li>
 			<li>Intellectual</li>
@@ -191,38 +130,26 @@
 			<li>GiantHunter</li>
 			<li>GiantChampion</li>
 		</spawnCategories>
-	</AlienRace.BackstoryDef>
+	</AlienRace.AlienBackstoryDef>
 	
-	<AlienRace.BackstoryDef ParentName="GiantBackStory">
+	<AlienRace.AlienBackstoryDef ParentName="GiantBackStory">
 		<defName>Giant_SquireGiant</defName>
 		<title>Giant Squire Giant</title>
 		<titleShort>squire giant</titleShort>
-		<baseDescription>[PAWN_nameDef] learned to fight as a young squire of giant warriors.</baseDescription>
+		<description>[PAWN_nameDef] learned to fight as a young squire of giant warriors.</description>
 		<slot>Childhood</slot>
 		<skillGains>
-			<li>
-				<defName>Melee</defName>
-				<amount>3</amount>
-			</li>
-			<li>
-				<defName>Mining</defName>
-				<amount>-2</amount>
-			</li>
-			<li>
-				<defName>Plants</defName>
-				<amount>-2</amount>
-			</li>
-			<li>
-			    <defName>Crafting</defName>
-				<amount>-3</amount>
-			</li>
+			<Melee>3</Melee>
+			<Mining>-2</Mining>
+			<Plants>-2</Plants>
+			<Crafting>-3</Crafting>
 		</skillGains>
-		<forcedTraits>
+		<forcedTraitsChance>
 			<li>
 				<defName>Nimble</defName>
 				<chance>75</chance>
 			</li>
-		</forcedTraits>
+		</forcedTraitsChance>
 		<workDisables>
 			<li>Intellectual</li>
 			<li>Animals</li>
@@ -234,34 +161,25 @@
 			<li>GiantWarrior</li>
 			<li>GiantChampion</li>
 		</spawnCategories>
-	</AlienRace.BackstoryDef>
+	</AlienRace.AlienBackstoryDef>
 	
-	<AlienRace.BackstoryDef ParentName="GiantBackStory">
+	<AlienRace.AlienBackstoryDef ParentName="GiantBackStory">
 		<defName>Giant_PlainsGiantsChild</defName>
 		<title>Giant Plains Giants Child</title>
 		<titleShort>plains giants child giant</titleShort>
-		<baseDescription>[PAWN_nameDef] has lived on the plains of the Great Plains.</baseDescription>
+		<description>[PAWN_nameDef] has lived on the plains of the Great Plains.</description>
 		<slot>Childhood</slot>
 		<skillGains>
-			<li>
-				<defName>Melee</defName>
-				<amount>1</amount>
-			</li>
-			<li>
-				<defName>Plants</defName>
-				<amount>4</amount>
-			</li>
-			<li>
-			    <defName>Cooking</defName>
-				<amount>-4</amount>
-			</li>
+			<Melee>1</Melee>
+			<Plants>4</Plants>
+			<Cooking>-4</Cooking>
 		</skillGains>
-		<forcedTraits>
+		<forcedTraitsChance>
 			<li>
 				<defName>Kind</defName>
 				<chance>60</chance>
 			</li>
-		</forcedTraits>
+		</forcedTraitsChance>
 		<workDisables>
 			<li>Caring</li>
 			<li>Intellectual</li>
@@ -275,42 +193,27 @@
 			<li>GiantHunter</li>
 			<li>GiantChampion</li>
 		</spawnCategories>
-	</AlienRace.BackstoryDef>
+	</AlienRace.AlienBackstoryDef>
 	
-	<AlienRace.BackstoryDef ParentName="GiantBackStory">
+	<AlienRace.AlienBackstoryDef ParentName="GiantBackStory">
 		<defName>Giant_YoungGiantSoldier</defName>
 		<title>Giant Young Giant Soldier</title>
 		<titleShort>young giant soldier</titleShort>
-		<baseDescription>[PAWN_nameDef] has been following the war since childhood.</baseDescription>
+		<description>[PAWN_nameDef] has been following the war since childhood.</description>
 		<slot>Childhood</slot>
 		<skillGains>
-			<li>
-				<defName>Shooting</defName>
-				<amount>2</amount>
-			</li>
-			<li>
-				<defName>Melee</defName>
-				<amount>2</amount>
-			</li>
-			<li>
-			    <defName>Social</defName>
-				<amount>-2</amount>
-			</li>
-			<li>
-			    <defName>Crafting</defName>
-				<amount>-4</amount>
-			</li>
-			<li>
-			    <defName>Cooking</defName>
-				<amount>-4</amount>
-			</li>
+			<Shooting>2</Shooting>
+			<Melee>2</Melee>
+			<Social>-2</Social>
+			<Crafting>-4</Crafting>
+			<Cooking>-4</Cooking>
 		</skillGains>
-		<forcedTraits>
+		<forcedTraitsChance>
 			<li>
 				<defName>Brawler</defName>
 				<chance>75</chance>
 			</li>
-		</forcedTraits>
+		</forcedTraitsChance>
 		<workDisables>
 			<li>Mining</li>
 			<li>PlantWork</li>
@@ -324,30 +227,24 @@
 			<li>GiantHunter</li>
 			<li>GiantChampion</li>
 		</spawnCategories>
-	</AlienRace.BackstoryDef>
+	</AlienRace.AlienBackstoryDef>
 	
-	<AlienRace.BackstoryDef ParentName="GiantBackStory">
+	<AlienRace.AlienBackstoryDef ParentName="GiantBackStory">
 		<defName>Giant_GiantismGiant</defName>
 		<title>Giant Giantism Giant</title>
 		<titleShort>giantism giant</titleShort>
-		<baseDescription>[PAWN_nameDef] has a very large body among giants.</baseDescription>
+		<description>[PAWN_nameDef] has a very large body among giants.</description>
 		<slot>Childhood</slot>
 		<skillGains>
-			<li>
-				<defName>Melee</defName>
-				<amount>2</amount>
-			</li>
-			<li>
-				<defName>Mining</defName>
-				<amount>4</amount>
-			</li>
+			<Melee>2</Melee>
+			<Mining>4</Mining>
 		</skillGains>
-		<forcedTraits>
+		<forcedTraitsChance>
 			<li>
 				<defName>Giantism</defName>
 				<chance>100</chance>
 			</li>
-		</forcedTraits>
+		</forcedTraitsChance>
 		<workDisables>
 			<li>Caring</li>
 			<li>Intellectual</li>
@@ -363,15 +260,15 @@
 			<li>GiantHunter</li>
 			<li>GiantChampion</li>
 		</spawnCategories>
-	</AlienRace.BackstoryDef>
+	</AlienRace.AlienBackstoryDef>
 
     <!-- 성년기 -->
 
-	<AlienRace.BackstoryDef ParentName="GiantBackStory">
+	<AlienRace.AlienBackstoryDef ParentName="GiantBackStory">
 		<defName>WeedChewer</defName>
 		<title>Weed Chewer</title>
 		<titleShort>weed chewer</titleShort>
-		<baseDescription>[PAWN_nameDef] is crazy about chewing weeds and leaves.</baseDescription>
+		<description>[PAWN_nameDef] is crazy about chewing weeds and leaves.</description>
 		<slot>Adulthood</slot>
 		<skillGains>
 			<li>
@@ -394,13 +291,13 @@
 			<li>GiantStory</li>
 			<li>GiantWild</li>
 		</spawnCategories>
-	</AlienRace.BackstoryDef>
+	</AlienRace.AlienBackstoryDef>
 	
-	<AlienRace.BackstoryDef ParentName="GiantBackStory">
+	<AlienRace.AlienBackstoryDef ParentName="GiantBackStory">
 		<defName>WoodSwallower</defName>
 		<title>Wood Swallower</title>
 		<titleShort>wood swallower</titleShort>
-		<baseDescription>[PAWN_nameDef] is such a big eater that he can swallow the whole tree!</baseDescription>
+		<description>[PAWN_nameDef] is such a big eater that he can swallow the whole tree!</description>
 		<slot>Adulthood</slot>
 		<skillGains>
 			<li>
@@ -416,13 +313,13 @@
 				<amount>5</amount>
 			</li>
 		</skillGains>
-		<forcedTraits>
+		<forcedTraitsChance>
 			<li>
 				<defName>Neurotic</defName>
 				<degree>1</degree>
 				<chance>100</chance>
 			</li>
-		</forcedTraits>
+		</forcedTraitsChance>
 		<workDisables>		
 			<li>Intellectual</li>
 			<li>Artistic</li>
@@ -435,13 +332,13 @@
 			<li>GiantWild</li>
 			<li>GiantWarrior</li>
 		</spawnCategories>
-	</AlienRace.BackstoryDef>
+	</AlienRace.AlienBackstoryDef>
 	
-	<AlienRace.BackstoryDef ParentName="GiantBackStory">
+	<AlienRace.AlienBackstoryDef ParentName="GiantBackStory">
 		<defName>SendChewer</defName>
 		<title>Send Chewer</title>
 		<titleShort>send chewer</titleShort>
-		<baseDescription>[PAWN_nameDef]  enjoys the sound of chewing on grains of sand.</baseDescription>
+		<description>[PAWN_nameDef]  enjoys the sound of chewing on grains of sand.</description>
 		<slot>Adulthood</slot>
 		<skillGains>
 			<li>
@@ -464,13 +361,13 @@
 			<li>GiantStory</li>
 			<li>GiantWild</li>
 		</spawnCategories>
-	</AlienRace.BackstoryDef>
+	</AlienRace.AlienBackstoryDef>
 	
-	<AlienRace.BackstoryDef ParentName="GiantBackStory">
+	<AlienRace.AlienBackstoryDef ParentName="GiantBackStory">
 		<defName>RockSwallower</defName>
 		<title>Rock Swallower</title>
 		<titleShort>rock swallower</titleShort>
-		<baseDescription>[PAWN_nameDef] believes in his stomach and swallows it to the rock!</baseDescription>
+		<description>[PAWN_nameDef] believes in his stomach and swallows it to the rock!</description>
 		<slot>Adulthood</slot>
 		<skillGains>
 			<li>
@@ -486,13 +383,13 @@
 				<amount>5</amount>
 			</li>
 		</skillGains>
-		<forcedTraits>
+		<forcedTraitsChance>
 			<li>
 				<defName>Neurotic</defName>
 				<degree>1</degree>
 				<chance>100</chance>
 			</li>
-		</forcedTraits>
+		</forcedTraitsChance>
 		<workDisables>		
 			<li>Intellectual</li>
 			<li>Artistic</li>
@@ -505,13 +402,13 @@
 			<li>GiantWild</li>
 			<li>GiantWarrior</li>
 		</spawnCategories>
-	</AlienRace.BackstoryDef>
+	</AlienRace.AlienBackstoryDef>
 	
-	<AlienRace.BackstoryDef ParentName="GiantBackStory">
+	<AlienRace.AlienBackstoryDef ParentName="GiantBackStory">
 		<defName>StoneStacker</defName>
 		<title>Stone Stacker</title>
 		<titleShort>stone stacker</titleShort>
-		<baseDescription>[PAWN_nameDef] has a talent for building stones especially among giants.</baseDescription>
+		<description>[PAWN_nameDef] has a talent for building stones especially among giants.</description>
 		<slot>Adulthood</slot>
 		<skillGains>
 			<li>
@@ -523,13 +420,13 @@
 				<amount>-2</amount>
 			</li>
 		</skillGains>
-		<forcedTraits>
+		<forcedTraitsChance>
 			<li>
 				<defName>Industriousness</defName>
 				<degree>2</degree>
 				<chance>80</chance>
 			</li>
-		</forcedTraits>
+		</forcedTraitsChance>
 		<workDisables>		
 			<li>Caring</li>
 			<li>Intellectual</li>
@@ -541,13 +438,13 @@
 			<li>GiantWarrior</li>
 			<li>GiantHunter</li>
 		</spawnCategories>
-	</AlienRace.BackstoryDef>
+	</AlienRace.AlienBackstoryDef>
 	
-	<AlienRace.BackstoryDef ParentName="GiantBackStory">
+	<AlienRace.AlienBackstoryDef ParentName="GiantBackStory">
 		<defName>RhinoButcher</defName>
 		<title>Rhino Butcher</title>
 		<titleShort>rhino butcher</titleShort>
-		<baseDescription>[PAWN_nameDef] slaughtering the rhino's thick leather is evidence of long-term research.</baseDescription>
+		<description>[PAWN_nameDef] slaughtering the rhino's thick leather is evidence of long-term research.</description>
 		<slot>Adulthood</slot>
 		<skillGains>
 			<li>
@@ -559,12 +456,12 @@
 				<amount>2</amount>
 			</li>
 		</skillGains>
-		<forcedTraits>
+		<forcedTraitsChance>
 			<li>
 				<defName>Bloodlust</defName>
 				<chance>100</chance>
 			</li>
-		</forcedTraits>
+		</forcedTraitsChance>
 		<workDisables>		
 			<li>Caring</li>
 			<li>Intellectual</li>
@@ -576,13 +473,13 @@
 			<li>GiantWild</li>
 			<li>GiantWarrior</li>
 		</spawnCategories>
-	</AlienRace.BackstoryDef>
+	</AlienRace.AlienBackstoryDef>
 	
-	<AlienRace.BackstoryDef ParentName="GiantBackStory">
+	<AlienRace.AlienBackstoryDef ParentName="GiantBackStory">
 		<defName>CheeseMaster</defName>
 		<title>Cheese Master</title>
 		<titleShort>cheese master</titleShort>
-		<baseDescription>[PAWN_nameDef] is a great cook who makes great fermented foods out of animal milk!</baseDescription>
+		<description>[PAWN_nameDef] is a great cook who makes great fermented foods out of animal milk!</description>
 		<slot>Adulthood</slot>
 		<skillGains>
 			<li>
@@ -590,13 +487,13 @@
 				<amount>4</amount>
 			</li>
 	    </skillGains>
-		<forcedTraits>
+		<forcedTraitsChance>
 			<li>
 				<defName>NaturalMood</defName>
 				<degree>1</degree>
 				<chance>100</chance>
 			</li>
-		</forcedTraits>
+		</forcedTraitsChance>
 		<workDisables>		
 			<li>Caring</li>
 			<li>Intellectual</li>
@@ -608,13 +505,13 @@
 			<li>GiantWarrior</li>
 			<li>GiantHunter</li>
 		</spawnCategories>
-	</AlienRace.BackstoryDef>
+	</AlienRace.AlienBackstoryDef>
 	
-	<AlienRace.BackstoryDef ParentName="GiantBackStory">
+	<AlienRace.AlienBackstoryDef ParentName="GiantBackStory">
 		<defName>PillarThrower</defName>
 		<title>Pillar Thrower</title>
 		<titleShort>pillar thrower</titleShort>
-		<baseDescription>[PAWN_nameDef] is a master of throwing columns, a game of giants.</baseDescription>
+		<description>[PAWN_nameDef] is a master of throwing columns, a game of giants.</description>
 		<slot>Adulthood</slot>
 		<skillGains>
 			<li>
@@ -630,13 +527,13 @@
 				<amount>2</amount>
 			</li>
 		</skillGains>
-		<forcedTraits>
+		<forcedTraitsChance>
 			<li>
 				<defName>ShootingAccuracy</defName>
 				<degree>-1</degree>
 				<chance>85</chance>
 			</li>
-		</forcedTraits>
+		</forcedTraitsChance>
 		<workDisables>		
 			<li>Caring</li>
 			<li>Intellectual</li>
@@ -649,13 +546,13 @@
 			<li>GiantWarrior</li>
 			<li>GiantHunter</li>
 		</spawnCategories>
-	</AlienRace.BackstoryDef>
+	</AlienRace.AlienBackstoryDef>
 	
-	<AlienRace.BackstoryDef ParentName="GiantBackStory">
+	<AlienRace.AlienBackstoryDef ParentName="GiantBackStory">
 		<defName>SlothHunter</defName>
 		<title>Sloth Hunter</title>
 		<titleShort>sloth hunter</titleShort>
-		<baseDescription>[PAWN_nameDef] is an outstanding hunter who has observed the mega sloth perfectly.</baseDescription>
+		<description>[PAWN_nameDef] is an outstanding hunter who has observed the mega sloth perfectly.</description>
 		<slot>Adulthood</slot>
 		<skillGains>
 			<li>
@@ -679,13 +576,13 @@
 				<amount>-3</amount>
 			</li>
 		</skillGains>
-		<forcedTraits>
+		<forcedTraitsChance>
 			<li>
 				<defName>ShootingAccuracy</defName>
 				<degree>1</degree>
 				<chance>85</chance>
 			</li>
-		</forcedTraits>
+		</forcedTraitsChance>
 		<workDisables>		
 			<li>Intellectual</li>
 			<li>Artistic</li>
@@ -697,13 +594,13 @@
 			<li>GiantWild</li>
 			<li>GiantHunter</li>
 		</spawnCategories>
-	</AlienRace.BackstoryDef>
+	</AlienRace.AlienBackstoryDef>
 	
-	<AlienRace.BackstoryDef ParentName="GiantBackStory">
+	<AlienRace.AlienBackstoryDef ParentName="GiantBackStory">
 		<defName>ManHunter</defName>
 		<title>Man Hunter</title>
 		<titleShort>man hunter</titleShort>
-		<baseDescription>[PAWN_nameDef] is a gourmet who is aiming for a relatively small and weak species.</baseDescription>
+		<description>[PAWN_nameDef] is a gourmet who is aiming for a relatively small and weak species.</description>
 		<slot>Adulthood</slot>
 		<skillGains>
 			<li>
@@ -715,12 +612,12 @@
 				<amount>-2</amount>
 			</li>
 		</skillGains>
-		<forcedTraits>
+		<forcedTraitsChance>
 			<li>
 				<defName>Cannibal</defName>
 				<chance>100</chance>
 			</li>
-		</forcedTraits>
+		</forcedTraitsChance>
 		<workDisables>		
 			<li>Intellectual</li>
 			<li>Artistic</li>
@@ -731,13 +628,13 @@
 			<li>GiantWild</li>
 			<li>GiantHunter</li>
 		</spawnCategories>
-	</AlienRace.BackstoryDef>
+	</AlienRace.AlienBackstoryDef>
 	
-	<AlienRace.BackstoryDef ParentName="GiantBackStory">
+	<AlienRace.AlienBackstoryDef ParentName="GiantBackStory">
 		<defName>ThrumboHunter</defName>
 		<title>Thrumbo Hunter</title>
 		<titleShort>thrumbo hunters</titleShort>
-		<baseDescription>[PAWN_nameDef] is one of those who hunts Thrumbo, which is feared by giants.</baseDescription>
+		<description>[PAWN_nameDef] is one of those who hunts Thrumbo, which is feared by giants.</description>
 		<slot>Adulthood</slot>
 		<skillGains>
 			<li>
@@ -765,13 +662,13 @@
 				<amount>-3</amount>
 			</li>
 		</skillGains>
-		<forcedTraits>
+		<forcedTraitsChance>
 			<li>
 				<defName>SpeedOffset</defName>
 				<degree>2</degree>
 				<chance>100</chance>
 			</li>
-		</forcedTraits>
+		</forcedTraitsChance>
 		<workDisables>		
 			<li>Caring</li>
 			<li>Intellectual</li>
@@ -784,13 +681,13 @@
 			<li>GiantHunter</li>
 			<li>GiantChampion</li>
 		</spawnCategories>
-	</AlienRace.BackstoryDef>
+	</AlienRace.AlienBackstoryDef>
 	
-	<AlienRace.BackstoryDef ParentName="GiantBackStory">
+	<AlienRace.AlienBackstoryDef ParentName="GiantBackStory">
 		<defName>BugHunter</defName>
 		<title>Bug Hunter</title>
 		<titleShort>bug hunter</titleShort>
-		<baseDescription>[PAWN_nameDef] hunted for a long time large bugs that popped out of the cave, and his body adapted to the insect venom.</baseDescription>
+		<description>[PAWN_nameDef] hunted for a long time large bugs that popped out of the cave, and his body adapted to the insect venom.</description>
 		<slot>Adulthood</slot>
 		<skillGains>
 			<li>
@@ -814,13 +711,13 @@
 				<amount>-2</amount>
 			</li>
 		</skillGains>
-		<forcedTraits>
+		<forcedTraitsChance>
 			<li>
 				<defName>Immunity</defName>
 				<degree>1</degree>
 				<chance>100</chance>
 			</li>
-		</forcedTraits>
+		</forcedTraitsChance>
 		<workDisables>		
 			<li>Caring</li>
 			<li>Intellectual</li>
@@ -833,13 +730,13 @@
 			<li>GiantWild</li>
 			<li>GiantHunter</li>
 		</spawnCategories>
-	</AlienRace.BackstoryDef>
+	</AlienRace.AlienBackstoryDef>
 	
-	<AlienRace.BackstoryDef ParentName="GiantBackStory">
+	<AlienRace.AlienBackstoryDef ParentName="GiantBackStory">
 		<defName>GiantWrestler</defName>
 		<title>Giant Wrestler</title>
 		<titleShort>giant wrestler</titleShort>
-		<baseDescription>In ssireum, the biggest game of giants, [PAWN_nameDef] is like a professional!.</baseDescription>
+		<description>In ssireum, the biggest game of giants, [PAWN_nameDef] is like a professional!.</description>
 		<slot>Adulthood</slot>
 		<skillGains>
 			<li>
@@ -863,12 +760,12 @@
 				<amount>-4</amount>
 			</li>
 		</skillGains>
-		<forcedTraits>
+		<forcedTraitsChance>
 			<li>
 				<defName>Brawler</defName>
 				<chance>100</chance>
 			</li>
-		</forcedTraits>
+		</forcedTraitsChance>
 		<workDisables>		
 			<li>Caring</li>
 			<li>Intellectual</li>
@@ -880,13 +777,13 @@
 			<li>GiantWarrior</li>
 			<li>GiantChampion</li>
 		</spawnCategories>
-	</AlienRace.BackstoryDef>
+	</AlienRace.AlienBackstoryDef>
 	
-	<AlienRace.BackstoryDef ParentName="GiantBackStory">
+	<AlienRace.AlienBackstoryDef ParentName="GiantBackStory">
 		<defName>GiantChampion</defName>
 		<title>Giant Champion</title>
 		<titleShort>giant champion</titleShort>
-		<baseDescription>[PAWN_nameDef] is a veteran who participated in the war against many tribes.</baseDescription>
+		<description>[PAWN_nameDef] is a veteran who participated in the war against many tribes.</description>
 		<slot>Adulthood</slot>
 		<skillGains>
 			<li>
@@ -906,13 +803,13 @@
 				<amount>-4</amount>
 			</li>
 		</skillGains>
-		<forcedTraits>
+		<forcedTraitsChance>
 			<li>
 				<defName>Nerves</defName>
 				<degree>2</degree>
 				<chance>100</chance>
 			</li>
-		</forcedTraits>
+		</forcedTraitsChance>
 		<workDisables>		
 			<li>Intellectual</li>
 			<li>Artistic</li>
@@ -924,13 +821,13 @@
 			<li>GiantWarrior</li>
 			<li>GiantHunter</li>
 		</spawnCategories>
-	</AlienRace.BackstoryDef>
+	</AlienRace.AlienBackstoryDef>
 	
-	<AlienRace.BackstoryDef ParentName="GiantBackStory">
+	<AlienRace.AlienBackstoryDef ParentName="GiantBackStory">
 		<defName>ThrumboSlayer</defName>
 		<title>Thrumbo Slayer</title>
 		<titleShort>thrumbo slayer</titleShort>
-		<baseDescription>[PAWN_nameDef] is the great Thrumbo Massacre that killed several Thrumbo.</baseDescription>
+		<description>[PAWN_nameDef] is the great Thrumbo Massacre that killed several Thrumbo.</description>
 		<slot>Adulthood</slot>
 		<skillGains>
 			<li>
@@ -950,12 +847,12 @@
 				<amount>-4</amount>
 			</li>
 		</skillGains>
-		<forcedTraits>
+		<forcedTraitsChance>
 			<li>
 				<defName>MonsterHunter</defName>
 				<chance>100</chance>
 			</li>
-		</forcedTraits>
+		</forcedTraitsChance>
 		<workDisables>		
 			<li>Intellectual</li>
 			<li>Animals</li>
@@ -966,13 +863,13 @@
 			<li>GiantStory</li>
 			<li>GiantChampion</li>
 		</spawnCategories>
-	</AlienRace.BackstoryDef>
+	</AlienRace.AlienBackstoryDef>
 	
-	<AlienRace.BackstoryDef ParentName="GiantBackStory">
+	<AlienRace.AlienBackstoryDef ParentName="GiantBackStory">
 		<defName>NomadicWarrior</defName>
 		<title>Nomadic Warrior</title>
 		<titleShort>nomadic warrior</titleShort>
-		<baseDescription>[PAWN_nameDef] is a warrior of giants living nomadic lives.</baseDescription>
+		<description>[PAWN_nameDef] is a warrior of giants living nomadic lives.</description>
 		<slot>Adulthood</slot>
 		<skillGains>
 			<li>
@@ -1000,13 +897,13 @@
 				<amount>-4</amount>
 			</li>
 		</skillGains>
-		<forcedTraits>
+		<forcedTraitsChance>
 			<li>
 				<defName>NaturalMood</defName>
 				<degree>1</degree>
 				<chance>65</chance>
 			</li>
-		</forcedTraits>
+		</forcedTraitsChance>
 		<workDisables>		
 			<li>Caring</li>
 			<li>Intellectual</li>
@@ -1017,7 +914,7 @@
 			<li>GiantWarrior</li>
 			<li>GiantHunter</li>
 		</spawnCategories>
-	</AlienRace.BackstoryDef>
+	</AlienRace.AlienBackstoryDef>
 
 
 
