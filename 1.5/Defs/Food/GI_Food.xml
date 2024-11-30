@@ -35,7 +35,7 @@
       <ingestEffect>EatVegetarian</ingestEffect>
       <ingestSound>Meal_Eat</ingestSound>
     </ingestible>
-	<comps>
+    <comps>
       <li Class="CompProperties_Rottable">
         <daysToRotStart>60</daysToRotStart>
         <rotDestroys>true</rotDestroys>
@@ -50,7 +50,7 @@
     <graphicData>
       <texPath>Things/Item/MammothFood</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
-	  <drawSize>1.6</drawSize>
+	    <drawSize>1.6</drawSize>
     </graphicData>
     <statBases>
       <MarketValue>90</MarketValue>
@@ -65,7 +65,7 @@
       <ingestEffect>EatMeat</ingestEffect>
       <ingestSound>Meal_Eat</ingestSound>
     </ingestible>
-	<comps>
+	  <comps>
       <li Class="CompProperties_Rottable">
         <daysToRotStart>15</daysToRotStart>
         <rotDestroys>true</rotDestroys>

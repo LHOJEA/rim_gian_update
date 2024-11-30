@@ -12,7 +12,7 @@
                 <label>ate stone soup</label>
                 <description>I think there's a rock in my stomach...</description>
                 <baseMoodEffect>-25</baseMoodEffect>
-          </li>
+            </li>
         </stages>
     </ThoughtDef>
 	

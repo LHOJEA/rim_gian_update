@@ -8,8 +8,39 @@
       <generalSettings>
         <reproduction>
           <childKindDef>GI_Tribal</childKindDef>
-          
+          <maleFertilityAgeFactor>
+						<points>
+							<li>(10, 0)</li>
+               <li>(14, 1)</li>
+               <li>(80, 1)</li>
+               <li>(145, 0)</li>
+						</points>
+					</maleFertilityAgeFactor>
+          <femaleFertilityAgeFactor>
+						<points>
+						  <li>(10, 0)</li>
+              <li>(16, 1)</li>
+              <li>(40, 1)</li>
+              <li>(54, 0.5)</li>
+              <li>(66, 0.1)</li>
+              <li>(72, 0.02)</li>
+              <li>(80, 0)</li>
+						</points>
+					</femaleFertilityAgeFactor>
         </reproduction>
+        <newbornBackstoryFilter>
+          <!-- <li>
+						<categories>
+							<li>GiantStory</li>
+						</categories>
+						<commonality>1</commonality>
+					</li> -->
+        </newbornBackstoryFilter>
+        <growthAges MayRequire="Ludeon.RimWorld.Biotech">
+					<li>7</li>
+					<li>10</li>
+					<li>13</li>
+				</growthAges>
         <minAgeForAdulthood>14</minAgeForAdulthood>
         <maleGenderProbability>0.5</maleGenderProbability>
         <immuneToAge>true</immuneToAge>
@@ -23,59 +54,52 @@
 		  <li>GIBed</li>
 		</validBeds>
 		<forcedRaceTraitEntries>
-		  <li>
-		    <defName>Tough</defName>
-			<chance>20</chance>
+      <li>
+		    <defName>Gourmand</defName>
+			  <chance>100</chance>
 		  </li>
 		  <li>
-		    <defName>Gourmand</defName>
-			<chance>100</chance>
+		    <defName>Tough</defName>
+			  <chance>20</chance>
 		  </li>
 		</forcedRaceTraitEntries>
         <disallowedTraits>
           <li>
-					<defName>PsychicSensitivity</defName>
-					<degree>2</degree>
-					<commonalityMale>0</commonalityMale>
-					<commonalityFemale>100</commonalityFemale>
-				</li>
-				<li>
-					<defName>PsychicSensitivity</defName>
-					<degree>1</degree>
-					<commonalityMale>0</commonalityMale>
-					<commonalityFemale>100</commonalityFemale>
-				</li>
-				<li>
-					<defName>PsychicSensitivity</defName>
-					<degree>-1</degree>
-					<commonalityMale>0</commonalityMale>
-					<commonalityFemale>100</commonalityFemale>
-				</li>
-				<li>
-					<defName>PsychicSensitivity</defName>
-					<degree>-2</degree>
-					<commonalityMale>0</commonalityMale>
-					<commonalityFemale>100</commonalityFemale>
-				</li>
-				<li>
-				    <defName>DrugDesire</defName>
-					<degree>2</degree>
-					<commonalityMale>0</commonalityMale>
-					<commonalityFemale>100</commonalityFemale>
-				</li>
-				<li>
-				    <defName>DrugDesire</defName>
-					<degree>1</degree>
-					<commonalityMale>0</commonalityMale>
-					<commonalityFemale>100</commonalityFemale>
-				</li>
-				<li>
-				    <defName>DrugDesire</defName>
-					<degree>-1</degree>
-					<commonalityMale>0</commonalityMale>
-					<commonalityFemale>100</commonalityFemale>
-				</li>
-				<li>
+            <defName Degree="2">PsychicSensitivity</defName>
+            <commonalityMale>0</commonalityMale>
+            <commonalityFemale>100</commonalityFemale>
+				  </li>
+          <li>
+            <defName Degree="1">PsychicSensitivity</defName>
+            <commonalityMale>0</commonalityMale>
+            <commonalityFemale>100</commonalityFemale>
+          </li>
+          <li>
+            <defName Degree="-1">PsychicSensitivity</defName>
+            <commonalityMale>0</commonalityMale>
+            <commonalityFemale>100</commonalityFemale>
+          </li>
+          <li>
+            <defName Degree="-2">PsychicSensitivity</defName>
+            <commonalityMale>0</commonalityMale>
+            <commonalityFemale>100</commonalityFemale>
+          </li>
+          <li>
+              <defName Degree="2">DrugDesire</defName>
+            <commonalityMale>0</commonalityMale>
+            <commonalityFemale>100</commonalityFemale>
+          </li>
+          <li>
+              <defName Degree="1">DrugDesire</defName>
+            <commonalityMale>0</commonalityMale>
+            <commonalityFemale>100</commonalityFemale>
+          </li>
+          <li>
+              <defName Degree="-1">DrugDesire</defName>
+            <commonalityMale>0</commonalityMale>
+            <commonalityFemale>100</commonalityFemale>
+          </li>
+          <li>
 				    <defName>Transhumanist</defName>
 			    	<chance>100</chance>
 	     		</li>
@@ -92,43 +116,69 @@
         <!--=파트제네레이터==========================================================================================-->
         <alienPartGenerator>
           <borderScale>3.012</borderScale>
-		  <atlasScale>3.012</atlasScale>
-		  <aliencrowntypes>            <!-- 헤드 -->
+		      <atlasScale>3.012</atlasScale>
+		      <headTypes>            <!-- 헤드 -->
             <li>Average_1</li>
-          </aliencrowntypes>
-          <alienbodytypes>            <!-- 바디 -->
+          </headTypes>
+          <bodyTypes>            <!-- 바디 -->
             <li>GiantF</li>
             <li>GiantM</li>
-          </alienbodytypes>
+            <li MayRequire="Ludeon.RimWorld.Biotech">Baby</li><!-- test -->
+  					<li MayRequire="Ludeon.RimWorld.Biotech">Child</li><!-- test -->
+          </bodyTypes>
+
+          <headOffsetDirectional MayRequire="Ludeon.RimWorld.Biotech">
+            <north MayRequire="Ludeon.RimWorld.Biotech">
+              <bodyTypes MayRequire="Ludeon.RimWorld.Biotech">
+                <Child MayRequire="Ludeon.RimWorld.Biotech">(0,0)</Child>
+              </bodyTypes>
+            </north>
+            <south MayRequire="Ludeon.RimWorld.Biotech">
+              <bodyTypes MayRequire="Ludeon.RimWorld.Biotech">
+                <Child MayRequire="Ludeon.RimWorld.Biotech">(0,0)</Child>
+              </bodyTypes>
+            </south>
+            <east MayRequire="Ludeon.RimWorld.Biotech">
+              <bodyTypes MayRequire="Ludeon.RimWorld.Biotech">
+                <Child MayRequire="Ludeon.RimWorld.Biotech">(0.05,0)</Child>
+              </bodyTypes>
+            </east>
+            <west MayRequire="Ludeon.RimWorld.Biotech">
+              <bodyTypes MayRequire="Ludeon.RimWorld.Biotech">
+                <Child MayRequire="Ludeon.RimWorld.Biotech">(-0.05,0)</Child>
+              </bodyTypes>
+            </west>
+				  </headOffsetDirectional>
+
           <headOffset>(0, 0)</headOffset>
           <useGenderedHeads>true</useGenderedHeads>
           <useGenderedBodies>false</useGenderedBodies>
           <!-- 신체 드로잉 크기 -->
           <customDrawSize>(3.2, 3.2)</customDrawSize>
           <customHeadDrawSize>(3.2, 3.2)</customHeadDrawSize>
-          <customPortraitDrawSize>1.5, 1.5)</customPortraitDrawSize>
+          <customPortraitDrawSize>(1.5, 1.5)</customPortraitDrawSize>
           <!--컬러-->
           <colorChannels>
             <li>
               <name>skin</name>
               <first Class="ColorGenerator_Options">
                 <options>
-                    <li>
-					    <weight>5</weight>
-					    <only>RGBA(1.0,1.0,1.0,1)</only>
-			        </li>
-					<li>
-						<weight>3</weight>
-						<only>RGBA(1,0.9,0.8,1)</only>
-					</li>
-					<li>
-						<weight>2</weight>
-						<only>RGBA(0.8,0.7,0.6,1)</only>
-					</li>
-					<li>
-					    <weight>1</weight>
-						<only>RGBA(0.5,0.4,0.38,1)</only>
-					</li>
+                  <li>
+                    <weight>5</weight>
+                    <only>RGBA(1.0,1.0,1.0,1)</only>
+                  </li>
+                  <li>
+                    <weight>3</weight>
+                    <only>RGBA(1,0.9,0.8,1)</only>
+                  </li>
+                  <li>
+                    <weight>2</weight>
+                    <only>RGBA(0.8,0.7,0.6,1)</only>
+                  </li>
+                  <li>
+                    <weight>1</weight>
+                    <only>RGBA(0.5,0.4,0.38,1)</only>
+                  </li>
                 </options>
               </first>
             </li>
@@ -136,42 +186,42 @@
               <name>hair</name>
               <first Class="ColorGenerator_Options">
                 <options>
-					<!-- 블랙 -->
-					<li>
-						<weight>6</weight>
-						<only>RGBA(0.23,0.23,0.23,1)</only>
-					</li>
-					<!-- 다크브라운 -->
-					<li>
-						<weight>6</weight>
-						<only>RGBA(0.66,0.48,0.26,1)</only>
-					</li>
-					<!-- 화이트 -->
-					<li>
-						<weight>1</weight>
-						<only>RGBA(1.0,1.0,1.0,1)</only>
-					</li>
-					<!-- 오렌지 -->
-					<li>
-						<weight>2</weight>
-						<only>RGBA(0.85,0.48,0.16,1)</only>
-					</li>
-					<!-- 골드 -->
-					<li>
-						<weight>2</weight>
-						<only>RGBA(0.88,0.82,0.68,1)</only>
-					</li>
-					<!-- 네이비 -->
-					<li>
-						<weight>3</weight>
-						<only>RGBA(0.32,0.34,0.42,1)</only>
-					</li>
-					<!-- 레드 -->
-					<li>
-						<weight>3</weight>
-						<only>RGBA(0.82,0.32,0.23,1)</only>
-					</li>
-				</options>
+                  <!-- 블랙 -->
+                  <li>
+                    <weight>6</weight>
+                    <only>RGBA(0.23,0.23,0.23,1)</only>
+                  </li>
+                  <!-- 다크브라운 -->
+                  <li>
+                    <weight>6</weight>
+                    <only>RGBA(0.66,0.48,0.26,1)</only>
+                  </li>
+                  <!-- 화이트 -->
+                  <li>
+                    <weight>1</weight>
+                    <only>RGBA(1.0,1.0,1.0,1)</only>
+                  </li>
+                  <!-- 오렌지 -->
+                  <li>
+                    <weight>2</weight>
+                    <only>RGBA(0.85,0.48,0.16,1)</only>
+                  </li>
+                  <!-- 골드 -->
+                  <li>
+                    <weight>2</weight>
+                    <only>RGBA(0.88,0.82,0.68,1)</only>
+                  </li>
+                  <!-- 네이비 -->
+                  <li>
+                    <weight>3</weight>
+                    <only>RGBA(0.32,0.34,0.42,1)</only>
+                  </li>
+                  <!-- 레드 -->
+                  <li>
+                    <weight>3</weight>
+                    <only>RGBA(0.82,0.32,0.23,1)</only>
+                  </li>
+                </options>
               </first>
             </li>
           </colorChannels>
@@ -181,12 +231,56 @@
 
       <!--텍스처경로-->
       <graphicPaths>
+        <head>
+          <path>Giant/Heads/</path>
+						<extendedGraphics>
+            	<Hediff MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">Dragonian/Dragonianlike/Heads/Female_DR_headGH</Hediff>
+							<Age For="HumanlikeBaby" MayRequire="Ludeon.RimWorld.Biotech">Giant/Heads/Female_Average_1</Age>
+            </extendedGraphics>
+        </head>
+        <body>
+          <path>Giant/Bodies/</path>
+            <extendedGraphics>
+              <Age For="HumanlikeBaby_Giant">
+                <path></path>
+                <extendedGraphics>
+                </extendedGraphics>
+              </Age>
+              <Age For="HumanlikeChild_Giant">
+                <path></path>
+                <extendedGraphics>
+                </extendedGraphics>
+              </Age>
+              <Age For="HumanlikePreTeenager_Giant">
+                <path>Giant/Bodies/</path>
+                <extendedGraphics>
+                </extendedGraphics>
+              </Age>
+              <Age For="HumanlikeTeenager_Giant">
+                <path>Giant/Bodies/</path>
+                <extendedGraphics>
+                </extendedGraphics>
+              </Age>
+              <Age For="HumanlikeAdult_Giant">
+                <path>Giant/Bodies/</path>
+                <extendedGraphics>
+                </extendedGraphics>
+              </Age>
+            </extendedGraphics>
+        </body>
         <li>
           <head>Giant/Heads/</head>
           <body>Giant/Bodies/</body>
           <skeleton>Things/Pawn/Humanlike/Bodies/Dessicated/Dessicated_Male</skeleton>
         </li>
       </graphicPaths>
+      <!-- <graphicPaths>
+        <li>
+          <head>Giant/Heads/</head>
+          <body>Giant/Bodies/</body>
+          <skeleton>Things/Pawn/Humanlike/Bodies/Dessicated/Dessicated_Male</skeleton>
+        </li>
+      </graphicPaths> -->
       <!-- 헤어 -->
 	  <styleSettings>
     <li>
@@ -427,13 +521,13 @@
           <minAge>0</minAge>
         </li>
         <li>
-          <def>HumanlikeToddler</def>
-          <minAge>1.2</minAge>
-        </li>
-        <li>
           <def>HumanlikeChild</def>
           <minAge>4</minAge>
         </li>
+        <li MayRequire="Ludeon.RimWorld.Biotech">
+					<def>HumanlikePreTeenager</def>
+					<minAge>8</minAge>
+				</li>
         <li>
           <def>GiantTeenager</def>
           <minAge>12</minAge>

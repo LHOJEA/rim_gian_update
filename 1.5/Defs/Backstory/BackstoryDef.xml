@@ -271,14 +271,8 @@
 		<description>[PAWN_nameDef] is crazy about chewing weeds and leaves.</description>
 		<slot>Adulthood</slot>
 		<skillGains>
-			<li>
-				<defName>Social</defName>
-				<amount>-3</amount>
-			</li>
-			<li>
-				<defName>Plants</defName>
-				<amount>2</amount>
-			</li>
+			<Social>-3</Social>
+			<Plants>2</Plants>
 		</skillGains>
 		<workDisables>		
 			<li>Intellectual</li>
@@ -300,18 +294,9 @@
 		<description>[PAWN_nameDef] is such a big eater that he can swallow the whole tree!</description>
 		<slot>Adulthood</slot>
 		<skillGains>
-			<li>
-				<defName>Melee</defName>
-				<amount>1</amount>
-			</li>
-			<li>
-				<defName>Social</defName>
-				<amount>-2</amount>
-			</li>
-			<li>
-				<defName>Plants</defName>
-				<amount>5</amount>
-			</li>
+			<Melee>1</Melee>
+			<Social>-2</Social>
+			<Plants>5</Plants>
 		</skillGains>
 		<forcedTraitsChance>
 			<li>
@@ -341,14 +326,8 @@
 		<description>[PAWN_nameDef]  enjoys the sound of chewing on grains of sand.</description>
 		<slot>Adulthood</slot>
 		<skillGains>
-			<li>
-				<defName>Social</defName>
-				<amount>-3</amount>
-			</li>
-			<li>
-				<defName>Mining</defName>
-				<amount>2</amount>
-			</li>
+			<Social>-3</Social>
+			<Mining>2</Mining>
 		</skillGains>
 		<workDisables>		
 			<li>Intellectual</li>
@@ -370,18 +349,9 @@
 		<description>[PAWN_nameDef] believes in his stomach and swallows it to the rock!</description>
 		<slot>Adulthood</slot>
 		<skillGains>
-			<li>
-				<defName>Melee</defName>
-				<amount>1</amount>
-			</li>
-			<li>
-				<defName>Social</defName>
-				<amount>-2</amount>
-			</li>
-			<li>
-				<defName>Mining</defName>
-				<amount>5</amount>
-			</li>
+			<Melee>1</Melee>
+			<Social>-2</Social>
+			<Mining>5</Mining>
 		</skillGains>
 		<forcedTraitsChance>
 			<li>
@@ -411,14 +381,8 @@
 		<description>[PAWN_nameDef] has a talent for building stones especially among giants.</description>
 		<slot>Adulthood</slot>
 		<skillGains>
-			<li>
-				<defName>Construction</defName>
-				<amount>4</amount>
-			</li>
-			<li>
-			    <defName>Crafting</defName>
-				<amount>-2</amount>
-			</li>
+			<Construction>4</Construction>
+			<Crafting>-2</Crafting>
 		</skillGains>
 		<forcedTraitsChance>
 			<li>
@@ -447,14 +411,8 @@
 		<description>[PAWN_nameDef] slaughtering the rhino's thick leather is evidence of long-term research.</description>
 		<slot>Adulthood</slot>
 		<skillGains>
-			<li>
-				<defName>Melee</defName>
-				<amount>2</amount>
-			</li>
-			<li>
-				<defName>Animals</defName>
-				<amount>2</amount>
-			</li>
+			<Melee>2</Melee>
+			<Animals>2</Animals>
 		</skillGains>
 		<forcedTraitsChance>
 			<li>
@@ -482,10 +440,7 @@
 		<description>[PAWN_nameDef] is a great cook who makes great fermented foods out of animal milk!</description>
 		<slot>Adulthood</slot>
 		<skillGains>
-			<li>
-				<defName>Cooking</defName>
-				<amount>4</amount>
-			</li>
+			<Cooking>4</Cooking>
 	    </skillGains>
 		<forcedTraitsChance>
 			<li>
@@ -514,18 +469,9 @@
 		<description>[PAWN_nameDef] is a master of throwing columns, a game of giants.</description>
 		<slot>Adulthood</slot>
 		<skillGains>
-			<li>
-				<defName>Shooting</defName>
-				<amount>5</amount>
-			</li>
-			<li>
-				<defName>Construction</defName>
-				<amount>-3</amount>
-			</li>
-			<li>
-				<defName>Melee</defName>
-				<amount>2</amount>
-			</li>
+			<Shooting>5</Shooting>
+			<Construction>-3</Construction>
+			<Melee>2</Melee>
 		</skillGains>
 		<forcedTraitsChance>
 			<li>
@@ -555,26 +501,11 @@
 		<description>[PAWN_nameDef] is an outstanding hunter who has observed the mega sloth perfectly.</description>
 		<slot>Adulthood</slot>
 		<skillGains>
-			<li>
-				<defName>Shooting</defName>
-				<amount>3</amount>
-			</li>
-			<li>
-				<defName>Melee</defName>
-				<amount>2</amount>
-			</li>
-			<li>
-				<defName>Animals</defName>
-				<amount>3</amount>
-			</li>
-			<li>
-				<defName>Plants</defName>
-				<amount>-3</amount>
-			</li>
-			<li>
-			    <defName>Crafting</defName>
-				<amount>-3</amount>
-			</li>
+			<Shooting>3</Shooting>
+			<Melee>2</Melee>
+			<Animals>3</Animals>
+			<Plants>-3</Plants>
+			<Crafting>-3</Crafting>
 		</skillGains>
 		<forcedTraitsChance>
 			<li>
@@ -603,14 +534,8 @@
 		<description>[PAWN_nameDef] is a gourmet who is aiming for a relatively small and weak species.</description>
 		<slot>Adulthood</slot>
 		<skillGains>
-			<li>
-				<defName>Shooting</defName>
-				<amount>4</amount>
-			</li>
-			<li>
-				<defName>Melee</defName>
-				<amount>-2</amount>
-			</li>
+			<Shooting>4</Shooting>
+			<Melee>-2</Melee>
 		</skillGains>
 		<forcedTraitsChance>
 			<li>
@@ -637,30 +562,12 @@
 		<description>[PAWN_nameDef] is one of those who hunts Thrumbo, which is feared by giants.</description>
 		<slot>Adulthood</slot>
 		<skillGains>
-			<li>
-				<defName>Shooting</defName>
-				<amount>4</amount>
-			</li>
-			<li>
-				<defName>Melee</defName>
-				<amount>4</amount>
-			</li>
-			<li>
-				<defName>Animals</defName>
-				<amount>2</amount>
-			</li>
-			<li>
-				<defName>Mining</defName>
-				<amount>-2</amount>
-			</li>
-			<li>
-				<defName>Plants</defName>
-				<amount>-2</amount>
-			</li>
-			<li>
-			    <defName>Crafting</defName>
-				<amount>-3</amount>
-			</li>
+			<Shooting>4</Shooting>
+			<Melee>4</Melee>
+			<Animals>2</Animals>
+			<Mining>-2</Mining>
+			<Plants>-2</Plants>
+			<Crafting>-3</Crafting>
 		</skillGains>
 		<forcedTraitsChance>
 			<li>
@@ -690,26 +597,11 @@
 		<description>[PAWN_nameDef] hunted for a long time large bugs that popped out of the cave, and his body adapted to the insect venom.</description>
 		<slot>Adulthood</slot>
 		<skillGains>
-			<li>
-				<defName>Construction</defName>
-				<amount>2</amount>
-			</li>
-			<li>
-				<defName>Melee</defName>
-				<amount>3</amount>
-			</li>
-			<li>
-				<defName>Mining</defName>
-				<amount>3</amount>
-			</li>
-			<li>
-				<defName>Plants</defName>
-				<amount>-3</amount>
-			</li>
-			<li>
-			    <defName>Crafting</defName>
-				<amount>-2</amount>
-			</li>
+			<Construction>2</Construction>
+			<Melee>3</Melee>
+			<Mining>3</Mining>
+			<Plants>-3</Plants>
+			<Crafting>-2</Crafting>
 		</skillGains>
 		<forcedTraitsChance>
 			<li>
@@ -739,26 +631,11 @@
 		<description>In ssireum, the biggest game of giants, [PAWN_nameDef] is like a professional!.</description>
 		<slot>Adulthood</slot>
 		<skillGains>
-			<li>
-				<defName>Melee</defName>
-				<amount>4</amount>
-			</li>
-			<li>
-				<defName>Social</defName>
-				<amount>2</amount>
-			</li>
-			<li>
-				<defName>Mining</defName>
-				<amount>-2</amount>
-			</li>
-			<li>
-				<defName>Plants</defName>
-				<amount>-2</amount>
-			</li>
-			<li>
-			    <defName>Crafting</defName>
-				<amount>-4</amount>
-			</li>
+			<Melee>4</Melee>
+			<Social>2</Social>
+			<Mining>-2</Mining>
+			<Plants>-2</Plants>
+			<Crafting>-4</Crafting>
 		</skillGains>
 		<forcedTraitsChance>
 			<li>
@@ -786,22 +663,10 @@
 		<description>[PAWN_nameDef] is a veteran who participated in the war against many tribes.</description>
 		<slot>Adulthood</slot>
 		<skillGains>
-			<li>
-				<defName>Construction</defName>
-				<amount>3</amount>
-			</li>
-			<li>
-				<defName>Melee</defName>
-				<amount>6</amount>
-			</li>
-			<li>
-			    <defName>Crafting</defName>
-				<amount>-2</amount>
-			</li>
-			<li>
-			    <defName>Cooking</defName>
-				<amount>-4</amount>
-			</li>
+			<Construction>3</Construction>
+			<Melee>6</Melee>
+			<Crafting>-2</Crafting>
+			<Cooking>-4</Cooking>
 		</skillGains>
 		<forcedTraitsChance>
 			<li>
@@ -830,22 +695,10 @@
 		<description>[PAWN_nameDef] is the great Thrumbo Massacre that killed several Thrumbo.</description>
 		<slot>Adulthood</slot>
 		<skillGains>
-			<li>
-				<defName>Shooting</defName>
-				<amount>6</amount>
-			</li>
-			<li>
-				<defName>Melee</defName>
-				<amount>8</amount>
-			</li>
-			<li>
-			    <defName>Crafting</defName>
-				<amount>-2</amount>
-			</li>
-			<li>
-			    <defName>Cooking</defName>
-				<amount>-4</amount>
-			</li>
+			<Shooting>6</Shooting>
+			<Melee>8</Melee>
+			<Crafting>-2</Crafting>
+			<Cooking>-4</Cooking>
 		</skillGains>
 		<forcedTraitsChance>
 			<li>
@@ -872,30 +725,12 @@
 		<description>[PAWN_nameDef] is a warrior of giants living nomadic lives.</description>
 		<slot>Adulthood</slot>
 		<skillGains>
-			<li>
-				<defName>Shooting</defName>
-				<amount>4</amount>
-			</li>
-			<li>
-				<defName>Melee</defName>
-				<amount>2</amount>
-			</li>
-			<li>
-				<defName>Mining</defName>
-				<amount>-2</amount>
-			</li>
-			<li>
-				<defName>Plants</defName>
-				<amount>-2</amount>
-			</li>
-			<li>
-			    <defName>Crafting</defName>
-				<amount>-2</amount>
-			</li>
-			<li>
-			    <defName>Cooking</defName>
-				<amount>-4</amount>
-			</li>
+			<Shooting>4</Shooting>
+			<Melee>2</Melee>
+			<Mining>-2</Mining>
+			<Plants>-2</Plants>
+			<Crafting>-2</Crafting>
+			<Cooking>-4</Cooking>
 		</skillGains>
 		<forcedTraitsChance>
 			<li>
