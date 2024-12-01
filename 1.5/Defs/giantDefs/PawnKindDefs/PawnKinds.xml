@@ -4,13 +4,34 @@
 
   <PawnKindDef Name="GIBasePawnKind" Abstract="True">
     <race>HC_Giant</race>
-	<combatPower>180</combatPower>
+	  <combatPower>180</combatPower>
     <isFighter>true</isFighter>
     <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
     <forceNormalGearQuality>true</forceNormalGearQuality>
-	<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
-	<initialWillRange>0~1</initialWillRange>
+	  <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+	  <initialWillRange>0~1</initialWillRange>
     <initialResistanceRange>10~17</initialResistanceRange>
+
+    <xenotypeSet>
+			<xenotypeChances>
+				<HCGiantXenotype MayRequire="Ludeon.RimWorld.Biotech">100</HCGiantXenotype>
+			
+				<Baseliner MayRequire="Ludeon.RimWorld.Biotech">0</Baseliner>
+				
+				<Dirtmole MayRequire="Ludeon.RimWorld.Biotech">0</Dirtmole>
+				<Genie MayRequire="Ludeon.RimWorld.Biotech">0</Genie>
+				<Hussar MayRequire="Ludeon.RimWorld.Biotech">0</Hussar>
+				<Sanguophage MayRequire="Ludeon.RimWorld.Biotech">0</Sanguophage>
+				<Neanderthal MayRequire="Ludeon.RimWorld.Biotech">0</Neanderthal>
+				<Pigskin MayRequire="Ludeon.RimWorld.Biotech">0</Pigskin>
+				<Impid MayRequire="Ludeon.RimWorld.Biotech">0</Impid>
+				<Waster MayRequire="Ludeon.RimWorld.Biotech">0</Waster>
+				<Yttakin MayRequire="Ludeon.RimWorld.Biotech">0</Yttakin>
+				<Highmate MayRequire="Ludeon.RimWorld.Biotech">0</Highmate>
+			</xenotypeChances>
+		</xenotypeSet>
+		<useFactionXenotypes>false</useFactionXenotypes>
+
   </PawnKindDef>
 
 

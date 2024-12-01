@@ -1,0 +1,127 @@
+
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<XenotypeDef>
+        <defName>HCGiantXenotype</defName>
+        <label>Giant</label>
+        <description>It's a giant creature with an average height of 5 meters. While intelligence is low and requires a lot of food, the power of thick leather and mass is beyond imagination.</description>
+        <iconPath>Icon/GI_Icon</iconPath>
+        <inheritable>true</inheritable>
+        <genes>
+            <li>MinTemp_SmallDecrease</li>
+            <li>MaxTemp_SmallIncrease</li>
+            <li>Robust</li>
+            <li>Immunity_Strong</li>
+            <li>AptitudePoor_Artistic</li>
+            <li>AptitudeTerrible_Social</li>
+        </genes>
+    </XenotypeDef>
+
+    <XenotypeDef>
+    <defName>Xeno_Maru</defName>
+    <label>Maru</label>
+    <description>The genes of Maru, created and passed down in the distant past.</description>
+	<!--먼 옛날에 만들어져 계승된 마루의 유전자입니다.-->
+    <descriptionShort>Maru's gene.</descriptionShort>
+	<!--마루의 유전자입니다.-->
+    <iconPath>Icon/MR_HomeIcon</iconPath>
+    <inheritable>true</inheritable>
+    <genes>
+      <li>Gene_Maru</li>
+      <!--<li>PsychicAbility_Dull</li>-->
+      <li>MaxTemp_SmallDecrease</li>
+      <li>Aggression_DeadCalm</li>
+      <li>LowSleep</li>
+      <li>Libido_Low</li>
+      <li>Immunity_Strong</li>
+      <!--<li>StrongStomach</li>-->
+      <!--<li>MoveSpeed_Quick</li>-->
+      <li>DarkVision</li>
+      <li>AptitudeTerrible_Plants</li>
+      <li>AptitudePoor_Artistic</li>
+      <li>AptitudeTerrible_Social</li>
+    </genes>
+  </XenotypeDef>
+  
+  <GeneDef>
+    <defName>Gene_Maru</defName>
+    <label>stupa</label>
+	<!--사리탑-->
+    <description>It is a gene containing civilization. If the human body is like a precise machine, then those who created it must be a type of human being called a master.</description>
+	<!--문명이 담긴 유전자입니다.인간의 신체가 정밀한 기계와 같다면 이들을 만든 자들은 틀림없이 장인이라고 불리는 부류의 인간들이겠지요.-->
+    <iconPath>Things/Weapons/Mote/MR_stupa</iconPath>
+    <selectionWeight>0</selectionWeight>
+    <displayOrderInCategory>-2</displayOrderInCategory>
+    <symbolPack>
+    </symbolPack>
+    <resourceLossPerDay>0.02</resourceLossPerDay>
+	<!--복잡도-->
+    <biostatCpx>-1</biostatCpx>
+	<!--대사효율-->
+    <biostatMet>1</biostatMet>
+  </GeneDef>
+  
+  <GeneDef>
+    <defName>MR_jumplegs</defName>
+    <label>predator</label>
+	<!--포식자-->
+    <description>Carriers are born with an elastic body and can jump long distances by consciously activating their muscles.</description>
+	<!--이 유전자의 보유자는 선천적으로 탄력있는 몸을 타고나며, 의식적으로 근육을 활성화 시켜 먼 거리를 뛸 수 있습니다.-->
+    <iconPath>Things/Weapons/Mote/MR_jump</iconPath>
+    <displayCategory>Ability</displayCategory>
+    <abilities>
+      <li>MR_jump</li>
+    </abilities>
+    <descriptionHyperlinks>
+      <AbilityDef>MR_jump</AbilityDef>
+    </descriptionHyperlinks>
+    <biostatMet>-1</biostatMet>
+    <symbolPack>
+      <wholeNameSymbols>
+        <li><symbol>jumper</symbol></li>
+        <li><symbol>leaper</symbol></li>
+        <li><symbol>bouncer</symbol></li>
+      </wholeNameSymbols>
+      <prefixSymbols>
+        <li><symbol>jump</symbol></li>
+        <li><symbol>leap</symbol></li>
+        <li><symbol>vault</symbol></li>
+        <li><symbol>long</symbol></li>
+        <li><symbol>fly</symbol></li>
+        <li><symbol>hop</symbol></li>
+      </prefixSymbols>
+    </symbolPack>
+  </GeneDef>
+  
+  <AbilityDef Name="MR_jump">
+    <defName>MR_jump</defName>
+    <label>predatory jump</label>
+	<!--포식 도약-->
+    <description>Jump to prey and quickly close the distance.</description>
+	<!--사냥감에게 도약하여 빠르게 거리를 좁힙니다.-->
+    <iconPath>Things/Weapons/Mote/MR_jump</iconPath>
+    <cooldownTicksRange>600</cooldownTicksRange>
+    <hostile>false</hostile>
+    <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+    <verbProperties>
+      <verbClass>Verb_CastAbilityJump</verbClass>
+      <label>jump</label>
+      <violent>false</violent>
+      <forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+      <warmupTime>0.5</warmupTime>
+      <range>6.9</range>
+      <requireLineOfSight>true</requireLineOfSight>
+      <soundCast>Longjump_Jump</soundCast>
+      <soundLanding>Longjump_Land</soundLanding>
+      <targetParams>
+        <canTargetLocations>false</canTargetLocations>
+        <canTargetPawns>true</canTargetPawns>
+        <canTargetBuildings>false</canTargetBuildings>
+      </targetParams>
+    </verbProperties>
+    <jobDef>CastJump</jobDef>
+    <comps>
+    </comps>
+  </AbilityDef>
+  
+</Defs>

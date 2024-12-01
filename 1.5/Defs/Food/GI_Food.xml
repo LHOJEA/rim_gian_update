@@ -3,12 +3,12 @@
 
   <ThingDef ParentName="GI_MealBase" Name="GIMeal" Abstract="True">
     <tradeability>Buyable</tradeability>
-	<comps>
+	  <!-- <comps>
       <li Class="CompProperties_Rottable">
         <daysToRotStart>4</daysToRotStart>
         <rotDestroys>true</rotDestroys>
       </li>
-    </comps>
+    </comps> -->
   </ThingDef>
   
   <ThingDef ParentName="GIMeal">

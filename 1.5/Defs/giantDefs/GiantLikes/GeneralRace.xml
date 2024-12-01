@@ -413,6 +413,39 @@
 		
         <buildingList>
         </buildingList>
+
+        <blackEndoCategories MayRequire="Ludeon.RimWorld.Biotech">
+					<li MayRequire="Ludeon.RimWorld.Biotech">BodyType</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Ears</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Nose</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Voice</li>
+					
+					<li MayRequire="Ludeon.RimWorld.Biotech">Headbone</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Head</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Jaw</li>
+				</blackEndoCategories>
+
+        <blackGeneList MayRequire="Ludeon.RimWorld.Biotech">
+					<li MayRequire="Ludeon.RimWorld.Biotech">Furskin</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Brow_Heavy</li>
+					
+					<li MayRequire="Ludeon.RimWorld.Biotech">Hair_BaldOnly</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Beard_Always</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">FacialRidges</li>
+				</blackGeneList>
+
+        <blackGeneTags MayRequire="Ludeon.RimWorld.Biotech">
+					<li MayRequire="Ludeon.RimWorld.Biotech">EyeColor</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Tail</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">BeardStyle</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Fur</li>
+				</blackGeneTags>
+
+        <xenotypeList MayRequire="Ludeon.RimWorld.Biotech">
+					<li MayRequire="Ludeon.RimWorld.Biotech">DragonianXenotype</li>
+				</xenotypeList>
+
+
       </raceRestriction>
     </alienRace>
     <!--=============================================================================================================================-->
