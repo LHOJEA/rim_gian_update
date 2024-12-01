@@ -300,8 +300,7 @@
 		</skillGains>
 		<forcedTraitsChance>
 			<li>
-				<defName>Neurotic</defName>
-				<degree>1</degree>
+				<defName Degree="1">Neurotic</defName>
 				<chance>100</chance>
 			</li>
 		</forcedTraitsChance>
@@ -355,8 +354,7 @@
 		</skillGains>
 		<forcedTraitsChance>
 			<li>
-				<defName>Neurotic</defName>
-				<degree>1</degree>
+				<defName Degree="1">Neurotic</defName>
 				<chance>100</chance>
 			</li>
 		</forcedTraitsChance>
@@ -386,8 +384,7 @@
 		</skillGains>
 		<forcedTraitsChance>
 			<li>
-				<defName>Industriousness</defName>
-				<degree>2</degree>
+				<defName Degree="2">Industriousness</defName>
 				<chance>80</chance>
 			</li>
 		</forcedTraitsChance>
@@ -444,8 +441,7 @@
 	    </skillGains>
 		<forcedTraitsChance>
 			<li>
-				<defName>NaturalMood</defName>
-				<degree>1</degree>
+				<defName Degree="1">NaturalMood</defName>
 				<chance>100</chance>
 			</li>
 		</forcedTraitsChance>
@@ -475,8 +471,7 @@
 		</skillGains>
 		<forcedTraitsChance>
 			<li>
-				<defName>ShootingAccuracy</defName>
-				<degree>-1</degree>
+				<defName Degree="-1">ShootingAccuracy</defName>
 				<chance>85</chance>
 			</li>
 		</forcedTraitsChance>
@@ -509,8 +504,7 @@
 		</skillGains>
 		<forcedTraitsChance>
 			<li>
-				<defName>ShootingAccuracy</defName>
-				<degree>1</degree>
+				<defName Degree="1">ShootingAccuracy</defName>
 				<chance>85</chance>
 			</li>
 		</forcedTraitsChance>
@@ -571,8 +565,7 @@
 		</skillGains>
 		<forcedTraitsChance>
 			<li>
-				<defName>SpeedOffset</defName>
-				<degree>2</degree>
+				<defName Degree="2">SpeedOffset</defName>
 				<chance>100</chance>
 			</li>
 		</forcedTraitsChance>
@@ -605,8 +598,7 @@
 		</skillGains>
 		<forcedTraitsChance>
 			<li>
-				<defName>Immunity</defName>
-				<degree>1</degree>
+				<defName Degree="1">Immunity</defName>
 				<chance>100</chance>
 			</li>
 		</forcedTraitsChance>
@@ -670,8 +662,7 @@
 		</skillGains>
 		<forcedTraitsChance>
 			<li>
-				<defName>Nerves</defName>
-				<degree>2</degree>
+				<defName Degree="2">Nerves</defName>
 				<chance>100</chance>
 			</li>
 		</forcedTraitsChance>
@@ -734,8 +725,7 @@
 		</skillGains>
 		<forcedTraitsChance>
 			<li>
-				<defName>NaturalMood</defName>
-				<degree>1</degree>
+				<defName Degree="1">NaturalMood</defName>
 				<chance>65</chance>
 			</li>
 		</forcedTraitsChance>

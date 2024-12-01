@@ -26,7 +26,7 @@
     <description>large cylinder for high power injection of the engine It also has a mobility acceleration effect by adjusting the dispense output. (Outdated equipment and graphics don't match.)</description>
     <techLevel>Spacer</techLevel>
     <comps>
-      <li Class="CompProperties_Reloadable">
+      <li Class="CompProperties_ApparelReloadable">
         <maxCharges>4</maxCharges>
         <ammoDef>Chemfuel</ammoDef>
         <ammoCountPerCharge>50</ammoCountPerCharge>

@@ -50,6 +50,7 @@
 			<CarryingCapacity>30</CarryingCapacity>
 			<Flammability>-0.8</Flammability>
 			<IncomingDamageFactor>-0.10</IncomingDamageFactor>
+            <ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
 		</equippedStatOffsets>
 		<thingCategories>
 		    <li>ApparelArmor</li>
@@ -123,7 +124,7 @@
 		<equippedStatOffsets>
 			<MentalBreakThreshold>-0.1</MentalBreakThreshold>
 			<Flammability>-0.2</Flammability>
-			<ToxicSensitivity>-0.5</ToxicSensitivity>
+			<ToxicEnvironmentResistance>0.3</ToxicEnvironmentResistance>
 			<MoveSpeed>-0.1</MoveSpeed>
 		</equippedStatOffsets>
 		<thingCategories>

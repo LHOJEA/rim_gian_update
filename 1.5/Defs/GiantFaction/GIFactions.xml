@@ -21,8 +21,8 @@
     <playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
     <factionNameMaker>NamerFactionOutlander</factionNameMaker>
     <settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
-	<allowedArrivalTemperatureRange>-70~40</allowedArrivalTemperatureRange>
-    <geneticVariance>1</geneticVariance>
+	  <allowedArrivalTemperatureRange>-70~40</allowedArrivalTemperatureRange>
+    <melaninRange>0~0.3</melaninRange>
     <startingResearchTags>
       <li>TribalStart</li>
     </startingResearchTags>
@@ -71,7 +71,7 @@
     <canMakeRandomly>true</canMakeRandomly>
 	  <canStageAttacks>true</canStageAttacks>
     <factionIconPath>Icon/SG_Icon</factionIconPath>
-    <geneticVariance>0.5</geneticVariance>
+    <melaninRange>0.7~1</melaninRange>
     <factionNameMaker>NamerFactionTribal</factionNameMaker>
     <settlementNameMaker>NamerSettlementTribal</settlementNameMaker>
     <techLevel>Neolithic</techLevel>

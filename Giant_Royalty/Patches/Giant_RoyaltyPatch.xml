@@ -8,7 +8,7 @@
 			<xpath>/Defs/ThingDef[defName = "GI_Powerarmour"]</xpath>
 			<value>
 				<comps>
-					<li Class="CompProperties_Reloadable">
+					<li Class="CompProperties_ApparelReloadable">
 						<maxCharges>4</maxCharges>
 						<ammoDef>Shell_HighExplosive</ammoDef>
 						<ammoCountPerCharge>1</ammoCountPerCharge>

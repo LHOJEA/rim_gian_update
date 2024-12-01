@@ -15,11 +15,11 @@
 			<displayName>HumanoidAlienRaces</displayName>
 			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=839005762</steamWorkshopUrl>
 		</li>
-		<li>
+		<!-- <li>
 			<packageId>OskarPotocki.VanillaFactionsExpanded.Core</packageId>
 			<displayName>Vanilla Expanded Framework</displayName>
 			<steamWorkshopUrl>OskarPotocki.VanillaFactionsExpanded.Core</steamWorkshopUrl>
-		</li>
+		</li> -->
 	</modDependencies>
 	<loadAfter>
 		<li>erdelf.HumanoidAlienRaces</li>

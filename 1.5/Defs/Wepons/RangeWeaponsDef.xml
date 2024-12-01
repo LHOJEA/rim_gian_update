@@ -12,8 +12,8 @@
 			<li>Giant_WeaponsRanged</li>
 		</thingCategories>
 		<comps>
-			<li>
-			  <compClass>CompOversizedWeapon.CompOversizedWeapon</compClass>
+			<li Class="CompOversizedWeapon"> 
+				<compClass>CompOversizedWeapon</compClass> 
 			</li>
 		</comps>
 	</ThingDef>
