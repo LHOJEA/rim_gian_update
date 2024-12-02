@@ -12,7 +12,7 @@
 		<race>
 			<canBecomeShambler>true</canBecomeShambler>
 			<knowledgeCategory MayRequire="Ludeon.RimWorld.Anomaly">Basic</knowledgeCategory>
-			<anomalyKnowledge>6</anomalyKnowledge>
+			<anomalyKnowledge>2</anomalyKnowledge>
 		</race>
 		<ingredient>
 			<mergeCompatibilityTags>
@@ -21,7 +21,7 @@
 		</ingredient>
 		<comps>
 			<li MayRequire="Ludeon.RimWorld.Anomaly" Class="CompProperties_HoldingPlatformTarget">
-				<baseEscapeIntervalMtbDays>120</baseEscapeIntervalMtbDays>
+				<baseEscapeIntervalMtbDays>60</baseEscapeIntervalMtbDays>
 				<getsColdContainmentBonus>true</getsColdContainmentBonus>
 			</li>
 			<li MayRequire="Ludeon.RimWorld.Anomaly" Class="CompProperties_Studiable">

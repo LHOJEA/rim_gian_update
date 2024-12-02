@@ -17,6 +17,7 @@
 
 	<v1.5>
 		<li>1.5</li>
+		<li>Contents</li>
 		<li IfModActive="Ludeon.Rimworld.Royalty">Giant_Royalty</li>
 	</v1.5>
 </loadFolders>

@@ -1,19 +1,17 @@
 <?xml version="1.0" encoding="utf-8" ?>
 
 <Defs>
-  <BodyDef>
+  <BodyTypeDef>
     <defName>GiantF</defName>
     <label>Giant Female</label>
-    <!-- <bodyType>Human</bodyType> -->
     <bodyNakedGraphicPath>Giant/Bodies/Naked_GiantF</bodyNakedGraphicPath>
-    <bodyDessicatedGraphicPath>things/pawn/humanlike/bodies/dessicated/Dessicated_Male</bodyDessicatedGraphicPath>
-  </BodyDef>
+    <!-- <bodyDessicatedGraphicPath>Things/Pawn/Humanlike/Bodies/Dessicated/Dessicated_Male</bodyDessicatedGraphicPath> -->
+  </BodyTypeDef>
 
-  <BodyDef>
+  <BodyTypeDef>
     <defName>GiantM</defName>
     <label>Giant Male</label>
-    <!-- <bodyType>Human</bodyType> -->
     <bodyNakedGraphicPath>Giant/Bodies/Naked_GiantM</bodyNakedGraphicPath>
-    <bodyDessicatedGraphicPath>things/pawn/humanlike/bodies/dessicated/Dessicated_Male</bodyDessicatedGraphicPath>
-  </BodyDef>
+    <!-- <bodyDessicatedGraphicPath>Things/Pawn/Humanlike/Bodies/Dessicated/Dessicated_Male</bodyDessicatedGraphicPath> -->
+  </BodyTypeDef>
 </Defs>

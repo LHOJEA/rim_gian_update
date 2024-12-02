@@ -3,21 +3,21 @@
 
 <!-- 거인 박격포탄 -->
 	<ThingDef ParentName="BaseBullet">
-        <defName>Proj_Cyclops_Mortar</defName>
-        <label>Cyclops Mortar shell</label>
-        <graphicData>
-            <texPath>Things/Projectile/Rocket_Big</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-            <shaderType>TransparentPostLight</shaderType>
-        </graphicData>
-		<thingClass>Projectile_Explosive</thingClass>
-        <projectile>
-            <speed>50</speed>
-			<damageDef>Bomb</damageDef>
-			<flyOverhead>true</flyOverhead>
-			<explosionRadius>4.5</explosionRadius>
-        </projectile>
-    </ThingDef>
+    <defName>Proj_Cyclops_Mortar</defName>
+    <label>Cyclops Mortar shell</label>
+    <graphicData>
+        <texPath>Things/Projectile/Rocket_Big</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+        <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+  <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <speed>50</speed>
+      <damageDef>Bomb</damageDef>
+      <flyOverhead>true</flyOverhead>
+      <explosionRadius>4.5</explosionRadius>
+    </projectile>
+  </ThingDef>
 	
 <!-- 거인 제트팩 -->
  <ThingDef ParentName="ApparelBase">

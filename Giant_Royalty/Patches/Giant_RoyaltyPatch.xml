@@ -15,6 +15,7 @@
 						<baseReloadTicks>120</baseReloadTicks>
 						<soundReload>Standard_Reload</soundReload>
 						<hotKey>Misc4</hotKey>
+						<chargeNoun>grenade</chargeNoun>
 						<displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
 					</li>
 					<li Class="CompProperties_Explosive">

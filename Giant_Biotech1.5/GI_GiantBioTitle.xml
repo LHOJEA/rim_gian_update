@@ -2,20 +2,21 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<XenotypeDef>
-        <defName>HCGiantXenotype</defName>
-        <label>Giant</label>
-        <description>It's a giant creature with an average height of 5 meters. While intelligence is low and requires a lot of food, the power of thick leather and mass is beyond imagination.</description>
-        <iconPath>Icon/GI_Icon</iconPath>
-        <inheritable>true</inheritable>
-        <genes>
-            <li>MinTemp_SmallDecrease</li>
-            <li>MaxTemp_SmallIncrease</li>
-            <li>Robust</li>
-            <li>Immunity_Strong</li>
-            <li>AptitudePoor_Artistic</li>
-            <li>AptitudeTerrible_Social</li>
-        </genes>
-    </XenotypeDef>
+    <defName>HCGiantXenotype</defName>
+    <label>Giant</label>
+    <description>It's a giant creature with an average height of 5 meters. While intelligence is low and requires a lot of food, the power of thick leather and mass is beyond imagination.</description>
+    <iconPath>Icon/GI_Icon</iconPath>
+    <inheritable>true</inheritable>
+    <genes>
+        <li>MinTemp_SmallDecrease</li>
+        <li>MaxTemp_SmallIncrease</li>
+        <li>Robust</li>
+        <li>Immunity_Strong</li>
+        <li>AptitudePoor_Artistic</li>
+        <li>AptitudeTerrible_Social</li>
+        <li>PsychicAbility_Dull</li>
+    </genes>
+  </XenotypeDef>
 
     <XenotypeDef>
     <defName>Xeno_Maru</defName>
