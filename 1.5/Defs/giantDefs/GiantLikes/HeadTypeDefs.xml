@@ -3,11 +3,14 @@
     <HeadTypeDef ParentName="AverageBase">
         <defName>Female_Average_1</defName>
         <graphicPath>Giant/Heads/Female_Average_1</graphicPath>
-        <gender>Male</gender>
+        <bodyDessicatedGraphicPath>things/pawn/humanlike/heads/None_Average_Skull</bodyDessicatedGraphicPath>
+        <gender>Female</gender>
     </HeadTypeDef>
+    
     <HeadTypeDef ParentName="AverageBase">
         <defName>Male_Average_1</defName>
         <graphicPath>Giant/Heads/Male_Average_1</graphicPath>
-        <gender>Female</gender>
+        <bodyDessicatedGraphicPath>things/pawn/humanlike/heads/None_Average_Skull</bodyDessicatedGraphicPath>
+        <gender>Male</gender>
     </HeadTypeDef>
 </Defs>

@@ -129,6 +129,7 @@
           </bodyTypes>
 
           <headOffsetDirectional MayRequire="Ludeon.RimWorld.Biotech">
+          <!-- <headOffsetSpecific MayRequire="Ludeon.RimWorld.Biotech"></headOffsetSpecific> -->
             <north MayRequire="Ludeon.RimWorld.Biotech">
               <bodyTypes MayRequire="Ludeon.RimWorld.Biotech">
                 <Child MayRequire="Ludeon.RimWorld.Biotech">(0,0)</Child>
@@ -442,9 +443,24 @@
 				</blackGeneTags>
 
         <xenotypeList MayRequire="Ludeon.RimWorld.Biotech">
-					<li MayRequire="Ludeon.RimWorld.Biotech">DragonianXenotype</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">HCGiantXenotype</li>
 				</xenotypeList>
 
+        <blackXenotypeList>
+					<!-- <li MayRequire="Ludeon.RimWorld.Biotech">Baseliner</li> -->
+					<li MayRequire="Ludeon.RimWorld.Biotech">Dirtmole</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Genie</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Hussar</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Sanguophage</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Neanderthal</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Pigskin</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Impid</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Waster</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Yttakin</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Highmate</li>
+				</blackXenotypeList>
+
+        <onlyUseRaceRestrictedXenotypes>false</onlyUseRaceRestrictedXenotypes>
 
       </raceRestriction>
     </alienRace>
@@ -563,7 +579,7 @@
       <bloodDef>Filth_Blood</bloodDef><!-- 피 -->
 			<bloodSmearDef>Filth_BloodSmear</bloodSmearDef>
 	    <fleshType>Normal</fleshType>
-      <!-- <body>Human</body> -->
+      <body>Human</body>
       <baseBodySize>3.5</baseBodySize>
       <baseHealthScale>4.5</baseHealthScale>
       <foodType>CarnivoreAnimalStrict,OmnivoreHuman,AnimalProduct</foodType>

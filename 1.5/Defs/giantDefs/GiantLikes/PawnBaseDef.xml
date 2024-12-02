@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<ThingDef Name="GI_PawnBase" Abstract="True">
+	<ThingDef Name="GI_PawnBase" ParentName="BasePawn" Abstract="True">
 		<thingClass>Pawn</thingClass>
 		<category>Pawn</category>
 		<selectable>true</selectable>
@@ -9,8 +9,32 @@
 		<useHitPoints>false</useHitPoints>
 		<hasTooltip>true</hasTooltip>
 		<soundImpactDefault>BulletImpact_Flesh</soundImpactDefault>
-    <butcherProducts>
-    </butcherProducts>
+		<race>
+			<canBecomeShambler>true</canBecomeShambler>
+			<knowledgeCategory MayRequire="Ludeon.RimWorld.Anomaly">Basic</knowledgeCategory>
+			<anomalyKnowledge>6</anomalyKnowledge>
+		</race>
+		<ingredient>
+			<mergeCompatibilityTags>
+				<li>HumanMeat</li>
+			</mergeCompatibilityTags>
+		</ingredient>
+		<comps>
+			<li MayRequire="Ludeon.RimWorld.Anomaly" Class="CompProperties_HoldingPlatformTarget">
+				<baseEscapeIntervalMtbDays>120</baseEscapeIntervalMtbDays>
+				<getsColdContainmentBonus>true</getsColdContainmentBonus>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Anomaly" Class="CompProperties_Studiable">
+				<frequencyTicks>120000</frequencyTicks>
+				<minMonolithLevelForStudy>1</minMonolithLevelForStudy>
+				<requiresImprisonment>true</requiresImprisonment>
+			</li>
+		</comps>
+		<statBases>
+			<MinimumContainmentStrength MayRequire="Ludeon.RimWorld.Anomaly">70</MinimumContainmentStrength>
+		</statBases>
+    <!-- 	<butcherProducts>
+    	</butcherProducts>
 		<statBases>
 			<Mass>100</Mass>
 		</statBases>
@@ -31,6 +55,6 @@
 				<compClass>CompAttachBase</compClass>
 			</li>
 		</comps>
-		<drawGUIOverlay>true</drawGUIOverlay>
+		<drawGUIOverlay>true</drawGUIOverlay> -->
 	</ThingDef>
 </Defs>
