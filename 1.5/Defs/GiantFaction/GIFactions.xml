@@ -68,12 +68,15 @@
     <listOrderPriority>20</listOrderPriority>
     <settlementGenerationWeight>1</settlementGenerationWeight>
     <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <maxCountAtGameStart>2</maxCountAtGameStart>
     <canMakeRandomly>true</canMakeRandomly>
 	  <canStageAttacks>true</canStageAttacks>
+    <hidden>false</hidden>
     <factionIconPath>Icon/SG_Icon</factionIconPath>
     <melaninRange>0.5~0.8</melaninRange>
     <factionNameMaker>NamerFactionTribal</factionNameMaker>
     <settlementNameMaker>NamerSettlementTribal</settlementNameMaker>
+    <replacesFaction>TribeSavage</replacesFaction> <!-- 부족민 대체 가능. -->
     <techLevel>Neolithic</techLevel>
 	  <backstoryFilters>
       <li>
@@ -83,6 +86,12 @@
       </li>
     </backstoryFilters>
     <leaderTitle>chief</leaderTitle>
+    <xenotypeSet>
+      <xenotypeChances>
+        <HCGiantXenotype MayRequire="Ludeon.RimWorld.Biotech">90</HCGiantXenotype>
+        <Baseliner MayRequire="Ludeon.RimWorld.Biotech">10</Baseliner>
+      </xenotypeChances>
+    </xenotypeSet>
     <caravanTraderKinds>
       <li>Caravan_Neolithic_BulkGoods</li>
       <li>Caravan_Neolithic_WarMerchant</li>
@@ -196,7 +205,8 @@
     <label>savage giants tribe</label>
     <description>It's a tribe of dangerous, violent, savage giants.</description>
     <factionIconPath>Icon/SG_Icon</factionIconPath>
-    <permanentEnemy>true</permanentEnemy>
+    <!-- <permanentEnemy>true</permanentEnemy> -->
+    <permanentEnemy>false</permanentEnemy>
   </FactionDef>
 
 

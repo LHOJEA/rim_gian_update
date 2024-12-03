@@ -30,9 +30,9 @@
 			</reproduction>
 
 			<growthAges MayRequire="Ludeon.RimWorld.Biotech">
-				<li>7</li>
-				<li>10</li>
-				<li>13</li>
+				<li>8</li>
+				<li>12</li>
+				<li>16</li>
 			</growthAges>
 			<minAgeForAdulthood>14</minAgeForAdulthood>
 			<maleGenderProbability>0.5</maleGenderProbability>
@@ -619,12 +619,16 @@
 		</litterSizeCurve>
 		<lifeStageAges>
 			<li>
-			<def>HumanlikeBaby</def>
-			<minAge>0</minAge>
+				<def>HumanlikeBaby</def>
+				<minAge>0</minAge>
 			</li>
 			<li>
-			<def>HumanlikeChild_Giant</def>
-			<minAge>4</minAge>
+				<def>HumanlikeChild</def>
+				<minAge>3.99999999</minAge>
+			</li>
+			<li>
+				<def>HumanlikeChild_Giant</def>
+				<minAge>4</minAge>
 			</li>
 			<li MayRequire="Ludeon.RimWorld.Biotech">
 				<def>HumanlikePreTeenager_Giant</def>
@@ -635,20 +639,20 @@
 				<minAge>11.999999</minAge>
 			</li> -->
 			<li>
-			<def>HumanlikeTeenager_Giant</def>
-			<minAge>12</minAge>
+				<def>HumanlikeTeenager</def>
+				<minAge>11.99999999</minAge>
 			</li>
-			<!-- <li>
-						<def>HumanlikeAdult</def>
-						<minAge>16</minAge>
-					</li>
 			<li>
-			<def>HumanlikeAdult_Giant</def>
-			<minAge>16.00000001</minAge>
-			</li> -->
+				<def>HumanlikeTeenager_Giant</def>
+				<minAge>12</minAge>
+			</li>
 			<li>
-			<def>HumanlikeAdult_Giant</def>
-			<minAge>16</minAge>
+				<def>HumanlikeAdult</def>
+				<minAge>16</minAge>
+			</li>
+			<li>
+				<def>HumanlikeAdult_Giant</def>
+				<minAge>16.00000001</minAge>
 			</li>
 		</lifeStageAges>
 		<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>

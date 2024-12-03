@@ -14,9 +14,9 @@
     
     <xenotypeSet>
 			<xenotypeChances>
-				<HCGiantXenotype MayRequire="Ludeon.RimWorld.Biotech">100</HCGiantXenotype>
+				<HCGiantXenotype MayRequire="Ludeon.RimWorld.Biotech">90</HCGiantXenotype>
 			
-				<Baseliner MayRequire="Ludeon.RimWorld.Biotech">0</Baseliner>
+				<Baseliner MayRequire="Ludeon.RimWorld.Biotech">10</Baseliner>
 				
 				<Dirtmole MayRequire="Ludeon.RimWorld.Biotech">0</Dirtmole>
 				<Genie MayRequire="Ludeon.RimWorld.Biotech">0</Genie>

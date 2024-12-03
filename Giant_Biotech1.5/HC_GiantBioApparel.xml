@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef ParentName="GI_ApparelBase">
+        <defName>GI_ChildApp</defName>
+        <description></description>
+
+    </ThingDef>
+    
+</Defs>
