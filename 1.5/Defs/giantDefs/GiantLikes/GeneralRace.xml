@@ -764,11 +764,11 @@
 	</LifeStageDef>
 
 	<LifeStageDef ParentName="LifeStageHumanlikeChild">
-			<defName>HumanlikeChild_Giant</defName>
-			<bodyDrawOffset>(0, 0, -0.15)</bodyDrawOffset>
-			<bodySizeFactor>0.45</bodySizeFactor>
-			<bodyWidth>0.75</bodyWidth>
-			<headSizeFactor>0.52</headSizeFactor>
+		<defName>HumanlikeChild_Giant</defName>
+		<bodyDrawOffset>(0, 0, -0.15)</bodyDrawOffset>
+		<bodySizeFactor>0.45</bodySizeFactor>
+		<bodyWidth>0.75</bodyWidth>
+		<headSizeFactor>0.52</headSizeFactor>
 		<healthScaleFactor>0.4</healthScaleFactor>
 		<foodMaxFactor>1.552</foodMaxFactor>
 		<hungerRateFactor>0.9</hungerRateFactor>

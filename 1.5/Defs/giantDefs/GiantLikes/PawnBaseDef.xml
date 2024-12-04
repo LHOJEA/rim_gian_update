@@ -25,7 +25,7 @@
 				<getsColdContainmentBonus>true</getsColdContainmentBonus>
 			</li>
 			<li MayRequire="Ludeon.RimWorld.Anomaly" Class="CompProperties_Studiable">
-				<frequencyTicks>120000</frequencyTicks>
+				<frequencyTicks>120000</frequencyTicks> <!-- 재 연구 가능한 시간 텀? -->
 				<minMonolithLevelForStudy>1</minMonolithLevelForStudy>
 				<requiresImprisonment>true</requiresImprisonment>
 			</li>

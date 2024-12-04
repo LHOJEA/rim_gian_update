@@ -2,8 +2,121 @@
 <Defs>
     <ThingDef ParentName="GI_ApparelBase">
         <defName>GI_ChildApp</defName>
-        <description></description>
+        <label>giant baby Clothes</label>
+        <description>Sturdy clothing for a giant baby. No matter how strong a giant is, they still need protection in their early years.</description>
+        <!-- 튼튼한 거인 아기의 옷. 아무리 강인한 거인이라도 어릴 때는 보호가 필요한 법입니다. -->
+        <recipeMaker>
+        </recipeMaker>
+        <graphicData>
+            <texPath>Giant/Apparel/Clothes/Icon/GI_ChildClothes</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>1.76</drawSize>
+        </graphicData>
+        <costList>
+        </costList>
+        <stuffCategories>
+            <li>Fabric</li>
+            <li>Leathery</li>
+        </stuffCategories>
+        <costStuffCount>100</costStuffCount>
+        <statBases>
+            <MaxHitPoints>300</MaxHitPoints>
+            <WorkToMake>5200</WorkToMake>
+            <Mass>2</Mass>
+            <Flammability>1</Flammability>
+            <DeteriorationRate>2</DeteriorationRate>
+            <Insulation_Cold>8</Insulation_Cold>
 
+            <StuffEffectMultiplierArmor>0.50</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.70</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.70</StuffEffectMultiplierInsulation_Heat>
+            <EquipDelay>6</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+        </equippedStatOffsets>
+        <apparel>
+                <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+                <developmentalStageFilter>Child</developmentalStageFilter>
+        <bodyPartGroups>
+            <li>Torso</li>
+            <li>Neck</li>
+            <li>Shoulders</li>
+            <li>Arms</li>
+            <li>Legs</li>
+        </bodyPartGroups>
+        <!-- <drawData>
+            <dataNorth>
+            <layer>300</layer> 이건 무슨 태그?
+            </dataNorth>
+            <dataSouth>
+            <layer>100</layer>
+            </dataSouth>
+            <dataEast>
+            <layer>100</layer>
+            </dataEast>
+            <dataWest>
+            <layer>100</layer>
+            </dataWest>
+        </drawData> -->
+        <defaultOutfitTags>
+            <li>Worker</li>
+            <li>Soldier</li>
+        </defaultOutfitTags>
+        <wornGraphicPath>Giant/Apparel/Clothes/GI_ChildClothes</wornGraphicPath>   
+        <blocksAddedPartWoundGraphics>true</blocksAddedPartWoundGraphics>
+        <useWornGraphicMask>true</useWornGraphicMask>
+        <layers>
+            <li>OnSkin</li>
+        </layers>
+        <tags>
+            <li>GiantStory</li>
+        </tags>
+        </apparel>
+    </ThingDef>
+
+    <ThingDef ParentName="ChildApparelMakeableBase">
+        <defName>GI_ChildParka</defName>
+        <label>kid parka</label>
+        <description>A heavy jacket for keeping a child warm in cold temperatures.</description>
+        <techLevel>Neolithic</techLevel>
+        <graphicData>
+            <texPath>Things/Pawn/Humanlike/Apparel/KidParka/KidParka</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(1, 1)</drawSize>
+        </graphicData>
+        <costStuffCount>40</costStuffCount>
+        <statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+            <WorkToMake>6400</WorkToMake>
+            <Mass>1</Mass>
+            <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>1.5</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.00</StuffEffectMultiplierInsulation_Heat>
+            <EquipDelay>3</EquipDelay>
+        </statBases>
+        <apparel>
+        <bodyPartGroups>
+            <li>Torso</li>
+            <li>Neck</li>
+            <li>Shoulders</li>
+            <li>Arms</li>
+        </bodyPartGroups>
+        <layers Inherit="False">
+            <li>Shell</li>
+        </layers>
+        <wornGraphicPath>Things/Pawn/Humanlike/Apparel/KidParka/KidParka</wornGraphicPath>
+        <anyTechLevelCanUseForWarmth>true</anyTechLevelCanUseForWarmth>
+        <tags>
+            <li>Neolithic</li>
+        </tags>
+        </apparel>
+        <tradeTags>
+            <li>BasicClothing</li>
+        </tradeTags>
+        <recipeMaker>
+        <displayPriority>280</displayPriority>
+        <researchPrerequisite Inherit="False" IsNull="True"/>
+        </recipeMaker>
     </ThingDef>
     
 </Defs>
