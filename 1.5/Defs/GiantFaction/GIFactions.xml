@@ -86,12 +86,12 @@
       </li>
     </backstoryFilters>
     <leaderTitle>chief</leaderTitle>
-    <xenotypeSet>
+    <!-- <xenotypeSet>
       <xenotypeChances>
-        <HCGiantXenotype MayRequire="Ludeon.RimWorld.Biotech">90</HCGiantXenotype>
+        <GianthcXenotype MayRequire="Ludeon.RimWorld.Biotech">100</GianthcXenotype>
         <Baseliner MayRequire="Ludeon.RimWorld.Biotech">10</Baseliner>
       </xenotypeChances>
-    </xenotypeSet>
+    </xenotypeSet> -->
     <caravanTraderKinds>
       <li>Caravan_Neolithic_BulkGoods</li>
       <li>Caravan_Neolithic_WarMerchant</li>

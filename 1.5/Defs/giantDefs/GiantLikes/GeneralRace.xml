@@ -41,10 +41,10 @@
 			<canLayDown>true</canLayDown>
 			<maxDamageForSocialfight>8</maxDamageForSocialfight>
 			<validBeds>
-			<li>GIhardbed</li>
-			<li>GIDhardbed</li>
-			<li>GIDBed</li>
-			<li>GIBed</li>
+				<li>GIhardbed</li>
+				<li>GIDhardbed</li>
+				<li>GIDBed</li>
+				<li>GIBed</li>
 			</validBeds>
 			<forcedRaceTraitEntries>
 				<li>
@@ -61,7 +61,7 @@
 					<defName Degree="2">PsychicSensitivity</defName>
 					<commonalityMale>0</commonalityMale>
 					<commonalityFemale>100</commonalityFemale>
-						</li>
+				</li>
 				<li>
 					<defName Degree="1">PsychicSensitivity</defName>
 					<commonalityMale>0</commonalityMale>
@@ -198,9 +198,9 @@
 								</li>
 							</options>
 						</first>
-						<second Class="ColorGenerator_Single">
-							<color>RGBA(128, 255, 0, 255)</color>
-						</second>
+						<!-- <second Class="ColorGenerator_Single">
+							<color>RGBA(255, 255, 255, 1)</color>
+						</second> -->
 					</li>
 					<li>
 						<name>hair</name>
@@ -252,23 +252,23 @@
 		<!--텍스처경로-->
 		<graphicPaths>
 			<head>
-				<path>Giant/Heads/</path>
+				<path>Giant/Giantlike/Heads/Female_Average_1</path>
 				<!-- <headtypeGraphics>
 				<Male_AverageNormal></Male_AverageNormal>
 				<Female_AverageNormal></Female_AverageNormal>
 				</headtypeGraphics> -->
 				<extendedGraphics>
-					<!-- <Gender For="Female">Giant/Heads/Female_Average_1</Gender>
-					<Gender For="Male">Giant/Heads/Male_Average_1</Gender> -->
-					<Age For="HumanlikeBaby" MayRequire="Ludeon.RimWorld.Biotech">Giant/Heads/Baby/Baby_Average_1</Age>
-					<Hediff MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">Giant/Heads/Giant_AverageGH_1</Hediff>
+					<Gender For="Female">Giant/Giantlike/Heads/Female_Average_1</Gender>
+					<Gender For="Male">Giant/Giantlike/Heads/Male_Average_1</Gender>
+					<Age For="HumanlikeBaby" MayRequire="Ludeon.RimWorld.Biotech">Giant/Giantlike/Heads/Baby/Baby_Average_1</Age>
+					<Hediff MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">Giant/Giantlike/Heads/Giant_AverageGH_1</Hediff>
 				</extendedGraphics>
 			</head>
 			<body>
 			<!-- <path>Giant/Bodies/Naked_GiantM</path> -->
 				<extendedGraphics>
 				<!-- <Age For="HumanlikeBaby_Giant">Giant/Bodies/Naked_Baby</Age> -->
-				<Age For="HumanlikeBaby">Giant/Bodies/Naked_Baby</Age>
+				<!-- <Age For="HumanlikeBaby">Giant/Bodies/Naked_Baby</Age>
 				<Age For="HumanlikeChild_Giant">
 					<path>Giant/Bodies/Naked_Baby</path>
 					<extendedGraphics>
@@ -277,31 +277,31 @@
 				</Age>
 				<Age For="HumanlikePreTeenager_Giant">
 					<path>Giant/Bodies/Naked_Child</path>
-					<extendedGraphics>
+					<extendedGraphics> -->
 					<!-- <Gender For="Female">Giant/Bodies/Naked_GiantF</Gender>
 					<Gender For="Male">Giant/Bodies/Naked_GiantM</Gender> -->
-					<Hediff MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">Giant/Bodies/Naked_ChildGH</Hediff>
+					<!-- <Hediff MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">Giant/Bodies/Naked_ChildGH</Hediff>
 					</extendedGraphics>
-				</Age>
+				</Age> -->
 				<Age For="HumanlikeTeenager_Giant">
-					<path>Giant/Bodies/Naked_GiantM</path>
+					<path>Giant/Giantlike/Bodies/Naked_GiantM</path>
 					<extendedGraphics>
-					<Gender For="Female">Giant/Bodies/Naked_GiantF</Gender>
-					<Gender For="Male">Giant/Bodies/Naked_GiantM</Gender>
-					<Hediff MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">Giant/Bodies/Naked_ChildGH</Hediff>
+					<Gender For="Female">Giant/Giantlike/Bodies/Naked_GiantF</Gender>
+					<Gender For="Male">Giant/Giantlike/Bodies/Naked_GiantM</Gender>
+					<Hediff MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">Giant/Giantlike/Bodies/Naked_ChildGH</Hediff>
 					</extendedGraphics>
 				</Age>
 				<Age For="HumanlikeAdult_Giant">
 					<path>Giant/Bodies/Naked_GiantM</path>
 					<extendedGraphics>
-					<Gender For="Female">Giant/Bodies/Naked_GiantF</Gender>
-					<Gender For="Male">Giant/Bodies/Naked_GiantM</Gender>
-					<Hediff MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">Giant/Bodies/Naked_Child</Hediff>
+					<Gender For="Female">Giant/Giantlike/Bodies/Naked_GiantF</Gender>
+					<Gender For="Male">Giant/Giantlike/Bodies/Naked_GiantM</Gender>
+					<Hediff MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">Giant/Giantlike/Bodies/Naked_Child</Hediff>
 					</extendedGraphics>
 				</Age>
 				</extendedGraphics>
 			</body>
-			<skeleton>Giant/Bodies/Dessicated/Dessicated_male</skeleton>
+			<skeleton>Giant/Giantlike/Bodies/Dessicated/Dessicated_male</skeleton>
 		</graphicPaths>
 		<!-- <graphicPaths>
 			<li>
@@ -377,24 +377,24 @@
 		<raceRestriction>
 
 			<onlyUseRaceRestrictedApparel>true</onlyUseRaceRestrictedApparel>
-				<onlyUseRaceRestrictedWeapons>true</onlyUseRaceRestrictedWeapons>
+			<onlyUseRaceRestrictedWeapons>true</onlyUseRaceRestrictedWeapons>
 			<apparelList>
-			<li>GI_GiantRags</li>
-			<li>GI_Clothes</li>
+				<li>GI_GiantRags</li>
+				<li>GI_Clothes</li>
 				<li>GI_Brigandine</li>
-			<li>GI_Shadehat</li>
-			<li>GI_Potlid</li>
-			<li>GI_Thrumboskull</li>
-			<li>GI_MaskandhelmF</li>
-			<li>GI_MaskandhelmM</li>
-			<li>GI_Insignia</li>
-			<li>GI_Bonepauldron</li>
-			<li>GI_Booty</li>
-			<li>GI_Pauldron</li>
-			<li>GI_Powerarmour</li>
-			<li>GI_Powerhelmet</li>
-			<li>GI_Coverall</li>
-			<li>GI_Mechashell</li>
+				<li>GI_Shadehat</li>
+				<li>GI_Potlid</li>
+				<li>GI_Thrumboskull</li>
+				<li>GI_MaskandhelmF</li>
+				<li>GI_MaskandhelmM</li>
+				<li>GI_Insignia</li>
+				<li>GI_Bonepauldron</li>
+				<li>GI_Booty</li>
+				<li>GI_Pauldron</li>
+				<li>GI_Powerarmour</li>
+				<li>GI_Powerhelmet</li>
+				<li>GI_Coverall</li>
+				<li>GI_Mechashell</li>
 			</apparelList>
 			<whiteApparelList>
 				<li>Apparel_ShieldBelt</li>
@@ -468,7 +468,7 @@
 			</blackGeneTags>
 
 			<xenotypeList MayRequire="Ludeon.RimWorld.Biotech">
-				<li MayRequire="Ludeon.RimWorld.Biotech">HCGiantXenotype</li>
+				<li MayRequire="Ludeon.RimWorld.Biotech">GianthcXenotype</li>
 			</xenotypeList>
 
 			<blackXenotypeList>
@@ -618,14 +618,14 @@
 			</points>
 		</litterSizeCurve>
 		<lifeStageAges>
-			<li>
+			<!-- <li>
 				<def>HumanlikeBaby</def>
 				<minAge>0</minAge>
-			</li>
-			<li>
+			</li> -->
+			<!-- <li>
 				<def>HumanlikeChild</def>
 				<minAge>3.99999999</minAge>
-			</li>
+			</li> -->
 			<li>
 				<def>HumanlikeChild_Giant</def>
 				<minAge>4</minAge>
@@ -638,18 +638,18 @@
 				<def>HumanlikeTeenager</def>
 				<minAge>11.999999</minAge>
 			</li> -->
-			<li>
+			<!-- <li>
 				<def>HumanlikeTeenager</def>
 				<minAge>11.99999999</minAge>
-			</li>
+			</li> -->
 			<li>
 				<def>HumanlikeTeenager_Giant</def>
 				<minAge>12</minAge>
 			</li>
-			<li>
+			<!-- <li>
 				<def>HumanlikeAdult</def>
 				<minAge>16</minAge>
-			</li>
+			</li> -->
 			<li>
 				<def>HumanlikeAdult_Giant</def>
 				<minAge>16.00000001</minAge>

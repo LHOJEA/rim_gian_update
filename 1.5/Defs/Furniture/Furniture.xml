@@ -35,7 +35,7 @@
     <size>(1,1)</size>
     <costList>
 		    <WoodLog>80</WoodLog>
-	</costList>
+	  </costList>
     <building>
       <bed_showSleeperBody>true</bed_showSleeperBody>
       <bed_healPerDay>4</bed_healPerDay>
@@ -84,7 +84,7 @@
     <size>(2,1)</size>
     <costList>
 		    <WoodLog>120</WoodLog>
-	</costList>
+	  </costList>
     <building>
       <bed_showSleeperBody>true</bed_showSleeperBody>
       <bed_healPerDay>4</bed_healPerDay>
@@ -207,7 +207,7 @@
     <castEdgeShadows>True</castEdgeShadows>
     <designationHotKey>Misc3</designationHotKey>
     <techLevel>Industrial</techLevel>
-	<constructionSkillPrerequisite>7</constructionSkillPrerequisite>
+	  <constructionSkillPrerequisite>7</constructionSkillPrerequisite>
     <uiIconScale>0.8</uiIconScale>
   </ThingDef>
 </Defs>

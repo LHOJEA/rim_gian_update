@@ -1,46 +1,40 @@
-
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<XenotypeDef>
-    <defName>HCGiantXenotype</defName>
+    <defName>GianthcXenotype</defName>
     <label>Giant</label>
     <description>It's a giant creature with an average height of 5 meters. While intelligence is low and requires a lot of food, the power of thick leather and mass is beyond imagination.</description>
     <iconPath>Icon/GI_Icon</iconPath>
     <inheritable>true</inheritable>
+    <factionlessGenerationWeight>1</factionlessGenerationWeight>
     <genes>
-        <li>MinTemp_SmallDecrease</li>
-        <li>MaxTemp_SmallIncrease</li>
         <li>Robust</li>
         <li>Immunity_Strong</li>
-        <li>AptitudePoor_Artistic</li>
         <li>AptitudeTerrible_Social</li>
         <li>PsychicAbility_Dull</li>
     </genes>
   </XenotypeDef>
 
-  <GeneDef>
+  <!-- <GeneDef>
     <defName>Gene_GiantGeneTest</defName>
     <label>Giant Test Genes</label>
     <description>giant Test Genes</description>
     <iconPath>Icon/GI_Icon</iconPath>
-    <iconPath>Things/Weapons/Mote/MR_stupa</iconPath>
     <selectionWeight>0</selectionWeight>
     <displayOrderInCategory>-2</displayOrderInCategory>
     <symbolPack>
     </symbolPack>
-    <resourceLossPerDay>0.02</resourceLossPerDay>
+    <resourceLossPerDay>0.02</resourceLossPerDay> -->
 	<!--복잡도-->
-    <biostatCpx>-1</biostatCpx>
+    <!-- <biostatCpx>-1</biostatCpx> -->
 	<!--대사효율-->
-    <biostatMet>1</biostatMet>
-  </GeneDef>
+    <!-- <biostatMet>1</biostatMet> -->
+  <!-- </GeneDef> -->
   
   <!-- <GeneDef>
     <defName>MR_jumplegs</defName>
     <label>predator</label>
-	<!--포식자-->
     <description>Carriers are born with an elastic body and can jump long distances by consciously activating their muscles.</description>
-	<!--이 유전자의 보유자는 선천적으로 탄력있는 몸을 타고나며, 의식적으로 근육을 활성화 시켜 먼 거리를 뛸 수 있습니다.-->
     <iconPath>Things/Weapons/Mote/MR_jump</iconPath>
     <displayCategory>Ability</displayCategory>
     <abilities>
@@ -70,9 +64,7 @@
   <AbilityDef Name="MR_jump">
     <defName>MR_jump</defName>
     <label>predatory jump</label>
-	<!--포식 도약-->
     <description>Jump to prey and quickly close the distance.</description>
-	<!--사냥감에게 도약하여 빠르게 거리를 좁힙니다.-->
     <iconPath>Things/Weapons/Mote/MR_jump</iconPath>
     <cooldownTicksRange>600</cooldownTicksRange>
     <hostile>false</hostile>

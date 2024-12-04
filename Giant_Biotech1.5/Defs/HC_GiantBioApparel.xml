@@ -74,9 +74,9 @@
         </apparel>
     </ThingDef>
 
-    <ThingDef ParentName="ChildApparelMakeableBase">
+    <!-- <ThingDef ParentName="GI_ApparelBase">
         <defName>GI_ChildParka</defName>
-        <label>kid parka</label>
+        <label>giant kid parka</label>
         <description>A heavy jacket for keeping a child warm in cold temperatures.</description>
         <techLevel>Neolithic</techLevel>
         <graphicData>
@@ -89,6 +89,7 @@
             <MaxHitPoints>100</MaxHitPoints>
             <WorkToMake>6400</WorkToMake>
             <Mass>1</Mass>
+            
             <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
             <StuffEffectMultiplierInsulation_Cold>1.5</StuffEffectMultiplierInsulation_Cold>
             <StuffEffectMultiplierInsulation_Heat>0.00</StuffEffectMultiplierInsulation_Heat>
@@ -117,6 +118,6 @@
         <displayPriority>280</displayPriority>
         <researchPrerequisite Inherit="False" IsNull="True"/>
         </recipeMaker>
-    </ThingDef>
+    </ThingDef> -->
     
 </Defs>

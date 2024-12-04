@@ -19,5 +19,6 @@
 		<li>1.5</li>
 		<li>Contents</li>
 		<li IfModActive="Ludeon.Rimworld.Royalty">Giant_Royalty</li>
+		<li IfModActive="Ludeon.RimWorld.Biotech">Giant_Biotech1.5</li>
 	</v1.5>
 </loadFolders>
