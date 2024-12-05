@@ -254,11 +254,10 @@
 			<head>
 				<path>Giant/Giantlike/Heads/Female_Average_1</path>
 				<!-- <headtypeGraphics>
-				<Male_AverageNormal></Male_AverageNormal>
-				<Female_AverageNormal></Female_AverageNormal>
+				<Male_AverageNormal>Giant/Giantlike/Heads/Male_Average_1</Male_AverageNormal>
+				<Female_AverageNormal>Giant/Giantlike/Heads/Female_Average_1</Female_AverageNormal>
 				</headtypeGraphics> -->
 				<extendedGraphics>
-					<Gender For="Female">Giant/Giantlike/Heads/Female_Average_1</Gender>
 					<Gender For="Male">Giant/Giantlike/Heads/Male_Average_1</Gender>
 					<Age For="HumanlikeBaby" MayRequire="Ludeon.RimWorld.Biotech">Giant/Giantlike/Heads/Baby/Baby_Average_1</Age>
 					<Hediff MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">Giant/Giantlike/Heads/Giant_AverageGH_1</Hediff>
@@ -378,6 +377,8 @@
 
 			<onlyUseRaceRestrictedApparel>true</onlyUseRaceRestrictedApparel>
 			<onlyUseRaceRestrictedWeapons>true</onlyUseRaceRestrictedWeapons>
+			<onlyUseRaceRestrictedXenotypes>false</onlyUseRaceRestrictedXenotypes>
+
 			<apparelList>
 				<li>GI_GiantRags</li>
 				<li>GI_Clothes</li>
@@ -484,9 +485,6 @@
 				<li MayRequire="Ludeon.RimWorld.Biotech">Yttakin</li>
 				<li MayRequire="Ludeon.RimWorld.Biotech">Highmate</li>
 			</blackXenotypeList>
-
-			<onlyUseRaceRestrictedXenotypes>false</onlyUseRaceRestrictedXenotypes>
-
 		</raceRestriction>
 	</alienRace>
 	<!--=============================================================================================================================-->
