@@ -264,40 +264,40 @@
 				</extendedGraphics>
 			</head>
 			<body>
-			<!-- <path>Giant/Bodies/Naked_GiantM</path> -->
+				<path>Giant/Giantlike/Bodies/Naked_GiantM</path>
 				<extendedGraphics>
-				<!-- <Age For="HumanlikeBaby_Giant">Giant/Bodies/Naked_Baby</Age> -->
-				<!-- <Age For="HumanlikeBaby">Giant/Bodies/Naked_Baby</Age>
-				<Age For="HumanlikeChild_Giant">
-					<path>Giant/Bodies/Naked_Baby</path>
-					<extendedGraphics>
-					<Hediff MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">Giant/Bodies/Dessicated_example_Thin</Hediff>
-					</extendedGraphics>
-				</Age>
-				<Age For="HumanlikePreTeenager_Giant">
-					<path>Giant/Bodies/Naked_Child</path>
-					<extendedGraphics> -->
-					<!-- <Gender For="Female">Giant/Bodies/Naked_GiantF</Gender>
-					<Gender For="Male">Giant/Bodies/Naked_GiantM</Gender> -->
-					<!-- <Hediff MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">Giant/Bodies/Naked_ChildGH</Hediff>
-					</extendedGraphics>
-				</Age> -->
-				<Age For="HumanlikeTeenager_Giant">
-					<path>Giant/Giantlike/Bodies/Naked_GiantM</path>
-					<extendedGraphics>
-					<Gender For="Female">Giant/Giantlike/Bodies/Naked_GiantF</Gender>
-					<Gender For="Male">Giant/Giantlike/Bodies/Naked_GiantM</Gender>
-					<Hediff MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">Giant/Giantlike/Bodies/Naked_ChildGH</Hediff>
-					</extendedGraphics>
-				</Age>
-				<Age For="HumanlikeAdult_Giant">
-					<path>Giant/Bodies/Naked_GiantM</path>
-					<extendedGraphics>
-					<Gender For="Female">Giant/Giantlike/Bodies/Naked_GiantF</Gender>
-					<Gender For="Male">Giant/Giantlike/Bodies/Naked_GiantM</Gender>
-					<Hediff MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">Giant/Giantlike/Bodies/Naked_Child</Hediff>
-					</extendedGraphics>
-				</Age>
+					<Age For="HumanlikeBaby">Giant/Giantlike/Bodies/Naked_Baby</Age>
+					<!-- <Age For="HumanlikeBaby">Giant/Bodies/Naked_Baby</Age> -->
+					<Age For="HumanlikeChild_Giant">
+						<path>Giant/Giantlike/Bodies/Naked_Baby</path>
+						<extendedGraphics>
+							<Hediff MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">Giant/Giantlike/Bodies/Dessicated_example_Thin</Hediff>
+						</extendedGraphics>
+					</Age>
+					<Age For="HumanlikePreTeenager_Giant">
+						<path>Giant/Giantlike/Bodies/Naked_ChildM</path>
+						<extendedGraphics>
+							<Gender For="Female">Giant/Giantlike/Bodies/Naked_ChildM</Gender>
+							<Gender For="Male">Giant/Giantlike/Bodies/Naked_ChildF</Gender>
+							<Hediff MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">Giant/Giantlike/Bodies/Naked_ChildGH</Hediff>
+						</extendedGraphics>
+					</Age>
+					<Age For="HumanlikeTeenager_Giant">
+						<path>Giant/Giantlike/Bodies/Naked_GiantM</path>
+						<extendedGraphics>
+							<Gender For="Female">Giant/Giantlike/Bodies/Naked_GiantF</Gender>
+							<Gender For="Male">Giant/Giantlike/Bodies/Naked_GiantM</Gender>
+							<Hediff MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">Giant/Giantlike/Bodies/Naked_ChildGH</Hediff>
+						</extendedGraphics>
+					</Age>
+					<Age For="HumanlikeAdult_Giant">
+						<path>Giant/Bodies/Naked_GiantM</path>
+						<extendedGraphics>
+							<Gender For="Female">Giant/Giantlike/Bodies/Naked_GiantF</Gender>
+							<Gender For="Male">Giant/Giantlike/Bodies/Naked_GiantM</Gender>
+							<Hediff MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">Giant/Giantlike/Bodies/Naked_Child</Hediff>
+						</extendedGraphics>
+					</Age>
 				</extendedGraphics>
 			</body>
 			<skeleton>Giant/Giantlike/Bodies/Dessicated/Dessicated_male</skeleton>
@@ -616,14 +616,18 @@
 			</points>
 		</litterSizeCurve>
 		<lifeStageAges>
-			<!-- <li>
+			<li>
 				<def>HumanlikeBaby</def>
 				<minAge>0</minAge>
-			</li> -->
+			</li>
 			<!-- <li>
+				<def>HumanlikeBaby_Giant</def>
+				<minAge>0.00000001</minAge>
+			</li> -->
+			<li>
 				<def>HumanlikeChild</def>
 				<minAge>3.99999999</minAge>
-			</li> -->
+			</li>
 			<li>
 				<def>HumanlikeChild_Giant</def>
 				<minAge>4</minAge>
@@ -636,18 +640,18 @@
 				<def>HumanlikeTeenager</def>
 				<minAge>11.999999</minAge>
 			</li> -->
-			<!-- <li>
+			<li>
 				<def>HumanlikeTeenager</def>
 				<minAge>11.99999999</minAge>
-			</li> -->
+			</li>
 			<li>
 				<def>HumanlikeTeenager_Giant</def>
 				<minAge>12</minAge>
 			</li>
-			<!-- <li>
+			<li>
 				<def>HumanlikeAdult</def>
 				<minAge>16</minAge>
-			</li> -->
+			</li>
 			<li>
 				<def>HumanlikeAdult_Giant</def>
 				<minAge>16.00000001</minAge>
@@ -710,7 +714,7 @@
 	</AlienRace.ThingDef_AlienRace>
 
 	<LifeStageDef ParentName="HumanlikeAdolescent">
-		<defName>GiantlikeBaby</defName>
+		<defName>HumanlikeBaby_Giant</defName>
 		<label>baby</label>
 		<bodyDrawOffset>(0, 0, 0)</bodyDrawOffset>
 		<bodySizeFactor>0.2</bodySizeFactor>
