@@ -67,7 +67,9 @@
     <listOrderPriority>20</listOrderPriority>
     <settlementGenerationWeight>1</settlementGenerationWeight>
     <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <maxConfigurableAtWorldCreation>2</maxConfigurableAtWorldCreation>
     <canMakeRandomly>true</canMakeRandomly>
+    <canSiege>true</canSiege>
 	  <canStageAttacks>true</canStageAttacks>
     <factionIconPath>Icon/SG_Icon</factionIconPath>
     <factionNameMaker>NamerFactionTribal</factionNameMaker>
@@ -202,8 +204,7 @@
     <label>savage giants tribe</label>
     <description>It's a tribe of dangerous, violent, savage giants.</description>
     <factionIconPath>Icon/SG_Icon</factionIconPath>
-    <!-- <permanentEnemy>true</permanentEnemy> -->
-    <permanentEnemy>false</permanentEnemy>
+    <permanentEnemy>true</permanentEnemy>
   </FactionDef>
 
   <StyleItemCategoryDef>

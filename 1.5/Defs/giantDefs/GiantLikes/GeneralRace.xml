@@ -20,11 +20,11 @@
 				<points>
 					<li>(10, 0)</li>
 					<li>(16, 1)</li>
-					<li>(40, 1)</li>
-					<li>(54, 0.5)</li>
-					<li>(66, 0.1)</li>
-					<li>(72, 0.02)</li>
-					<li>(80, 0)</li>
+					<li>(80, 1)</li>
+					<li>(108, 0.5)</li>
+					<li>(132, 0.1)</li>
+					<li>(144, 0.02)</li>
+					<li>(160, 0)</li>
 				</points>
 			</femaleFertilityAgeFactor>
 			</reproduction>
@@ -34,6 +34,14 @@
 				<li>12</li>
 				<li>16</li>
 			</growthAges>
+			<growthFactorByAge>
+				<points>
+					<li>(0,1)</li>
+					<li>(8,1)</li>
+					<li>(12,0.75)</li>
+					<li>(16,0.75)</li>
+				</points>
+			</growthFactorByAge>
 			<minAgeForAdulthood>14</minAgeForAdulthood>
 			<maleGenderProbability>0.5</maleGenderProbability>
 			<immuneToAge>true</immuneToAge>
@@ -177,7 +185,7 @@
 				<customHeadDrawSize>(3.2, 3.2)</customHeadDrawSize>
 				<customPortraitDrawSize>(1.5, 1.5)</customPortraitDrawSize>
 				<!--컬러-->
-				<colorChannels>
+				<colorChannels Inherit="False">
 					<li>
 						<name>skin</name>
 						<first Class="ColorGenerator_Options">
@@ -200,9 +208,9 @@
 								</li>
 							</options>
 						</first>
-						<!-- <second Class="ColorGenerator_Single">
-							<color>RGBA(128, 255, 0, 255)</color>
-						</second> -->
+						<second Class="ColorGenerator_Single">
+							<color>RGBA(255, 255, 255, 255)</color>
+						</second>
 					</li>
 					<li>
 						<name>hair</name>
@@ -245,6 +253,9 @@
 								</li>
 							</options>
 						</first>
+						<second Class="ColorGenerator_Single">
+							<color>RGBA(255, 255, 255, 255)</color>
+						</second>
 					</li>
 				</colorChannels>
 				
@@ -480,13 +491,12 @@
 			</buildingList>
 
 			<blackEndoCategories MayRequire="Ludeon.RimWorld.Biotech">
-				<li MayRequire="Ludeon.RimWorld.Biotech">Melanin</li>
-				<li MayRequire="Ludeon.RimWorld.Biotech">HairColor</li>
-
 				<li MayRequire="Ludeon.RimWorld.Biotech">BodyType</li>
 				<li MayRequire="Ludeon.RimWorld.Biotech">Ears</li>
 				<li MayRequire="Ludeon.RimWorld.Biotech">Nose</li>
 				<li MayRequire="Ludeon.RimWorld.Biotech">Voice</li>
+				<li MayRequire="Ludeon.RimWorld.Biotech">Melanin</li>
+				<li MayRequire="Ludeon.RimWorld.Biotech">HairColor</li>
 				
 				<li MayRequire="Ludeon.RimWorld.Biotech">Headbone</li>
 				<li MayRequire="Ludeon.RimWorld.Biotech">Head</li>

@@ -55,5 +55,16 @@
         <li>GIhair</li>
     </styleTags>
   </HairDef>
+
+  <!-- <HairDef>
+    <defName>GIhair_Child</defName>
+    <label>Child_ShortCut</label>
+    <hairGender>Any</hairGender>
+    <texPath>Giant/Giantlike/Hairs/Male/GIhair_F</texPath>
+    <category>GIhair</category>
+    <styleTags>
+        <li>GIhair</li>
+    </styleTags>
+  </HairDef> -->
   
 </Defs>
