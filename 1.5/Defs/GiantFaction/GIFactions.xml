@@ -22,7 +22,6 @@
     <factionNameMaker>NamerFactionOutlander</factionNameMaker>
     <settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
 	  <allowedArrivalTemperatureRange>-70~40</allowedArrivalTemperatureRange>
-    <melaninRange>0~0.3</melaninRange>
     <startingResearchTags>
       <li>TribalStart</li>
     </startingResearchTags>
@@ -68,15 +67,13 @@
     <listOrderPriority>20</listOrderPriority>
     <settlementGenerationWeight>1</settlementGenerationWeight>
     <requiredCountAtGameStart>1</requiredCountAtGameStart>
-    <maxCountAtGameStart>2</maxCountAtGameStart>
     <canMakeRandomly>true</canMakeRandomly>
 	  <canStageAttacks>true</canStageAttacks>
-    <hidden>false</hidden>
     <factionIconPath>Icon/SG_Icon</factionIconPath>
-    <melaninRange>0.5~0.8</melaninRange>
     <factionNameMaker>NamerFactionTribal</factionNameMaker>
     <settlementNameMaker>NamerSettlementTribal</settlementNameMaker>
-    <replacesFaction>TribeSavage</replacesFaction> <!-- 부족민 대체 가능. -->
+    <!-- 부족민 대체 가능. -->
+    <!-- <replacesFaction>TribeSavage</replacesFaction>  -->
     <techLevel>Neolithic</techLevel>
 	  <backstoryFilters>
       <li>
@@ -209,5 +206,9 @@
     <permanentEnemy>false</permanentEnemy>
   </FactionDef>
 
+  <StyleItemCategoryDef>
+    <defName>GIhair</defName>
+    <label>Giant hair</label>
+  </StyleItemCategoryDef>
 
 </Defs>

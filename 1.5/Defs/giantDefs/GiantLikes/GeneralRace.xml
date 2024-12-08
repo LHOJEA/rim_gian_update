@@ -113,6 +113,8 @@
 				<headTypes><!-- 헤드 -->
 					<li>Female_Average_1</li>
 					<li>Male_Average_1</li>
+					<!-- <li>BabyF_Average_1</li>
+					<li>BabyM_Average_1</li> -->
 				</headTypes>
 				<bodyTypes><!-- 바디 -->
 					<li>GiantF</li>
@@ -182,24 +184,24 @@
 							<options>
 								<li>
 									<weight>5</weight>
-									<only>RGBA(255, 255, 255, 1)</only>
+									<only>RGBA(255, 255, 255, 255)</only>
 								</li>
 								<li>
 									<weight>3</weight>
-									<only>RGBA(255, 230, 204, 1)</only>
+									<only>RGBA(255, 230, 204, 255)</only>
 								</li>
 								<li>
 									<weight>2</weight>
-									<only>RGBA(204, 178, 153, 1)</only>
+									<only>RGBA(204, 178, 153, 255)</only>
 								</li>
 								<li>
 									<weight>1</weight>
-									<only>RGBA(127, 102, 96, 1)</only>
+									<only>RGBA(127, 102, 96, 255)</only>
 								</li>
 							</options>
 						</first>
 						<!-- <second Class="ColorGenerator_Single">
-							<color>RGBA(255, 255, 255, 1)</color>
+							<color>RGBA(128, 255, 0, 255)</color>
 						</second> -->
 					</li>
 					<li>
@@ -209,42 +211,43 @@
 							<!-- 블랙 -->
 								<li>
 									<weight>6</weight>
-									<only>RGBA(58, 58, 58, 1)</only>
+									<only>RGBA(58, 58, 58, 255)</only>
 								</li>
 								<!-- 다크브라운 -->
 								<li>
 									<weight>6</weight>
-									<only>RGBA(168, 122, 66, 1)</only>
+									<only>RGBA(168, 122, 66, 255)</only>
 								</li>
 								<!-- 화이트 -->
 								<li>
 									<weight>1</weight>
-									<only>RGBA(255, 255, 255, 1)</only>
+									<only>RGBA(255, 255, 255, 255)</only>
 								</li>
 								<!-- 오렌지 -->
 								<li>
 									<weight>2</weight>
-									<only>RGBA(216, 122, 40, 1)</only>
+									<only>RGBA(216, 122, 40, 255)</only>
 								</li>
 								<!-- 골드 -->
 								<li>
 									<weight>2</weight>
-									<only>RGBA(224, 209, 173, 1)</only>
+									<only>RGBA(224, 209, 173, 255)</only>
 								</li>
 								<!-- 네이비 -->
 								<li>
 									<weight>3</weight>
-									<only>RGBA(81, 86, 107, 1)</only>
+									<only>RGBA(81, 86, 107, 255)</only>
 								</li>
 								<!-- 레드 -->
 								<li>
 									<weight>3</weight>
-									<only>RGBA(209, 81, 58, 1)</only>
+									<only>RGBA(209, 81, 58, 255)</only>
 								</li>
 							</options>
 						</first>
 					</li>
 				</colorChannels>
+				
 			</alienPartGenerator>
 
 		</generalSettings>
@@ -253,15 +256,51 @@
 		<graphicPaths>
 			<head>
 				<path>Giant/Giantlike/Heads/Female_Average_1</path>
-				<!-- <headtypeGraphics>
-				<Male_AverageNormal>Giant/Giantlike/Heads/Male_Average_1</Male_AverageNormal>
-				<Female_AverageNormal>Giant/Giantlike/Heads/Female_Average_1</Female_AverageNormal>
-				</headtypeGraphics> -->
 				<extendedGraphics>
-					<Gender For="Male">Giant/Giantlike/Heads/Male_Average_1</Gender>
+					<Age For="HumanlikeBaby">Giant/Giantlike/Heads/Baby/Baby_Average_1</Age>
+					<Age For="HumanlikeChild_Giant">
+						<path>Giant/Giantlike/Heads/Child/Male_Average_1_Child</path>
+						<extendedGraphics>
+							<Gender For="Female">Giant/Giantlike/Heads/Child/Female_Average_1_Child</Gender>
+							<Gender For="Male">Giant/Giantlike/Heads/Child/Male_Average_1</Gender>
+							<Hediff MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">Giant/Giantlike/Heads/Giant_AverageGH_1</Hediff>
+						</extendedGraphics>
+					</Age>
+					<Age For="HumanlikePreTeenager_Giant">
+						<path>Giant/Giantlike/Heads/Child/Male_Average_1_Child</path>
+						<extendedGraphics>
+							<Gender For="Female">Giant/Giantlike/Heads/Child/Female_Average_1_Child</Gender>
+							<Gender For="Male">Giant/Giantlike/Heads/Child/Male_Average_1_Child</Gender>
+							<Hediff MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">Giant/Giantlike/Heads/Giant_AverageGH_1</Hediff>
+						</extendedGraphics>
+					</Age>
+					<Age For="HumanlikeTeenager_Giant">
+						<path>Giant/Giantlike/Heads/Male_Average_1</path>
+						<extendedGraphics>
+							<Gender For="Female">Giant/Giantlike/Heads/Female_Average_1</Gender>
+							<Gender For="Male">Giant/Giantlike/Heads/Male_Average_1</Gender>
+							<Hediff MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">Giant/Giantlike/Heads/Giant_AverageGH_1</Hediff>
+						</extendedGraphics>
+					</Age>
+					<Age For="HumanlikeAdult_Giant">
+						<path>Giant/Giantlike/Heads/Male_Average_1</path>
+						<extendedGraphics>
+							<Gender For="Female">Giant/Giantlike/Heads/Female_Average_1</Gender>
+							<Gender For="Male">Giant/Giantlike/Heads/Male_Average_1</Gender>
+							<Hediff MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">Giant/Giantlike/Heads/Giant_AverageGH_1</Hediff>
+						</extendedGraphics>
+					</Age>
+				</extendedGraphics>
+				<!-- <path>Giant/Giantlike/Heads/Male_Average_1</path>
+				<headtypeGraphics>
+					<Male_AverageNormal>Giant/Giantlike/Heads/Male_Average_1</Male_AverageNormal>
+					<Female_AverageNormal>Giant/Giantlike/Heads/Female_Average_1</Female_AverageNormal>
+				</headtypeGraphics>
+				<extendedGraphics>
+					<Gender For="Female">Giant/Giantlike/Heads/Female_Average_1</Gender>
 					<Age For="HumanlikeBaby" MayRequire="Ludeon.RimWorld.Biotech">Giant/Giantlike/Heads/Baby/Baby_Average_1</Age>
 					<Hediff MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">Giant/Giantlike/Heads/Giant_AverageGH_1</Hediff>
-				</extendedGraphics>
+				</extendedGraphics> -->
 			</head>
 			<body>
 				<path>Giant/Giantlike/Bodies/Naked_GiantM</path>
@@ -275,11 +314,11 @@
 						</extendedGraphics>
 					</Age>
 					<Age For="HumanlikePreTeenager_Giant">
-						<path>Giant/Giantlike/Bodies/Naked_ChildM</path>
+						<path>Giant/Giantlike/Bodies/Naked_GiantChildM</path>
 						<extendedGraphics>
-							<Gender For="Female">Giant/Giantlike/Bodies/Naked_ChildM</Gender>
-							<Gender For="Male">Giant/Giantlike/Bodies/Naked_ChildF</Gender>
-							<Hediff MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">Giant/Giantlike/Bodies/Naked_ChildGH</Hediff>
+							<Gender For="Female">Giant/Giantlike/Bodies/Naked_GiantChildF</Gender>
+							<!-- <Gender For="Male">Giant/Giantlike/Bodies/Naked_GiantChildM</Gender> -->
+							<Hediff MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">Giant/Giantlike/Bodies/Naked_GiantChildGH</Hediff>
 						</extendedGraphics>
 					</Age>
 					<Age For="HumanlikeTeenager_Giant">
@@ -291,7 +330,7 @@
 						</extendedGraphics>
 					</Age>
 					<Age For="HumanlikeAdult_Giant">
-						<path>Giant/Bodies/Naked_GiantM</path>
+						<path>Giant/Giantlike/Bodies/Naked_GiantM</path>
 						<extendedGraphics>
 							<Gender For="Female">Giant/Giantlike/Bodies/Naked_GiantF</Gender>
 							<Gender For="Male">Giant/Giantlike/Bodies/Naked_GiantM</Gender>
@@ -301,6 +340,7 @@
 				</extendedGraphics>
 			</body>
 			<skeleton>Giant/Giantlike/Bodies/Dessicated/Dessicated_male</skeleton>
+			<stump>Giant/Giantlike/Stump/Giant_Stump</stump>
 		</graphicPaths>
 		<!-- <graphicPaths>
 			<li>
@@ -396,6 +436,7 @@
 				<li>GI_Powerhelmet</li>
 				<li>GI_Coverall</li>
 				<li>GI_Mechashell</li>
+				<li MayRequire="Ludeon.RimWorld.Biotech">GI_ChildApp</li>
 			</apparelList>
 			<whiteApparelList>
 				<li>Apparel_ShieldBelt</li>
@@ -602,6 +643,7 @@
 		<bloodDef>Filth_Blood</bloodDef><!-- 피 -->
 				<bloodSmearDef>Filth_BloodSmear</bloodSmearDef>
 			<fleshType>Normal</fleshType>
+		<!-- <body>Giant_Body</body> -->
 		<body>Human</body>
 		<baseBodySize>3.5</baseBodySize>
 		<baseHealthScale>4.5</baseHealthScale>
@@ -719,7 +761,7 @@
 		<bodyDrawOffset>(0, 0, 0)</bodyDrawOffset>
 		<bodySizeFactor>0.2</bodySizeFactor>
 		<bodyWidth>0.95</bodyWidth>
-		<voxPitch>2.0</voxPitch>
+		<voxPitch>1.0</voxPitch>
 		<headSizeFactor>0.5</headSizeFactor>
 		<eyeSizeFactor>0.7</eyeSizeFactor>
 		<foodMaxFactor>0.625</foodMaxFactor> <!-- bodySizeFactor * foodMaxFactor = maxFood = 0.125 -->
@@ -811,9 +853,9 @@
 		<bodyDrawOffset>(0, 0, 0)</bodyDrawOffset>
 		<bodyWidth>1.35</bodyWidth>
 		<bodySizeFactor>0.85</bodySizeFactor>
+		<headSizeFactor>0.85</headSizeFactor>
 		<healthScaleFactor>0.90</healthScaleFactor>
 		<meleeDamageFactor>0.85</meleeDamageFactor>
-		<headSizeFactor>1</headSizeFactor>
 		<reproductive>true</reproductive>
 
 		<foodMaxFactor>1.25</foodMaxFactor> <!-- bodySizeFactor * foodMaxFactor = maxFood = 1.0 -->

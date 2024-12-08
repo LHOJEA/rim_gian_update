@@ -13,4 +13,15 @@
         <gender>Male</gender>
         <!-- <eyeOffsetEastWest>(0.15, 0, 0.175)</eyeOffsetEastWest> -->
     </HeadTypeDef>
+
+    <HeadTypeDef ParentName="AverageBase">
+        <defName>Baby_Average_1</defName>
+        <graphicPath>Giant/Giantlike/Heads/Baby/Baby_Average_1</graphicPath>
+    </HeadTypeDef>
+
+    <!-- <HeadTypeDef ParentName="AverageBase">
+        <defName>BabyM_Average_1</defName>
+        <graphicPath>Giant/Giantlike/Heads/Baby/Baby_Average_1</graphicPath>
+        <gender>Male</gender>
+    </HeadTypeDef> -->
 </Defs>

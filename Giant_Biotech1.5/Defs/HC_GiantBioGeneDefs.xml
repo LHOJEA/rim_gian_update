@@ -4,7 +4,7 @@
     <defName>GianthcXenotype</defName>
     <label>Giant</label>
     <description>It's a giant creature with an average height of 5 meters. While intelligence is low and requires a lot of food, the power of thick leather and mass is beyond imagination.</description>
-    <iconPath>Icon/GI_Icon</iconPath>
+    <iconPath>Icon/GI_GeneIcon</iconPath>
     <inheritable>true</inheritable>
     <factionlessGenerationWeight>1</factionlessGenerationWeight>
     <genes>
@@ -12,6 +12,7 @@
         <li>Immunity_Strong</li>
         <li>AptitudeTerrible_Social</li>
         <li>PsychicAbility_Dull</li>
+        <li>Hair_DarkBrown</li>
     </genes>
   </XenotypeDef>
 
