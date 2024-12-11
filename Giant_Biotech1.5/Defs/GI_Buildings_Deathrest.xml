@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+<!-- Rimworld Biotech Buildings_Deathrest.xml -->
+
+  <ThingDef ParentName="FurnitureWithQualityBase">
+    <defName>DeathrestVampiricTitanCasket</defName>
+    <label>Sarcophagus of the Vampiric Titan</label>
+    <!-- 흡혈 거신의 석관. -->
+    <description>A sarcophagus designed for the periodic slumber of vampiric titans. Enormously massive and alien in appearance, it is nonetheless compatible with existing deathrest support devices. The number of devices that can be connected depends on the user's deathrest capacity, which can be selected and viewed.\n\nOnly giants with the deathrest gene can utilize this sarcophagus.</description>
+    <!-- 흡혈 거인이 주기적으로 잠드는 석관입니다. 매우 거대하고 이질적으로 보이지만 기존의 안식 보조 장치와 호환됩니다. 연결할 수 있는 장치의 수는 사용자의 죽음안식 수용량에 따라 다르며, 선택하여 확인할 수 있습니다./n/n죽음안식 유전자를 가진 거인만 사용할 수 있습니다. -->
+    <thingClass>Building_Bed</thingClass>
+    <tickerType>Rare</tickerType>
+    <fillPercent>0.4</fillPercent>
+    <pathCost>42</pathCost>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <canOverlapZones>false</canOverlapZones>
+    <passability>PassThroughOnly</passability>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <thingCategories Inherit="False">
+      <li>BuildingsMisc</li>
+    </thingCategories>
+    <graphicData>
+      <texPath>Things/Building/Misc/DeathrestCasket/DeathrestCasket</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(4,4)</drawSize>
+    </graphicData>
+    <building>
+      <bed_showSleeperBody>false</bed_showSleeperBody>
+      <ai_chillDestination>false</ai_chillDestination>
+      <bed_healPerDay>4</bed_healPerDay>
+      <bed_canBeMedical>false</bed_canBeMedical>
+      <bed_DisplayOwnerType>false</bed_DisplayOwnerType>
+      <bed_DisplayOwnersInInspectString>false</bed_DisplayOwnersInInspectString>
+      <bed_countsForBedroomOrBarracks>false</bed_countsForBedroomOrBarracks>
+      <buildingTags>
+        <li>Bed</li>
+        <li>Biotech</li>
+      </buildingTags>
+      <relatedBuildCommands>
+        <li>DeathrestAccelerator</li>
+        <li>Hemopump</li>
+        <li>HemogenAmplifier</li>
+        <li>GlucosoidPump</li>
+        <li>PsychofluidPump</li>
+      </relatedBuildCommands>
+    </building>
+    <designationCategory>Biotech</designationCategory>
+    <uiOrder>2000</uiOrder>
+    <statBases>
+      <MaxHitPoints>400</MaxHitPoints>
+      <WorkToBuild>3000</WorkToBuild>
+      <Mass>80</Mass>
+      <Flammability>0.2</Flammability>
+      <Beauty>10</Beauty>
+      <BedRestEffectiveness>1</BedRestEffectiveness>
+      <Comfort>0.75</Comfort>
+      <ImmunityGainSpeedFactor>1.07</ImmunityGainSpeedFactor>
+      <SurgerySuccessChanceFactor>1</SurgerySuccessChanceFactor>
+    </statBases>
+    <size>(2,4)</size>
+    <!-- 벽돌 종류 중 200개 요구. -->
+    <stuffCategories>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>200</costStuffCount>
+    <!-- 강철 100, 부품 3 고정 요구. -->
+    <costList>
+      <Steel>100</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+    </costList>
+    <comps>
+      <li Class="CompProperties_AssignableToPawn">
+        <drawAssignmentOverlay>false</drawAssignmentOverlay>
+        <compClass>CompAssignableToPawn_DeathrestCasket</compClass>
+      </li>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>100</basePowerConsumption>
+        <idlePowerDraw>0</idlePowerDraw>
+        <alwaysDisplayAsUsingPower>true</alwaysDisplayAsUsingPower>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_DeathrestBindable">
+        <stackLimit>1</stackLimit>
+        <countsTowardsBuildingLimit>false</countsTowardsBuildingLimit>
+        <deathrestEffectivenessFactor>1.1</deathrestEffectivenessFactor>
+        <mustBeLayingInToBind>true</mustBeLayingInToBind>
+        <displayTimeActive>false</displayTimeActive>
+        <soundStart>DeathrestCasket_Enter</soundStart>
+        <soundEnd>DeathrestCasket_Exit</soundEnd>
+      </li>
+    </comps>
+    <researchPrerequisites><li>Deathrest</li></researchPrerequisites>
+    <placeWorkers>
+      <li>PlaceWorker_DrawLinesToDeathrestBuildings</li>
+    </placeWorkers>
+  </ThingDef>
+
+</Defs>
