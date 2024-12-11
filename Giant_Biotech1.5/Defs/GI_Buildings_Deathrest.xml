@@ -6,10 +6,10 @@
 
   <ThingDef ParentName="FurnitureWithQualityBase">
     <defName>DeathrestVampiricTitanCasket</defName>
-    <label>Sarcophagus of the Vampiric Titan</label>
-    <!-- 흡혈 거신의 석관. -->
-    <description>A sarcophagus designed for the periodic slumber of vampiric titans. Enormously massive and alien in appearance, it is nonetheless compatible with existing deathrest support devices. The number of devices that can be connected depends on the user's deathrest capacity, which can be selected and viewed.\n\nOnly giants with the deathrest gene can utilize this sarcophagus.</description>
-    <!-- 흡혈 거인이 주기적으로 잠드는 석관입니다. 매우 거대하고 이질적으로 보이지만 기존의 안식 보조 장치와 호환됩니다. 연결할 수 있는 장치의 수는 사용자의 죽음안식 수용량에 따라 다르며, 선택하여 확인할 수 있습니다./n/n죽음안식 유전자를 가진 거인만 사용할 수 있습니다. -->
+    <label>흡혈 거신의 석관.</label>
+    <!-- Sarcophagus of the Vampiric Titan -->
+    <description>흡혈 거인이 주기적으로 잠드는 석관입니다. 매우 거대하고 이질적으로 보이지만 기존의 안식 보조 장치와 호환됩니다. 연결할 수 있는 장치의 수는 사용자의 죽음안식 수용량에 따라 다르며, 선택하여 확인할 수 있습니다./n/n죽음안식 유전자를 가진 거인만 사용할 수 있습니다.</description>
+    <!-- A sarcophagus designed for the periodic slumber of vampiric titans. Enormously massive and alien in appearance, it is nonetheless compatible with existing deathrest support devices. The number of devices that can be connected depends on the user's deathrest capacity, which can be selected and viewed.\n\nOnly giants with the deathrest gene can utilize this sarcophagus. -->
     <thingClass>Building_Bed</thingClass>
     <tickerType>Rare</tickerType>
     <fillPercent>0.4</fillPercent>
@@ -27,7 +27,7 @@
       <drawSize>(4,4)</drawSize>
     </graphicData>
     <building>
-      <bed_showSleeperBody>false</bed_showSleeperBody>
+      <bed_showSleeperBody>true</bed_showSleeperBody>
       <ai_chillDestination>false</ai_chillDestination>
       <bed_healPerDay>4</bed_healPerDay>
       <bed_canBeMedical>false</bed_canBeMedical>
@@ -59,7 +59,7 @@
       <ImmunityGainSpeedFactor>1.07</ImmunityGainSpeedFactor>
       <SurgerySuccessChanceFactor>1</SurgerySuccessChanceFactor>
     </statBases>
-    <size>(2,4)</size>
+    <size>(1,2)</size>
     <!-- 벽돌 종류 중 200개 요구. -->
     <stuffCategories>
       <li>Stony</li>

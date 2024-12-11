@@ -54,7 +54,6 @@
 				<li>GIDBed</li>
 				<li>GIBed</li>
 				<li MayRequire="Ludeon.RimWorld.Biotech">DeathrestVampiricTitanCasket</li>
-				<li MayRequire="Ludeon.RimWorld.Biotech">DeathrestCasket</li>
 			</validBeds>
 			<forcedRaceTraitEntries>
 				<li>
@@ -352,7 +351,8 @@
 					</Age>
 				</extendedGraphics>
 			</body>
-			<skeleton>Giant/Giantlike/Bodies/Dessicated/Dessicated_male</skeleton>
+			<skeleton>Giant/Giantlike/Bodies/Dessicated/Dessicated</skeleton>
+			<skull>Giant/Giantlike/Bodies/Dessicated/Dessicated_Skull</skull>
 			<stump>Giant/Giantlike/Stump/Giant_Stump</stump>
 		</graphicPaths>
 		<!-- <graphicPaths>
