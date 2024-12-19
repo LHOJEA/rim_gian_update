@@ -147,13 +147,14 @@
          </stages>
     </HediffDef>
   
-  <ThingDef ParentName="GIMeal">
+  <ThingDef ParentName="OrganicProductBase">
     <defName>WoodenJerky</defName>
     <label>wooden jerky</label>
     <description>The bark feels like scratching the stomach wall...</description>
-	<thingClass>ThingWithComps</thingClass>
-	<stackLimit>75</stackLimit>
-	<thingCategories>
+    <tradeability>Buyable</tradeability>
+    <thingClass>ThingWithComps</thingClass>
+    <stackLimit>75</stackLimit>
+    <thingCategories>
       <li>Foods</li>
     </thingCategories>
     <graphicData>
@@ -161,23 +162,24 @@
       <graphicClass>Graphic_StackCount</graphicClass>
 	  <drawSize>1.6</drawSize>
     </graphicData>
+    <socialPropernessMatters>true</socialPropernessMatters>
     <statBases>
       <MarketValue>2.6</MarketValue>
       <WorkToMake>250</WorkToMake>
-      <Nutrition>0.10</Nutrition>
-	  <Mass>0.35</Mass>
-	  <DeteriorationRate>0.5</DeteriorationRate>
+      <Nutrition>0.20</Nutrition>
+      <Mass>0.35</Mass>
+      <DeteriorationRate>0.5</DeteriorationRate>
     </statBases>
     <ingestible>
 	  <foodType>Kibble</foodType>
       <preferability>RawBad</preferability>
-	  <tasteThought>AteWoodenJerky</tasteThought>
-	  <optimalityOffsetHumanlikes>-35</optimalityOffsetHumanlikes>
+      <tasteThought>AteWoodenJerky</tasteThought>
+      <optimalityOffsetHumanlikes>-35</optimalityOffsetHumanlikes>
       <optimalityOffsetFeedingAnimals>-5</optimalityOffsetFeedingAnimals>
       <ingestEffect>EatVegetarian</ingestEffect>
       <ingestSound>Meal_Eat</ingestSound>
     </ingestible>
-	<comps>
+	  <comps>
       <li Class="CompProperties_Rottable">
         <daysToRotStart>80</daysToRotStart>
         <rotDestroys>true</rotDestroys>

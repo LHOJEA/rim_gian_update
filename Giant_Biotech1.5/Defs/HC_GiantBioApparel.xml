@@ -46,7 +46,7 @@
         </bodyPartGroups>
         <!-- <drawData>
             <dataNorth>
-            <layer>300</layer> 이건 무슨 태그?
+            <layer>300</layer> 이건 무슨 태그? 레이어. 그려주는 영역.
             </dataNorth>
             <dataSouth>
             <layer>100</layer>

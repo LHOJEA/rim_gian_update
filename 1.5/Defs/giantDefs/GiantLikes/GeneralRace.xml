@@ -54,6 +54,7 @@
 				<li>GIDBed</li>
 				<li>GIBed</li>
 				<li MayRequire="Ludeon.RimWorld.Biotech">DeathrestVampiricTitanCasket</li>
+				<li MayRequire="Ludeon.RimWorld.Biotech">Crib_Giant</li>
 			</validBeds>
 			<forcedRaceTraitEntries>
 				<li>

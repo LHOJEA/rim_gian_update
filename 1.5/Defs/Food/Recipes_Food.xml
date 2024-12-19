@@ -199,7 +199,7 @@
     <soundWorking>Recipe_Smelt</soundWorking>
     <allowMixingIngredients>true</allowMixingIngredients>
 	<recipeUsers>
-		<li>TableStonecutter</li>
+		<!-- <li>TableStonecutter</li> -->
 		<li>FueledStove</li>
 		<li>ElectricStove</li>
 	</recipeUsers>
@@ -244,7 +244,7 @@
     <soundWorking>Recipe_Smelt</soundWorking>
     <allowMixingIngredients>true</allowMixingIngredients>
 	<recipeUsers>
-		<li>TableStonecutter</li>
+		<!-- <li>TableStonecutter</li> -->
 		<li>FueledStove</li>
 		<li>ElectricStove</li>
 	</recipeUsers>
@@ -289,7 +289,7 @@
     <soundWorking>Recipe_CookMeal</soundWorking>
     <allowMixingIngredients>true</allowMixingIngredients>
 	<recipeUsers>
-		<li>CraftingSpot</li>
+		<!-- <li>CraftingSpot</li> -->
 		<li>FueledStove</li>
 		<li>ElectricStove</li>
 	</recipeUsers>
@@ -334,7 +334,7 @@
     <soundWorking>Recipe_CookMeal</soundWorking>
     <allowMixingIngredients>true</allowMixingIngredients>
 	<recipeUsers>
-		<li>CraftingSpot</li>
+		<!-- <li>CraftingSpot</li> -->
 		<li>FueledStove</li>
 		<li>ElectricStove</li>
 	</recipeUsers>

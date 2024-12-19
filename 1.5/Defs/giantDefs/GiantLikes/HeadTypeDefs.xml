@@ -4,14 +4,14 @@
         <defName>Female_Average_1</defName>
         <graphicPath>Giant/Giantlike/Heads/Female_Average_1</graphicPath>
         <gender>Female</gender>
-        <!-- <eyeOffsetEastWest>(0.15, 0, 0.175)</eyeOffsetEastWest> -->
+        <!-- <eyeOffsetEastWest>(0.9, 0, 0.4)</eyeOffsetEastWest> -->
     </HeadTypeDef>
     
     <HeadTypeDef ParentName="AverageBase">
         <defName>Male_Average_1</defName>
         <graphicPath>Giant/Giantlike/Heads/Male_Average_1</graphicPath>
         <gender>Male</gender>
-        <!-- <eyeOffsetEastWest>(0.15, 0, 0.175)</eyeOffsetEastWest> -->
+        <!-- <eyeOffsetEastWest>(0.9, 0, 0.4)</eyeOffsetEastWest> -->
     </HeadTypeDef>
 
     <HeadTypeDef ParentName="AverageBase">
