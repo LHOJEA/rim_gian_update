@@ -160,19 +160,19 @@
 
 				<headOffsetDirectional>
 					<north>
-						<offset>(0, -0.125)</offset>
+						<offset>(0, 0.6)</offset>
 					</north>
 					<south>
-						<offset>(0, -0.125)</offset>
+						<offset>(0, 0.6)</offset>
 					</south>
 					<east>
-						<offset>(-0.1, -0.125)</offset>
+						<offset>(-0.1, 0.6)</offset>
 						<bodyTypes MayRequire="Ludeon.RimWorld.Biotech">
 							<Child MayRequire="Ludeon.RimWorld.Biotech">(0.05,0)</Child>
 						</bodyTypes>
 					</east>
 					<west>
-						<offset>(0.1, -0.125)</offset>
+						<offset>(0.1, 0.6)</offset>
 						<bodyTypes MayRequire="Ludeon.RimWorld.Biotech">
 							<Child MayRequire="Ludeon.RimWorld.Biotech">(-0.05,0)</Child>
 						</bodyTypes>
@@ -194,19 +194,19 @@
 							<options>
 								<li>
 									<weight>5</weight>
-									<only>RGBA(255, 255, 255, 255)</only>
+									<only>RGBA(255, 255, 255, 200)</only>
 								</li>
 								<li>
 									<weight>3</weight>
-									<only>RGBA(255, 230, 204, 255)</only>
+									<only>RGBA(255, 230, 204, 200)</only>
 								</li>
 								<li>
 									<weight>2</weight>
-									<only>RGBA(204, 178, 153, 255)</only>
+									<only>RGBA(204, 178, 153, 200)</only>
 								</li>
 								<li>
 									<weight>1</weight>
-									<only>RGBA(127, 102, 96, 255)</only>
+									<only>RGBA(127, 102, 96, 200)</only>
 								</li>
 							</options>
 						</first>
@@ -778,7 +778,7 @@
 		<headSizeFactor>0.5</headSizeFactor>
 		<eyeSizeFactor>0.7</eyeSizeFactor>
 		<foodMaxFactor>0.625</foodMaxFactor> <!-- bodySizeFactor * foodMaxFactor = maxFood = 0.125 -->
-		<hungerRateFactor>0.125</hungerRateFactor> <!-- consumes 2x maxFood per day -->
+		<hungerRateFactor>0.5</hungerRateFactor> <!-- 0.125 consumes 2x maxFood per day -->
 		<healthScaleFactor>0.2</healthScaleFactor>
 		<marketValueFactor>0.5</marketValueFactor>
 		<meleeDamageFactor>0.5</meleeDamageFactor>
