@@ -160,19 +160,19 @@
 
 				<headOffsetDirectional>
 					<north>
-						<offset>(0, 0.3)</offset>
+						<offset>(0, 0)</offset>
 					</north>
 					<south>
-						<offset>(0, 0.3)</offset>
+						<offset>(0, 0)</offset>
 					</south>
 					<east>
-						<offset>(-0.1, 0.3)</offset>
+						<offset>(0, 0)</offset>
 						<bodyTypes MayRequire="Ludeon.RimWorld.Biotech">
 							<Child MayRequire="Ludeon.RimWorld.Biotech">(0.05,0)</Child>
 						</bodyTypes>
 					</east>
 					<west>
-						<offset>(0.1, 0.3)</offset>
+						<offset>(0, 0)</offset>
 						<bodyTypes MayRequire="Ludeon.RimWorld.Biotech">
 							<Child MayRequire="Ludeon.RimWorld.Biotech">(-0.05,0)</Child>
 						</bodyTypes>

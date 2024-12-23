@@ -33,7 +33,7 @@
       <ImmunityGainSpeedFactor>1.07</ImmunityGainSpeedFactor>
       <SurgerySuccessChanceFactor>1</SurgerySuccessChanceFactor>
     </statBases>
-    <size>(1,2)</size>
+    <size>(1,1)</size>
     <costList>
 		    <WoodLog>80</WoodLog>
 	  </costList>
@@ -82,7 +82,7 @@
       <ImmunityGainSpeedFactor>1.07</ImmunityGainSpeedFactor>
       <SurgerySuccessChanceFactor>1</SurgerySuccessChanceFactor>
     </statBases>
-    <size>(2,2)</size>
+    <size>(2,1)</size>
     <costList>
 		    <WoodLog>120</WoodLog>
 	  </costList>
@@ -137,7 +137,7 @@
 	  <MedicalTendQualityOffset>0.1</MedicalTendQualityOffset>
       <SurgerySuccessChanceFactor>1.05</SurgerySuccessChanceFactor>
     </statBases>
-    <size>(1,2)</size>
+    <size>(1,1)</size>
     <stuffCategories>
       <li>Metallic</li>
       <li>Stony</li>
@@ -190,7 +190,7 @@
 	  <MedicalTendQualityOffset>0.1</MedicalTendQualityOffset>
       <SurgerySuccessChanceFactor>1.05</SurgerySuccessChanceFactor>
     </statBases>
-    <size>(2,2)</size>
+    <size>(2,1)</size>
     <stuffCategories>
       <li>Metallic</li>
       <li>Stony</li>
