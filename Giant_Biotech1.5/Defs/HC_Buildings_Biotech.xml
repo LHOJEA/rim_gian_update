@@ -1,8 +1,8 @@
 <Defs>
     <ThingDef ParentName="SansComfortBedBase">
     <defName>Crib_Giant</defName>
-    <label>crib</label>
-    <description>A cozy bed with safe latticed sides, perfect for a sleepy baby. A high quality crib will make a baby happy. Multiple cribs can be placed in a bedroom without turning it into a barracks.</description>
+    <label>giant babies bed</label>
+    <description>A high quality crib will make a baby happy. Multiple cribs can be placed in a bedroom without turning it into a barracks.</description>
     <comps>
       <li Class="CompProperties_AffectedByFacilities">
         <linkableFacilities>
@@ -11,11 +11,9 @@
       </li>
     </comps>
     <graphicData>
-      <!-- <texPath>Things/Building/Childcare/Crib/Crib</texPath> -->
       <texPath>Things/Building/Furniture/GiantCrib</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
       <shaderType>CutoutComplex</shaderType>
-      <!-- <drawSize>3.4</drawSize> -->
       <drawSize>(1.6,1.9)</drawSize>
       <shadowData>
         <volume>(0.8,0.4,0.9)</volume>
