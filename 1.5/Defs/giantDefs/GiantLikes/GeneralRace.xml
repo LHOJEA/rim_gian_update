@@ -205,19 +205,19 @@
 							<options>
 								<li>
 									<weight>5</weight>
-									<only>RGBA(255, 255, 255, 155)</only>
+									<only>RGBA(255, 255, 255, 255)</only>
 								</li>
 								<li>
 									<weight>3</weight>
-									<only>RGBA(255, 230, 204, 155)</only>
+									<only>RGBA(255, 230, 204, 255)</only>
 								</li>
 								<li>
 									<weight>2</weight>
-									<only>RGBA(204, 178, 153, 155)</only>
+									<only>RGBA(204, 178, 153, 255)</only>
 								</li>
 								<li>
 									<weight>1</weight>
-									<only>RGBA(127, 102, 96, 155)</only>
+									<only>RGBA(127, 102, 96, 255)</only>
 								</li>
 							</options>
 						</first>

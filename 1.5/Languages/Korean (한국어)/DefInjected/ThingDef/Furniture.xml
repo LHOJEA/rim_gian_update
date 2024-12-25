@@ -14,4 +14,9 @@
 	<GIDhardbed.label>특대형돌침대</GIDhardbed.label>
 	<GIDhardbed.description>단단한 소재로 만들어진 침대입니다. 청결유지가 용이하며 온도를 맞추기 좋습니다.</GIDhardbed.description>
 
+	<Crib_Giant.label>거인 아기용 잠자리</Crib_Giant.label>
+	<Crib_Giant.description>거인 아기를 눕혀두는 침대입니다. 겉보기엔 단순하지만 졸린 아기 거인에게는 딱 맞습니다. 고품질의 침대는</Crib_Giant.description>
+
+	<DeathrestVampiricTitanCasket.label>흡혈 거신의 석관</DeathrestVampiricTitanCasket.label>
+	<DeathrestVampiricTitanCasket.description>흡혈 거인이 주기적으로 잠드는 석관입니다. 매우 거대하고 이질적으로 보이지만 기존의 안식 보조 장치와 호환됩니다. 연결할 수 있는 장치의 수는 사용자의 죽음안식 수용량에 따라 다르며, 선택하여 확인할 수 있습니다. \n\n죽음안식 유전자를 가진 거인만 사용할 수 있습니다.</DeathrestVampiricTitanCasket.description>
 </LanguageData>
