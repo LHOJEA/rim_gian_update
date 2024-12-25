@@ -68,9 +68,10 @@
 	<ThingDef ParentName="GiantBaseRange">
 		<defName>GI_GiantAutocannon</defName>
 		<label>giant Autocannon</label>
+		<techLevel>Spacer</techLevel>
 		<description>A giant cannon built exclusively for giants. Smaller races modified heavy automatic turrets to create it. It takes a long time to fire, has terrible accuracy, and is quite cumbersome, but once it starts shooting, it can destroy anything.</description>
 		<graphicData>
-			<texPath>Giant/Weapons/Spacer/GI_Drill</texPath>
+			<texPath>Giant/Weapons/Spacer/GI_GiantAutocannon</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>3.0</drawSize>
 		</graphicData>
@@ -81,30 +82,29 @@
 			<Uranium>120</Uranium>
 			<ComponentIndustrial>6</ComponentIndustrial>
 		</costList>
-		
-		<soundInteract>Interact_Rifle</soundInteract>
+		<weaponTags>
+			<li>Giant_Ranged</li>
+		</weaponTags>
+		<!-- <soundInteract>Interact_Rifle</soundInteract> -->
 		<statBases>
-		<Mass>36</Mass>
-		<WorkToMake>108000</WorkToMake>
-		<AccuracyTouch>0.10</AccuracyTouch>
-		<AccuracyShort>0.15</AccuracyShort>
-		<AccuracyMedium>0.15</AccuracyMedium>
-		<AccuracyLong>0.5</AccuracyLong>
-		<RangedWeapon_Cooldown>10</RangedWeapon_Cooldown>
+			<Mass>36</Mass>
+			<WorkToMake>108000</WorkToMake>
+			<AccuracyTouch>0.72</AccuracyTouch>
+			<AccuracyShort>0.66</AccuracyShort>
+			<AccuracyMedium>0.5</AccuracyMedium>
+			<AccuracyLong>0.28</AccuracyLong>
+			<RangedWeapon_Cooldown>5</RangedWeapon_Cooldown>
 		</statBases>
 		<equippedStatOffsets>
-			<MoveSpeed>-0.8</MoveSpeed>
+			<MoveSpeed>-1.0</MoveSpeed>
 		</equippedStatOffsets>
-
-		<equippedAngleOffset>45</equippedAngleOffset>
-		
-
 		<verbs>
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_AutocannonTurret</defaultProjectile>
-				<warmupTime>0.24</warmupTime>
+				<burstShotCount>3</burstShotCount>
+				<warmupTime>3</warmupTime>
 				<minRange>3</minRange>
 				<range>30</range>
 				<soundCast>Shot_Autocannon</soundCast>
@@ -112,13 +112,9 @@
 				<muzzleFlashScale>12</muzzleFlashScale>
 			</li>
 		</verbs>
-		<weaponTags>
-			<li>Giant_Ranged</li>
-		</weaponTags>
-
 		<tools>
 			<li>
-				<label>cannon stock</label>
+				<label>stock</label>
 				<capacities>
 				<li>Blunt</li>
 				</capacities>
@@ -126,7 +122,7 @@
 				<cooldownTime>2.2</cooldownTime>
 			</li>
 			<li>
-				<label>cannon barrel</label>
+				<label>barrel</label>
 				<capacities>
 				<li>Blunt</li>
 				<li>Poke</li>

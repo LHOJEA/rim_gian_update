@@ -13,7 +13,8 @@
 					<li>(10, 0)</li>
 					<li>(14, 1)</li>
 					<li>(80, 1)</li>
-					<li>(145, 0)</li>
+					<li>(145, 0.2)</li>
+					<li>(160, 0)</li>
 				</points>
 			</maleFertilityAgeFactor>
 			<femaleFertilityAgeFactor>
@@ -161,31 +162,41 @@
 				<headOffsetDirectional>
 					<north>
 						<offset>(0, 0)</offset>
+						<bodyTypes MayRequire="Ludeon.RimWorld.Biotech">
+							<Baby MayRequire="Ludeon.RimWorld.Biotech">(0, -0.05)</Baby>
+							<Child MayRequire="Ludeon.RimWorld.Biotech">(0, -0.18)</Child>
+						</bodyTypes>
 					</north>
 					<south>
 						<offset>(0, 0)</offset>
+						<bodyTypes MayRequire="Ludeon.RimWorld.Biotech">
+							<Baby MayRequire="Ludeon.RimWorld.Biotech">(0, -0.05)</Baby>
+							<Child MayRequire="Ludeon.RimWorld.Biotech">(0, -0.18)</Child>
+						</bodyTypes>
 					</south>
 					<east>
 						<offset>(0, 0)</offset>
 						<bodyTypes MayRequire="Ludeon.RimWorld.Biotech">
-							<Child MayRequire="Ludeon.RimWorld.Biotech">(0.05,0)</Child>
+							<Baby MayRequire="Ludeon.RimWorld.Biotech">(0.04, -0.05)</Baby>
+							<Child MayRequire="Ludeon.RimWorld.Biotech">(-0.1, -0.18)</Child>
 						</bodyTypes>
 					</east>
 					<west>
 						<offset>(0, 0)</offset>
 						<bodyTypes MayRequire="Ludeon.RimWorld.Biotech">
-							<Child MayRequire="Ludeon.RimWorld.Biotech">(-0.05,0)</Child>
+							<Baby MayRequire="Ludeon.RimWorld.Biotech">(-0.04, -0.05)</Baby>
+							<Child MayRequire="Ludeon.RimWorld.Biotech">(0.1, -0.18)</Child>
 						</bodyTypes>
 					</west>
 				</headOffsetDirectional>
 
-				<headOffset>(0, 0)</headOffset>
+				<headOffset>(0, 0.28)</headOffset>
 				<!-- <useGenderedHeads>true</useGenderedHeads> -->
 				<!-- <useGenderedBodies>false</useGenderedBodies> -->
 				<!-- 신체 드로잉 크기 -->
 				<customDrawSize>(3.2, 3.2)</customDrawSize>
 				<customHeadDrawSize>(3.2, 3.2)</customHeadDrawSize>
-				<customPortraitDrawSize>(1.5, 1.5)</customPortraitDrawSize>
+				<customPortraitDrawSize>(2.8, 2.8)</customPortraitDrawSize>
 				<!--컬러-->
 				<colorChannels Inherit="False">
 					<li>
@@ -194,19 +205,19 @@
 							<options>
 								<li>
 									<weight>5</weight>
-									<only>RGBA(255, 255, 255, 200)</only>
+									<only>RGBA(255, 255, 255, 155)</only>
 								</li>
 								<li>
 									<weight>3</weight>
-									<only>RGBA(255, 230, 204, 200)</only>
+									<only>RGBA(255, 230, 204, 155)</only>
 								</li>
 								<li>
 									<weight>2</weight>
-									<only>RGBA(204, 178, 153, 200)</only>
+									<only>RGBA(204, 178, 153, 155)</only>
 								</li>
 								<li>
 									<weight>1</weight>
-									<only>RGBA(127, 102, 96, 200)</only>
+									<only>RGBA(127, 102, 96, 155)</only>
 								</li>
 							</options>
 						</first>
@@ -276,7 +287,7 @@
 						<extendedGraphics>
 							<Gender For="Female">Giant/Giantlike/Heads/Child/Female_Average_1_Child</Gender>
 							<Gender For="Male">Giant/Giantlike/Heads/Child/Male_Average_1</Gender>
-							<Hediff MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">Giant/Giantlike/Heads/Giant_AverageGH_1</Hediff>
+							<Hediff MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">Giant/Giantlike/Heads/Giant_AverageGH</Hediff>
 						</extendedGraphics>
 					</Age>
 					<Age For="HumanlikePreTeenager_Giant">
@@ -284,7 +295,7 @@
 						<extendedGraphics>
 							<Gender For="Female">Giant/Giantlike/Heads/Child/Female_Average_1_Child</Gender>
 							<Gender For="Male">Giant/Giantlike/Heads/Child/Male_Average_1_Child</Gender>
-							<Hediff MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">Giant/Giantlike/Heads/Giant_AverageGH_1</Hediff>
+							<Hediff MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">Giant/Giantlike/Heads/Giant_AverageGH</Hediff>
 						</extendedGraphics>
 					</Age>
 					<Age For="HumanlikeTeenager_Giant">
@@ -292,7 +303,7 @@
 						<extendedGraphics>
 							<Gender For="Female">Giant/Giantlike/Heads/Female_Average_1</Gender>
 							<Gender For="Male">Giant/Giantlike/Heads/Male_Average_1</Gender>
-							<Hediff MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">Giant/Giantlike/Heads/Giant_AverageGH_1</Hediff>
+							<Hediff MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">Giant/Giantlike/Heads/Giant_AverageGH</Hediff>
 						</extendedGraphics>
 					</Age>
 					<Age For="HumanlikeAdult_Giant">
@@ -300,7 +311,7 @@
 						<extendedGraphics>
 							<Gender For="Female">Giant/Giantlike/Heads/Female_Average_1</Gender>
 							<Gender For="Male">Giant/Giantlike/Heads/Male_Average_1</Gender>
-							<Hediff MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">Giant/Giantlike/Heads/Giant_AverageGH_1</Hediff>
+							<Hediff MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">Giant/Giantlike/Heads/Giant_AverageGH</Hediff>
 						</extendedGraphics>
 					</Age>
 				</extendedGraphics>
@@ -330,8 +341,11 @@
 						<path>Giant/Giantlike/Bodies/Naked_GiantChildM</path>
 						<extendedGraphics>
 							<Gender For="Female">Giant/Giantlike/Bodies/Naked_GiantChildF</Gender>
-							<!-- <Gender For="Male">Giant/Giantlike/Bodies/Naked_GiantChildM</Gender> -->
-							<Hediff MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">Giant/Giantlike/Bodies/Naked_GiantChildGH</Hediff>
+							<Gender For="Male">Giant/Giantlike/Bodies/Naked_GiantChildM</Gender>
+						</extendedGraphics>
+						<extendedGraphics>
+							<Hediff MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">Giant/Giantlike/Bodies/Dessicated_example_Thin</Hediff>
+							<!-- <Hediff MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">Giant/Giantlike/Bodies/Naked_GiantChildGH</Hediff> -->
 						</extendedGraphics>
 					</Age>
 					<Age For="HumanlikeTeenager_Giant">
@@ -339,7 +353,10 @@
 						<extendedGraphics>
 							<Gender For="Female">Giant/Giantlike/Bodies/Naked_GiantF</Gender>
 							<Gender For="Male">Giant/Giantlike/Bodies/Naked_GiantM</Gender>
-							<Hediff MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">Giant/Giantlike/Bodies/Naked_ChildGH</Hediff>
+						</extendedGraphics>
+						<extendedGraphics>
+							<!-- <Hediff MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">Giant/Giantlike/Bodies/Naked_GiantGH</Hediff> -->
+							<Hediff MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">Giant/Giantlike/Bodies/Dessicated_example_Thin</Hediff>
 						</extendedGraphics>
 					</Age>
 					<Age For="HumanlikeAdult_Giant">
@@ -347,7 +364,10 @@
 						<extendedGraphics>
 							<Gender For="Female">Giant/Giantlike/Bodies/Naked_GiantF</Gender>
 							<Gender For="Male">Giant/Giantlike/Bodies/Naked_GiantM</Gender>
-							<Hediff MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">Giant/Giantlike/Bodies/Naked_Child</Hediff>
+						</extendedGraphics>
+						<extendedGraphics>
+							<!-- <Hediff MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">Giant/Giantlike/Bodies/Naked_GiantGH</Hediff> -->
+							<Hediff MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">Giant/Giantlike/Bodies/Dessicated_example_Thin</Hediff>
 						</extendedGraphics>
 					</Age>
 				</extendedGraphics>
@@ -479,6 +499,7 @@
 				<li>GI_Titansword</li>
 				<li>GI_Lightningjavelin</li>
 				<li>GI_Drill</li>
+				<li>GI_GiantAutocannon</li>
 				<li MayRequire="Ludeon.RimWorld.Biotech">Apparel_HeavyShield</li>
 				<li MayRequire="Ludeon.RimWorld.Biotech">Apparel_PackControl</li>
 				<li MayRequire="Ludeon.RimWorld.Biotech">Apparel_PackBandwidth</li>
@@ -569,28 +590,32 @@
 		<MeleeHitChance>1</MeleeHitChance>
 		<AimingDelayFactor>0.8</AimingDelayFactor>
 		<ShootingAccuracyPawn>0.9</ShootingAccuracyPawn>
-			<HuntingStealth>0.1</HuntingStealth>
+		<HuntingStealth>0.1</HuntingStealth>
 
 		<!--사교-->
 		<NegotiationAbility>0.2</NegotiationAbility>      <!--외교 영향력-->
 		<SellPriceFactor>0.5</SellPriceFactor>      <!--거래 가격 개선-->
 		<SocialImpact>0.5</SocialImpact>      <!--사회적 영향력-->
+
 		<!--제작-->
 		<ButcheryMechanoidEfficiency>0.5</ButcheryMechanoidEfficiency>      <!--메카노이드 분해 효율-->
 		<ButcheryMechanoidSpeed>2</ButcheryMechanoidSpeed>      <!--메카노이드 분해 속도-->
 		<SmeltingSpeed>0.4</SmeltingSpeed>      <!--금속 제련 속도-->
 		<GeneralLaborSpeed>1</GeneralLaborSpeed>      <!--재단 속도-->
-			<ConstructionSpeed>2.5</ConstructionSpeed>      <!--건설 속도-->
+		<ConstructionSpeed>2.5</ConstructionSpeed>      <!--건설 속도-->
+
 		<!--조리-->
 		<ButcheryFleshEfficiency>0.85</ButcheryFleshEfficiency>      <!--도축 효율-->
 		<ButcheryFleshSpeed>2</ButcheryFleshSpeed>      <!--도축 속도-->
-		<FoodPoisonChance>1.8</FoodPoisonChance>      <!--식중독 확률-->
+		<FoodPoisonChance>1.3</FoodPoisonChance>      <!--식중독 확률--><!-- 1.5 식중독 확률 1.8=>1.3조정-->
 		<CookSpeed>2</CookSpeed>      <!--조리 속도-->
+
 		<!--수면-->
 		<RestRateMultiplier>1.5</RestRateMultiplier>
+
 		<!--재배-->
 		<PlantWorkSpeed>3</PlantWorkSpeed>
-			<PlantHarvestYield>0.85</PlantHarvestYield>
+		<PlantHarvestYield>0.85</PlantHarvestYield>
 
 		<!--의학및연구-->
 		<ResearchSpeed>0.1</ResearchSpeed>      <!--연구 속도-->
@@ -598,9 +623,11 @@
 		<DrugSynthesisSpeed>0.6</DrugSynthesisSpeed>
 		<MedicalSurgerySuccessChance>0.1</MedicalSurgerySuccessChance> <!-- 수술 성공률 -->
 		<ImmunityGainSpeed>1.3</ImmunityGainSpeed> <!--항체 속도 -->
+
 		<!--채굴-->
 		<MiningSpeed>3</MiningSpeed>
 		<MiningYield>0.85</MiningYield>
+
 		<!--식사-->
 		<EatingSpeed>4</EatingSpeed>
 
@@ -775,10 +802,10 @@
 		<bodySizeFactor>0.2</bodySizeFactor>
 		<bodyWidth>0.95</bodyWidth>
 		<voxPitch>1.0</voxPitch>
-		<headSizeFactor>0.5</headSizeFactor>
+		<headSizeFactor>0.45</headSizeFactor>
 		<eyeSizeFactor>0.7</eyeSizeFactor>
 		<foodMaxFactor>0.625</foodMaxFactor> <!-- bodySizeFactor * foodMaxFactor = maxFood = 0.125 -->
-		<hungerRateFactor>0.5</hungerRateFactor> <!-- 0.125 consumes 2x maxFood per day -->
+		<hungerRateFactor>0.345</hungerRateFactor> <!-- 0.125 consumes 2x maxFood per day -->
 		<healthScaleFactor>0.2</healthScaleFactor>
 		<marketValueFactor>0.5</marketValueFactor>
 		<meleeDamageFactor>0.5</meleeDamageFactor>
@@ -822,7 +849,7 @@
 
 	<LifeStageDef ParentName="LifeStageHumanlikeChild">
 		<defName>HumanlikeChild_Giant</defName>
-		<bodyDrawOffset>(0, 0, -0.15)</bodyDrawOffset>
+		<bodyDrawOffset>(0, 0, 0)</bodyDrawOffset>
 		<bodySizeFactor>0.45</bodySizeFactor>
 		<bodyWidth>0.75</bodyWidth>
 		<headSizeFactor>0.52</headSizeFactor>

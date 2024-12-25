@@ -9,7 +9,7 @@
       <texPath>Things/Building/Furniture/GIBed</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
       <!-- <drawSize>(1.8,3.5)</drawSize> -->
-      <drawSize>(1.5,3.5)</drawSize>
+      <drawSize>(1.8,3.5)</drawSize>
       <shaderType>CutoutComplex</shaderType>
       <damageData>
         <rect>(0,0.05,1,1.95)</rect>

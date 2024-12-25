@@ -9,9 +9,13 @@
     <factionlessGenerationWeight>1</factionlessGenerationWeight>
     <genes>
         <li>Robust</li>
-        <li>Immunity_Strong</li>
+        <li>Immunity_SuperStrong</li>
         <li>Aggression_Aggressive</li>
         <li>PsychicAbility_Deaf</li>
+        <li>AptitudePoor_Social</li>
+        <li>AptitudePoor_Medicine</li>
+        <li>AptitudeTerrible_Intellectual</li>
+        <li>AptitudeStrong_Cooking</li>
     </genes>
   </XenotypeDef>
 

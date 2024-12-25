@@ -11,10 +11,12 @@
       </li>
     </comps>
     <graphicData>
-      <texPath>Things/Building/Childcare/Crib/Crib</texPath>
+      <!-- <texPath>Things/Building/Childcare/Crib/Crib</texPath> -->
+      <texPath>Things/Building/Furniture/GiantCrib</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
       <shaderType>CutoutComplex</shaderType>
-      <drawSize>3.4</drawSize>
+      <!-- <drawSize>3.4</drawSize> -->
+      <drawSize>(1.6,1.9)</drawSize>
       <shadowData>
         <volume>(0.8,0.4,0.9)</volume>
       </shadowData>
@@ -29,7 +31,7 @@
       <BedRestEffectiveness>1</BedRestEffectiveness>
     </statBases>
     <size>(1,1)</size>
-    <costStuffCount>25</costStuffCount>
+    <costStuffCount>40</costStuffCount>
     <uiOrder>2022</uiOrder>
     <building>
       <bed_maxBodySize>0.8</bed_maxBodySize> <!-- Larger than HumanlikeBaby_Giant.BodySizeFactor but less than HumanlikeChild_Giant.BodySizeFactor. -->

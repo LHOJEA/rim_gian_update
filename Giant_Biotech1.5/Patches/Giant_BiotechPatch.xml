@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
-	
+<!-- 유전자로 구현된 만큼 1로 바꿔야 하는 것들. -->
+<!-- AlienRace.ThingDef_AlienRace의 statBases의 IncomingDamageFactor 0.8. Robust유전자로 대체.-->
+<!-- AlienRace.ThingDef_AlienRace의 statBases의 ImmunityGainSpeed 1.3 Immunity_SuperStrong 유전자로 대체. 의료 능력이 떨어지지만 면역력이 대단한 방향으로.-->
+<!-- AlienRace.ThingDef_AlienRace의 statBases의 PsychicSensitivity PsychicAbility_Deaf 유전자로 대체.-->
+<!-- AlienRace.ThingDef_AlienRace의 statBases의 NegotiationAbility 0.2 AptitudePoor_Social 유전자로 대체.-->
+<!-- AlienRace.ThingDef_AlienRace의 statBases의 MedicalTendQuality 0.4 AptitudePoor_Medical 유전자로 대체.-->
+<!-- AlienRace.ThingDef_AlienRace의 statBases의 ResearchSpeed 0.1 AptitudeTerrible_Intellectual 유전자로 대체.-->
 </Patch>
