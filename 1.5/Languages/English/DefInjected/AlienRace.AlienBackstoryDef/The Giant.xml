@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<Giant_CheesemakerChild.title>Cheesemaster's Child</Giant_CheesemakerChild.title>
+	<Giant_CheesemakerChild.titleShort>Cheesemaster Child</Giant_CheesemakerChild.titleShort>
+	<Giant_CheesemakerChild.description>[PAWN_nameDef] was a child of the cheesemaker, who grew up taking care of the mammoths.</Giant_CheesemakerChild.description>
+	
+	<Giant_SlothhunterChild.title>Slothhunter's Child</Giant_SlothhunterChild.title>
+	<Giant_SlothhunterChild.titleShort>Slothhunter Child</Giant_SlothhunterChild.titleShort>
+	<Giant_SlothhunterChild.description>[PAWN_nameDef] learned many skills from [PAWN_possessive] parents as [PAWN_pronoun] followed them to megatheria hunt.</Giant_SlothhunterChild.description>
+	
+	<Giant_SlaveGiant.title>Slave of Tinyman</Giant_SlaveGiant.title>
+	<Giant_SlaveGiant.titleShort>Tinyman Slave</Giant_SlaveGiant.titleShort>
+	<Giant_SlaveGiant.description>Unfortunate fate of [PAWN_nameDef] begun when [PAWN_pronoun] was captured by tiny people.</Giant_SlaveGiant.description>
+	
+	<Giant_NomadicGiantsChild.title>Child of Nomadic Giants</Giant_NomadicGiantsChild.title>
+	<Giant_NomadicGiantsChild.titleShort>Nomadic Giant Child</Giant_NomadicGiantsChild.titleShort>
+	<Giant_NomadicGiantsChild.description>[PAWN_nameDef] was born from a small nomadic giant tribe, where [PAWN_pronoun] learned to hunt faster prey.</Giant_NomadicGiantsChild.description>
+	
+	<Giant_SquireGiant.title>Giant Squire</Giant_SquireGiant.title>
+	<Giant_SquireGiant.titleShort>Giant Squire</Giant_SquireGiant.titleShort>
+	<Giant_SquireGiant.description>[PAWN_nameDef] learned how to fight from the giant warriors as their young servant.</Giant_SquireGiant.description>
+	
+	<Giant_PlainsGiantsChild.title>Child of Great Plains Giant</Giant_PlainsGiantsChild.title>
+	<Giant_PlainsGiantsChild.titleShort>Great Plains Giant Child</Giant_PlainsGiantsChild.titleShort>
+	<Giant_PlainsGiantsChild.description>[PAWN_nameDef] has lived on land of the Great Plains.</Giant_PlainsGiantsChild.description>
+	
+	<Giant_YoungGiantSoldier.title>Young Giant Soldier</Giant_YoungGiantSoldier.title>
+	<Giant_YoungGiantSoldier.titleShort>Young Giant Soldier</Giant_YoungGiantSoldier.titleShort>
+	<Giant_YoungGiantSoldier.description>[PAWN_nameDef] followed grown-ups into the wars from an early age.</Giant_YoungGiantSoldier.description>
+	
+	<Giant_GiantismGiant.title>Giant with Giantism</Giant_GiantismGiant.title>
+	<Giant_GiantismGiant.titleShort>Giantism Giant</Giant_GiantismGiant.titleShort>
+	<Giant_GiantismGiant.description>[PAWN_nameDef] is giant, even for a giant!</Giant_GiantismGiant.description>
+	
+	<WeedChewer.title>Grass Chewer</WeedChewer.title>
+	<WeedChewer.titleShort>Grass Chewer</WeedChewer.titleShort>
+	<WeedChewer.description>[PAWN_nameDef] is crazed about chewing on weed and leaves.</WeedChewer.description>
+	
+	<WoodSwallower.title>Wood Swallower</WoodSwallower.title>
+	<WoodSwallower.titleShort>Wood Swallower</WoodSwallower.titleShort>
+	<WoodSwallower.description>[PAWN_nameDef] is a big eater, who can even swallow a whole tree!</WoodSwallower.description>
+	
+	<SendChewer.title>Sand Chewer</SendChewer.title>
+	<SendChewer.titleShort>Sand Chewer</SendChewer.titleShort>
+	<SendChewer.description>The crunching sound of chewing sand always pleases [PAWN_nameDef].</SendChewer.description>
+	
+	<RockSwallower.title>Boudler Swallower</RockSwallower.title>
+	<RockSwallower.titleShort>Boulder Swallower</RockSwallower.titleShort>
+	<RockSwallower.description>With a firm trust in [PAWN_possessive] stomach, [PAWN_nameDef] often swallows a whole chunk of boulder!</RockSwallower.description>
+	
+	<StoneStacker.title>Rock Stacker</StoneStacker.title>
+	<StoneStacker.titleShort>Rock Stacker</StoneStacker.titleShort>
+	<StoneStacker.description>[PAWN_nameDef] is known amongst [PAWN_possessive] fellow giants for the talent for stacking rocks.</StoneStacker.description>
+	
+	<RhinoButcher.title>Rhino Butcher</RhinoButcher.title>
+	<RhinoButcher.titleShort>Rhino Butcher</RhinoButcher.titleShort>
+	<RhinoButcher.description>The ability to cut through the thick leather of rhinoceros is the proof that [PAWN_nameDef] spent many days studying it.</RhinoButcher.description>
+	
+	<CheeseMaster.title>Cheesemaster</CheeseMaster.title>
+	<CheeseMaster.titleShort>Cheesemaster</CheeseMaster.titleShort>
+	<CheeseMaster.description>[PAWN_nameDef] is an admirable cook capable of making excellent femented goodies from animal milk!</CheeseMaster.description>
+	
+	<PillarThrower.title>Pillar Thrower</PillarThrower.title>
+	<PillarThrower.titleShort>Pillar Thrower</PillarThrower.titleShort>
+	<PillarThrower.description>[PAWN_nameDef] is an expert at Pillar Throwing, a traditional game of the Giants.</PillarThrower.description>
+	
+	<SlothHunter.title>Sloth Hunter</SlothHunter.title>
+	<SlothHunter.titleShort>Sloth Hunter</SlothHunter.titleShort>
+	<SlothHunter.description>[PAWN_nameDef] is an outstanding hunter who has perfected [PAWN_possessive] observation of megatheria.</SlothHunter.description>
+	
+	<ManHunter.title>Manhunter</ManHunter.title>
+	<ManHunter.titleShort>Manhunter</ManHunter.titleShort>
+	<ManHunter.description>[PAWN_nameDef] is a gourmet who preys on weaker and smaller race.</ManHunter.description>
+	
+	<ThrumboHunter.title>Thrumbo Hunter</ThrumboHunter.title>
+	<ThrumboHunter.titleShort>Thrumbo Hunter</ThrumboHunter.titleShort>
+	<ThrumboHunter.description>[PAWN_nameDef] is one of the awe-inducing thrumbo hunters. They are highly admired by other Giants.</ThrumboHunter.description>
+	
+	<BugHunter.title>Bug Hunter</BugHunter.title>
+	<BugHunter.titleShort>Bug Hunter</BugHunter.titleShort>
+	<BugHunter.description>[PAWN_nameDef] spent many days hunting huge bugs emerging from caves. As a result, [PAWN_possessive] body adapted to the insect poison.</BugHunter.description>
+	
+	<GiantWrestler.title>Giant Wrestler</GiantWrestler.title>
+	<GiantWrestler.titleShort>Giant Wrestler</GiantWrestler.titleShort>
+	<GiantWrestler.description>Wrestling is the most popular sports amongst the Giants, and [PAWN_nameDef] is an expert!</GiantWrestler.description>
+	
+	<GiantChampion.title>Giant Champion</GiantChampion.title>
+	<GiantChampion.titleShort>Giant Champion</GiantChampion.titleShort>
+	<GiantChampion.description>[PAWN_nameDef] is a veteran warrior who has been through countless wars against other races.</GiantChampion.description>
+	
+	<ThrumboSlayer.title>Thrumbo Slayer</ThrumboSlayer.title>
+	<ThrumboSlayer.titleShort>Thrumbo Slayer</ThrumboSlayer.titleShort>
+	<ThrumboSlayer.description>[PAWN_nameDef] is a great thrumbo slayer, who struck down many thrumbos.</ThrumboSlayer.description>
+	
+	<NomadicWarrior.title>Giant Nomadic Warrior</NomadicWarrior.title>
+	<NomadicWarrior.titleShort>Nomadic Warrior</NomadicWarrior.titleShort>
+	<NomadicWarrior.description>[PAWN_nameDef] is a warrior from a Nomadic Giant tribe.</NomadicWarrior.description>
+	
+
+</LanguageData>

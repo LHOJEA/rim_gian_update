@@ -471,6 +471,8 @@
 				<li>GI_Coverall</li>
 				<li>GI_Mechashell</li>
 				<li MayRequire="Ludeon.RimWorld.Biotech">GI_ChildApp</li>
+				<li MayRequire="Ludeon.RimWorld.Biotech">GI_ChildParka</li>
+				<li MayRequire="Ludeon.RimWorld.Biotech">GI_ChildPotHelmet</li>
 			</apparelList>
 			<whiteApparelList>
 				<li>Apparel_ShieldBelt</li>
@@ -499,7 +501,7 @@
 				<li>GI_Titansword</li>
 				<li>GI_Lightningjavelin</li>
 				<li>GI_Drill</li>
-				<li>GI_GiantAutocannon</li>
+				<li>GI_GiantSlugCannon</li>
 				<li MayRequire="Ludeon.RimWorld.Biotech">Apparel_HeavyShield</li>
 				<li MayRequire="Ludeon.RimWorld.Biotech">Apparel_PackControl</li>
 				<li MayRequire="Ludeon.RimWorld.Biotech">Apparel_PackBandwidth</li>

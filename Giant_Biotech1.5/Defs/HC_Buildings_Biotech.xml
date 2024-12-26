@@ -2,7 +2,7 @@
     <ThingDef ParentName="SansComfortBedBase">
     <defName>Crib_Giant</defName>
     <label>giant babies bed</label>
-    <description>A high quality crib will make a baby happy. Multiple cribs can be placed in a bedroom without turning it into a barracks.</description>
+    <description>A bed for laying down a giant baby. It looks simple, but it's just right for a sleepy giant baby. A high quality crib will make a baby happy. Multiple cribs can be placed in a bedroom without turning it into a barracks.</description>
     <comps>
       <li Class="CompProperties_AffectedByFacilities">
         <linkableFacilities>
