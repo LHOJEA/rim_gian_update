@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+
 	<XenotypeDef>
     <defName>GianthcXenotype</defName>
     <label>Giant</label>
@@ -19,79 +20,4 @@
     </genes>
   </XenotypeDef>
 
-  <!-- <GeneDef>
-    <defName>Gene_GiantGeneTest</defName>
-    <label>Giant Test Genes</label>
-    <description>giant Test Genes</description>
-    <iconPath>Icon/GI_Icon</iconPath>
-    <selectionWeight>0</selectionWeight>
-    <displayOrderInCategory>-2</displayOrderInCategory>
-    <symbolPack>
-    </symbolPack>
-    <resourceLossPerDay>0.02</resourceLossPerDay> -->
-	<!--복잡도-->
-    <!-- <biostatCpx>-1</biostatCpx> -->
-	<!--대사효율-->
-    <!-- <biostatMet>1</biostatMet> -->
-  <!-- </GeneDef> -->
-  
-  <!-- <GeneDef>
-    <defName>MR_jumplegs</defName>
-    <label>predator</label>
-    <description>Carriers are born with an elastic body and can jump long distances by consciously activating their muscles.</description>
-    <iconPath>Things/Weapons/Mote/MR_jump</iconPath>
-    <displayCategory>Ability</displayCategory>
-    <abilities>
-      <li>MR_jump</li>
-    </abilities>
-    <descriptionHyperlinks>
-      <AbilityDef>MR_jump</AbilityDef>
-    </descriptionHyperlinks>
-    <biostatMet>-1</biostatMet>
-    <symbolPack>
-      <wholeNameSymbols>
-        <li><symbol>jumper</symbol></li>
-        <li><symbol>leaper</symbol></li>
-        <li><symbol>bouncer</symbol></li>
-      </wholeNameSymbols>
-      <prefixSymbols>
-        <li><symbol>jump</symbol></li>
-        <li><symbol>leap</symbol></li>
-        <li><symbol>vault</symbol></li>
-        <li><symbol>long</symbol></li>
-        <li><symbol>fly</symbol></li>
-        <li><symbol>hop</symbol></li>
-      </prefixSymbols>
-    </symbolPack>
-  </GeneDef>
-  
-  <AbilityDef Name="MR_jump">
-    <defName>MR_jump</defName>
-    <label>predatory jump</label>
-    <description>Jump to prey and quickly close the distance.</description>
-    <iconPath>Things/Weapons/Mote/MR_jump</iconPath>
-    <cooldownTicksRange>600</cooldownTicksRange>
-    <hostile>false</hostile>
-    <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
-    <verbProperties>
-      <verbClass>Verb_CastAbilityJump</verbClass>
-      <label>jump</label>
-      <violent>false</violent>
-      <forceNormalTimeSpeed>false</forceNormalTimeSpeed>
-      <warmupTime>0.5</warmupTime>
-      <range>6.9</range>
-      <requireLineOfSight>true</requireLineOfSight>
-      <soundCast>Longjump_Jump</soundCast>
-      <soundLanding>Longjump_Land</soundLanding>
-      <targetParams>
-        <canTargetLocations>false</canTargetLocations>
-        <canTargetPawns>true</canTargetPawns>
-        <canTargetBuildings>false</canTargetBuildings>
-      </targetParams>
-    </verbProperties>
-    <jobDef>CastJump</jobDef>
-    <comps>
-    </comps>
-  </AbilityDef> -->
-  
 </Defs>

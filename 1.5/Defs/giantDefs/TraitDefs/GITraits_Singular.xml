@@ -14,9 +14,9 @@
 		<hungerRateFactor>1.25</hungerRateFactor>
       </li>
     </degreeDatas>
-	<conflictingTraits>
+    <conflictingTraits>
       <li>Tough</li>
-	  <li>Gourmand</li>
+      <li>Gourmand</li>
     </conflictingTraits>
   </TraitDef>
   

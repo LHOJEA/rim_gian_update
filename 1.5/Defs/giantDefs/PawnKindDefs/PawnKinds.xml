@@ -29,7 +29,8 @@
 				<Highmate MayRequire="Ludeon.RimWorld.Biotech">0</Highmate>
 			</xenotypeChances>
 		</xenotypeSet>
-		<useFactionXenotypes>false</useFactionXenotypes>
+		<!-- <useFactionXenotypes>false</useFactionXenotypes> 왜 false? 선택창에서 팩션에 인종:인간으로 나온 게 이거 때문? -->
+    <useFactionXenotypes>true</useFactionXenotypes>
 
   </PawnKindDef>
 
