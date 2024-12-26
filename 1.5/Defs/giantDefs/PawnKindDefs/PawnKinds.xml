@@ -11,12 +11,11 @@
 	  <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
 	  <initialWillRange>0~1</initialWillRange>
     <initialResistanceRange>10~17</initialResistanceRange>
-    
     <xenotypeSet>
 			<xenotypeChances>
 				<GianthcXenotype MayRequire="Ludeon.RimWorld.Biotech">100</GianthcXenotype>
+
 				<Baseliner MayRequire="Ludeon.RimWorld.Biotech">0</Baseliner>
-				
 				<Dirtmole MayRequire="Ludeon.RimWorld.Biotech">0</Dirtmole>
 				<Genie MayRequire="Ludeon.RimWorld.Biotech">0</Genie>
 				<Hussar MayRequire="Ludeon.RimWorld.Biotech">0</Hussar>
@@ -71,7 +70,7 @@
     <defName>Gi_Slave</defName>
     <label>Giant Slave</label>
     <minGenerationAge>14</minGenerationAge>
-	<combatPower>140</combatPower>
+	<combatPower>200</combatPower>
     <defaultFactionType>SavageGiants</defaultFactionType>
     <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
 	<gearHealthRange>0.2~1.2</gearHealthRange>
@@ -102,7 +101,7 @@
   <PawnKindDef ParentName="GIBasePawnKind">
     <defName>Gi_Warrior</defName>
     <label>Giant Warrior</label>
-	<combatPower>200</combatPower>
+	<combatPower>250</combatPower>
     <minGenerationAge>20</minGenerationAge>
     <defaultFactionType>SavageGiants</defaultFactionType>
     <apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
@@ -136,7 +135,7 @@
   <PawnKindDef ParentName="GIBasePawnKind">
     <defName>Gi_Thrower</defName>
     <label>Giant Thrower</label>
-	<combatPower>200</combatPower>
+	<combatPower>250</combatPower>
     <minGenerationAge>20</minGenerationAge>
     <defaultFactionType>SavageGiants</defaultFactionType>
     <apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
@@ -173,7 +172,7 @@
   <PawnKindDef ParentName="GIBasePawnKind">
     <defName>Gi_ExpertWarrior</defName>
     <label>Giant Expert Warrior</label>
-	<combatPower>300</combatPower>
+	<combatPower>350</combatPower>
     <minGenerationAge>40</minGenerationAge>
     <defaultFactionType>SavageGiants</defaultFactionType>
     <apparelAllowHeadgearChance>0.6</apparelAllowHeadgearChance>
@@ -205,7 +204,7 @@
   <PawnKindDef ParentName="GIBasePawnKind">
     <defName>Gi_ExpertThrower</defName>
     <label>Giant Expert Thrower</label>
-	<combatPower>300</combatPower>
+	<combatPower>350</combatPower>
     <minGenerationAge>40</minGenerationAge>
     <defaultFactionType>SavageGiants</defaultFactionType>
     <apparelAllowHeadgearChance>0.6</apparelAllowHeadgearChance>
@@ -240,7 +239,7 @@
   <PawnKindDef ParentName="GIBasePawnKind">
     <defName>Gi_Champion</defName>
     <label>Giant Champion</label>
-	<combatPower>400</combatPower>
+	<combatPower>500</combatPower>
 	<factionLeader>true</factionLeader>
     <minGenerationAge>60</minGenerationAge>
     <defaultFactionType>SavageGiants</defaultFactionType>

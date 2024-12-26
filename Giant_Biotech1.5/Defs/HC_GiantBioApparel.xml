@@ -65,7 +65,7 @@
         <description>A parka for giant child, suitable for cold weather. It is made with several thick layers of fabric to ensure good protection.</description>
         <techLevel>Neolithic</techLevel>
         <graphicData>
-            <texPath>Giant/Apparel/Clothes/ChildParka/GI_ChildParka</texPath>
+            <texPath>Giant/Apparel/ChildParka/GI_ChildParka</texPath>
             <graphicClass>Graphic_Single</graphicClass>
             <drawSize>1.76</drawSize>
         </graphicData>
@@ -94,16 +94,15 @@
             <layers Inherit="False">
                 <li>Shell</li>
             </layers>
-            <wornGraphicPath>Giant/Apparel/Clothes/ChildParka/GI_ChildParka</wornGraphicPath>
+            <wornGraphicPath>Giant/Apparel/ChildParka/GI_ChildParka</wornGraphicPath>
             <blocksAddedPartWoundGraphics>true</blocksAddedPartWoundGraphics>
             <useWornGraphicMask>true</useWornGraphicMask>
-            <anyTechLevelCanUseForWarmth>true</anyTechLevelCanUseForWarmth>
+            <!-- <anyTechLevelCanUseForWarmth>true</anyTechLevelCanUseForWarmth> -->
             <tags>
                 <li>GiantStory</li>
             </tags>
         </apparel>
         <recipeMaker>
-            <displayPriority>280</displayPriority>
             <researchPrerequisite>ComplexClothing</researchPrerequisite>
         </recipeMaker>
     </ThingDef>
@@ -115,7 +114,7 @@
         <description>A helmet made from a wide pot used by small race for cooking, perfectly fitting the head of a giant child.</description>
         <techLevel>Medieval</techLevel> 
         <graphicData>
-            <texPath>Giant/Apparel/Clothes/ChildPotHelmet/GI_ChildPotHelmet</texPath>
+            <texPath>Giant/Apparel/ChildPotHelmet/GI_ChildPotHelmet</texPath>
             <graphicClass>Graphic_Single</graphicClass>
             <drawSize>1.76</drawSize>
         </graphicData>
@@ -149,7 +148,7 @@
                 <li>UpperHead</li>
             </bodyPartGroups>
             <!-- <parentTagDef>ApparelHead</parentTagDef> -->
-            <wornGraphicPath>Giant/Apparel/Clothes/ChildPotHelmet/GI_ChildPotHelmet</wornGraphicPath>
+            <wornGraphicPath>Giant/Clothes/ChildPotHelmet/GI_ChildPotHelmet</wornGraphicPath>
             <layers>
                 <li>Overhead</li>
             </layers>
