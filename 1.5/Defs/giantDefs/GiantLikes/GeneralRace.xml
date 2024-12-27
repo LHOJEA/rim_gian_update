@@ -136,28 +136,6 @@
 
 				<!-- <headOffsetSpecific MayRequire="Ludeon.RimWorld.Biotech"></headOffsetSpecific> -->
 
-				<!-- <headOffsetDirectional MayRequire="Ludeon.RimWorld.Biotech">
-					<north MayRequire="Ludeon.RimWorld.Biotech">
-						<bodyTypes MayRequire="Ludeon.RimWorld.Biotech">
-							<Child MayRequire="Ludeon.RimWorld.Biotech">(0,0)</Child>
-						</bodyTypes>
-					</north>
-					<south MayRequire="Ludeon.RimWorld.Biotech">
-						<bodyTypes MayRequire="Ludeon.RimWorld.Biotech">
-							<Child MayRequire="Ludeon.RimWorld.Biotech">(0,0)</Child>
-						</bodyTypes>
-					</south>
-					<east MayRequire="Ludeon.RimWorld.Biotech">
-						<bodyTypes MayRequire="Ludeon.RimWorld.Biotech">
-							<Child MayRequire="Ludeon.RimWorld.Biotech">(0.05,0)</Child>
-						</bodyTypes>
-					</east>
-					<west MayRequire="Ludeon.RimWorld.Biotech">
-						<bodyTypes MayRequire="Ludeon.RimWorld.Biotech">
-							<Child MayRequire="Ludeon.RimWorld.Biotech">(-0.05,0)</Child>
-						</bodyTypes>
-					</west>
-				</headOffsetDirectional> -->
 
 				<headOffsetDirectional>
 					<north>
@@ -333,9 +311,9 @@
 					<!-- <Age For="HumanlikeBaby">Giant/Bodies/Naked_Baby</Age> -->
 					<Age For="HumanlikeChild_Giant">
 						<path>Giant/Giantlike/Bodies/Naked_Baby</path>
-						<extendedGraphics>
+						<!-- <extendedGraphics>
 							<Hediff MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">Giant/Giantlike/Bodies/Dessicated_example_Thin</Hediff>
-						</extendedGraphics>
+						</extendedGraphics> -->
 					</Age>
 					<Age For="HumanlikePreTeenager_Giant">
 						<path>Giant/Giantlike/Bodies/Naked_GiantChildM</path>
@@ -344,7 +322,6 @@
 							<Gender For="Male">Giant/Giantlike/Bodies/Naked_GiantChildM</Gender>
 						</extendedGraphics>
 						<extendedGraphics>
-							<Hediff MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">Giant/Giantlike/Bodies/Dessicated_example_Thin</Hediff>
 							<!-- <Hediff MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">Giant/Giantlike/Bodies/Naked_GiantChildGH</Hediff> -->
 						</extendedGraphics>
 					</Age>
@@ -356,7 +333,6 @@
 						</extendedGraphics>
 						<extendedGraphics>
 							<!-- <Hediff MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">Giant/Giantlike/Bodies/Naked_GiantGH</Hediff> -->
-							<Hediff MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">Giant/Giantlike/Bodies/Dessicated_example_Thin</Hediff>
 						</extendedGraphics>
 					</Age>
 					<Age For="HumanlikeAdult_Giant">
@@ -367,7 +343,6 @@
 						</extendedGraphics>
 						<extendedGraphics>
 							<!-- <Hediff MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">Giant/Giantlike/Bodies/Naked_GiantGH</Hediff> -->
-							<Hediff MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">Giant/Giantlike/Bodies/Dessicated_example_Thin</Hediff>
 						</extendedGraphics>
 					</Age>
 				</extendedGraphics>
@@ -376,13 +351,7 @@
 			<skull>Giant/Giantlike/Bodies/Dessicated/Dessicated_Skull</skull>
 			<stump>Giant/Giantlike/Stump/Giant_Stump</stump>
 		</graphicPaths>
-		<!-- <graphicPaths>
-			<li>
-			<head>Giant/Heads/</head>
-			<body>Giant/Bodies/</body>
-			<skeleton>Things/Pawn/Humanlike/Bodies/Dessicated/Dessicated_Male</skeleton>
-			</li>
-		</graphicPaths> -->
+
 		<!-- 헤어 -->
 		<styleSettings>
 			<li>
