@@ -17,9 +17,6 @@
 		    <li>
 				<compClass>CompQuality</compClass>
 			</li>
-			<!-- <li Class="CompOversizedWeapon.CompProperties_OversizedWeapon"> 
-				<compClass>CompOversizedWeapon.CompOversizedWeapon</compClass> 
-			</li> -->
 		</comps>		
 	</ThingDef>	
 	
@@ -42,9 +39,6 @@
 				<descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
 				<minQualityForArtistic>Excellent</minQualityForArtistic>
 			</li>
-			<!-- <li Class="CompOversizedWeapon.CompProperties_OversizedWeapon"> 
-				<compClass>CompOversizedWeapon.CompOversizedWeapon</compClass> 
-			</li> -->
 		</comps>		
 	</ThingDef>	
 

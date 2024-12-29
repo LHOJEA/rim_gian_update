@@ -59,7 +59,7 @@
         </apparel>
     </ThingDef>
 
-    <ThingDef ParentName="GI_ApparelBase">
+    <!-- <ThingDef ParentName="GI_ApparelBase">
         <defName>GI_ChildParka</defName>
         <label>giant kid parka</label>
         <description>A parka for giant child, suitable for cold weather. It is made with several thick layers of fabric to ensure good protection.</description>
@@ -97,7 +97,7 @@
             <wornGraphicPath>Giant/Apparel/ChildParka/GI_ChildParka</wornGraphicPath>
             <blocksAddedPartWoundGraphics>true</blocksAddedPartWoundGraphics>
             <useWornGraphicMask>true</useWornGraphicMask>
-            <!-- <anyTechLevelCanUseForWarmth>true</anyTechLevelCanUseForWarmth> -->
+            <anyTechLevelCanUseForWarmth>true</anyTechLevelCanUseForWarmth>
             <tags>
                 <li>GiantStory</li>
             </tags>
@@ -107,7 +107,6 @@
         </recipeMaker>
     </ThingDef>
 
-    <!-- Giant kid armor -->
     <ThingDef ParentName="GI_HatBase">
         <defName>GI_ChildPotHelmet</defName>
         <label>giant kid helmet</label>
@@ -147,7 +146,6 @@
             <bodyPartGroups>
                 <li>UpperHead</li>
             </bodyPartGroups>
-            <!-- <parentTagDef>ApparelHead</parentTagDef> -->
             <wornGraphicPath>Giant/Clothes/ChildPotHelmet/GI_ChildPotHelmet</wornGraphicPath>
             <layers>
                 <li>Overhead</li>
@@ -164,7 +162,7 @@
             <li>Clothing</li>
             <li>Armor</li>
         </tradeTags>
-    </ThingDef>
+    </ThingDef> -->
 
 
 </Defs>

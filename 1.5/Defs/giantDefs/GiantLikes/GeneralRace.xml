@@ -137,7 +137,7 @@
 				<!-- <headOffsetSpecific MayRequire="Ludeon.RimWorld.Biotech"></headOffsetSpecific> -->
 
 
-				<headOffsetDirectional>
+				<!-- <headOffsetDirectional>
 					<north>
 						<offset>(0, 0)</offset>
 						<bodyTypes MayRequire="Ludeon.RimWorld.Biotech">
@@ -164,6 +164,36 @@
 						<bodyTypes MayRequire="Ludeon.RimWorld.Biotech">
 							<Baby MayRequire="Ludeon.RimWorld.Biotech">(-0.04, -0.05)</Baby>
 							<Child MayRequire="Ludeon.RimWorld.Biotech">(0.1, -0.18)</Child>
+						</bodyTypes>
+					</west>
+				</headOffsetDirectional> -->
+				<headOffsetDirectional>
+					<north>
+						<offset>(0, 0)</offset>
+						<bodyTypes>
+							<Baby>(0, -0.05)</Baby>
+							<Child>(0, -0.18)</Child>
+						</bodyTypes>
+					</north>
+					<south>
+						<offset>(0, 0)</offset>
+						<bodyTypes>
+							<Baby>(0, -0.05)</Baby>
+							<Child>(0, -0.18)</Child>
+						</bodyTypes>
+					</south>
+					<east>
+						<offset>(0, 0)</offset>
+						<bodyTypes>
+							<Baby>(0.04, -0.05)</Baby>
+							<Child>(-0.1, -0.18)</Child>
+						</bodyTypes>
+					</east>
+					<west>
+						<offset>(0, 0)</offset>
+						<bodyTypes>
+							<Baby>(-0.04, -0.05)</Baby>
+							<Child>(0.1, -0.18)</Child>
 						</bodyTypes>
 					</west>
 				</headOffsetDirectional>
@@ -265,15 +295,13 @@
 						<extendedGraphics>
 							<Gender For="Female">Giant/Giantlike/Heads/Child/Female_Average_1_Child</Gender>
 							<Gender For="Male">Giant/Giantlike/Heads/Child/Male_Average_1</Gender>
-							<Hediff MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">Giant/Giantlike/Heads/Giant_AverageGH</Hediff>
 						</extendedGraphics>
 					</Age>
 					<Age For="HumanlikePreTeenager_Giant">
-						<path>Giant/Giantlike/Heads/Child/Male_Average_1_Child</path>
+						<path>Giant/Giantlike/Heads/Male_Average_1</path>
 						<extendedGraphics>
-							<Gender For="Female">Giant/Giantlike/Heads/Child/Female_Average_1_Child</Gender>
-							<Gender For="Male">Giant/Giantlike/Heads/Child/Male_Average_1_Child</Gender>
-							<Hediff MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">Giant/Giantlike/Heads/Giant_AverageGH</Hediff>
+							<Gender For="Female">Giant/Giantlike/Heads/Female_Average_1</Gender>
+							<Gender For="Male">Giant/Giantlike/Heads/Male_Average_1</Gender>
 						</extendedGraphics>
 					</Age>
 					<Age For="HumanlikeTeenager_Giant">
@@ -281,7 +309,6 @@
 						<extendedGraphics>
 							<Gender For="Female">Giant/Giantlike/Heads/Female_Average_1</Gender>
 							<Gender For="Male">Giant/Giantlike/Heads/Male_Average_1</Gender>
-							<Hediff MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">Giant/Giantlike/Heads/Giant_AverageGH</Hediff>
 						</extendedGraphics>
 					</Age>
 					<Age For="HumanlikeAdult_Giant">
@@ -289,20 +316,10 @@
 						<extendedGraphics>
 							<Gender For="Female">Giant/Giantlike/Heads/Female_Average_1</Gender>
 							<Gender For="Male">Giant/Giantlike/Heads/Male_Average_1</Gender>
-							<Hediff MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">Giant/Giantlike/Heads/Giant_AverageGH</Hediff>
+							<!-- <Hediff MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">Giant/Giantlike/Heads/Giant_AverageGH</Hediff> -->
 						</extendedGraphics>
 					</Age>
 				</extendedGraphics>
-				<!-- <path>Giant/Giantlike/Heads/Male_Average_1</path>
-				<headtypeGraphics>
-					<Male_AverageNormal>Giant/Giantlike/Heads/Male_Average_1</Male_AverageNormal>
-					<Female_AverageNormal>Giant/Giantlike/Heads/Female_Average_1</Female_AverageNormal>
-				</headtypeGraphics>
-				<extendedGraphics>
-					<Gender For="Female">Giant/Giantlike/Heads/Female_Average_1</Gender>
-					<Age For="HumanlikeBaby" MayRequire="Ludeon.RimWorld.Biotech">Giant/Giantlike/Heads/Baby/Baby_Average_1</Age>
-					<Hediff MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">Giant/Giantlike/Heads/Giant_AverageGH_1</Hediff>
-				</extendedGraphics> -->
 			</head>
 			<body>
 				<path>Giant/Giantlike/Bodies/Naked_GiantM</path>
@@ -326,10 +343,10 @@
 						</extendedGraphics>
 					</Age>
 					<Age For="HumanlikeTeenager_Giant">
-						<path>Giant/Giantlike/Bodies/Naked_GiantM</path>
+						<path>Giant/Giantlike/Bodies/Naked_GiantChildM</path>
 						<extendedGraphics>
-							<Gender For="Female">Giant/Giantlike/Bodies/Naked_GiantF</Gender>
-							<Gender For="Male">Giant/Giantlike/Bodies/Naked_GiantM</Gender>
+							<Gender For="Female">Giant/Giantlike/Bodies/Naked_GiantChildF</Gender>
+							<Gender For="Male">Giant/Giantlike/Bodies/Naked_GiantChildM</Gender>
 						</extendedGraphics>
 						<extendedGraphics>
 							<!-- <Hediff MayRequire="Ludeon.RimWorld.Anomaly" For="Ghoul">Giant/Giantlike/Bodies/Naked_GiantGH</Hediff> -->
@@ -440,8 +457,8 @@
 				<li>GI_Coverall</li>
 				<li>GI_Mechashell</li>
 				<li MayRequire="Ludeon.RimWorld.Biotech">GI_ChildApp</li>
-				<li MayRequire="Ludeon.RimWorld.Biotech">GI_ChildParka</li>
-				<li MayRequire="Ludeon.RimWorld.Biotech">GI_ChildPotHelmet</li>
+				<!-- <li MayRequire="Ludeon.RimWorld.Biotech">GI_ChildParka</li>
+				<li MayRequire="Ludeon.RimWorld.Biotech">GI_ChildPotHelmet</li> -->
 			</apparelList>
 			<whiteApparelList>
 				<li>Apparel_ShieldBelt</li>
@@ -654,7 +671,6 @@
 		<bloodDef>Filth_Blood</bloodDef><!-- 피 -->
 				<bloodSmearDef>Filth_BloodSmear</bloodSmearDef>
 			<fleshType>Normal</fleshType>
-		<!-- <body>Giant_Body</body> -->
 		<body>Human</body>
 		<baseBodySize>3.5</baseBodySize>
 		<baseHealthScale>4.5</baseHealthScale>

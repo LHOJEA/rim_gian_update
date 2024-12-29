@@ -5,13 +5,11 @@
     <defName>GiantF</defName>
     <label>Giant Female</label>
     <bodyNakedGraphicPath>Giant/Bodies/Naked_GiantF</bodyNakedGraphicPath>
-    <!-- <bodyDessicatedGraphicPath>Giant/Giantlike/Bodies/Dessicated/Dessicated</bodyDessicatedGraphicPath> -->
   </BodyTypeDef>
 
   <BodyTypeDef>
     <defName>GiantM</defName>
     <label>Giant Male</label>
     <bodyNakedGraphicPath>Giant/Bodies/Naked_GiantM</bodyNakedGraphicPath>
-    <!-- <bodyDessicatedGraphicPath>Giant/Giantlike/Bodies/Dessicated/Dessicated</bodyDessicatedGraphicPath> -->
   </BodyTypeDef>
 </Defs>
