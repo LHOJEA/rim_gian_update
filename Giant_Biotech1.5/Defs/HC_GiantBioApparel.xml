@@ -59,13 +59,13 @@
         </apparel>
     </ThingDef>
 
-    <!-- <ThingDef ParentName="GI_ApparelBase">
-        <defName>GI_ChildParka</defName>
-        <label>giant kid parka</label>
-        <description>A parka for giant child, suitable for cold weather. It is made with several thick layers of fabric to ensure good protection.</description>
+    <ThingDef ParentName="GI_ApparelBase">
+        <defName>GI_ChildWinterCloak</defName>
+        <label>giant kid winter cloak</label>
+        <description>A cloak for giant child, suitable for cold weather. It is made with several thick layers of fabric to ensure good protection.</description>
         <techLevel>Neolithic</techLevel>
         <graphicData>
-            <texPath>Giant/Apparel/ChildParka/GI_ChildParka</texPath>
+            <texPath>Giant/Apparel/ChildWinterCloak/GI_ChildWinterCloak</texPath>
             <graphicClass>Graphic_Single</graphicClass>
             <drawSize>1.76</drawSize>
         </graphicData>
@@ -94,7 +94,7 @@
             <layers Inherit="False">
                 <li>Shell</li>
             </layers>
-            <wornGraphicPath>Giant/Apparel/ChildParka/GI_ChildParka</wornGraphicPath>
+            <wornGraphicPath>Giant/Apparel/ChildWinterCloak/GI_ChildWinterCloak</wornGraphicPath>
             <blocksAddedPartWoundGraphics>true</blocksAddedPartWoundGraphics>
             <useWornGraphicMask>true</useWornGraphicMask>
             <anyTechLevelCanUseForWarmth>true</anyTechLevelCanUseForWarmth>
@@ -125,7 +125,7 @@
             <WorkToMake>3000</WorkToMake>
             <MaxHitPoints>230</MaxHitPoints>
             <Mass>1.6</Mass>
-            <StuffEffectMultiplierArmor>0.4</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierArmor>0.55</StuffEffectMultiplierArmor>
             <StuffEffectMultiplierInsulation_Cold>0.25</StuffEffectMultiplierInsulation_Cold>
             <StuffEffectMultiplierInsulation_Heat>0.1</StuffEffectMultiplierInsulation_Heat>
             <EquipDelay>1.5</EquipDelay>
@@ -146,7 +146,8 @@
             <bodyPartGroups>
                 <li>UpperHead</li>
             </bodyPartGroups>
-            <wornGraphicPath>Giant/Clothes/ChildPotHelmet/GI_ChildPotHelmet</wornGraphicPath>
+            <wornGraphicPath>Giant/Apparel/ChildPotHelmet/GI_ChildPotHelmet_Child</wornGraphicPath>
+            <useWornGraphicMask>true</useWornGraphicMask>
             <layers>
                 <li>Overhead</li>
             </layers>
@@ -162,7 +163,7 @@
             <li>Clothing</li>
             <li>Armor</li>
         </tradeTags>
-    </ThingDef> -->
+    </ThingDef>
 
 
 </Defs>

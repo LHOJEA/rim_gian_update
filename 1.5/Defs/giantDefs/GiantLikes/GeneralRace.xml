@@ -60,7 +60,7 @@
 			<forcedRaceTraitEntries>
 				<li>
 					<defName>Gourmand</defName>
-					<chance>100</chance>
+					<chance>80</chance>
 				</li>
 				<li>
 					<defName>Tough</defName>
@@ -124,8 +124,7 @@
 				<headTypes><!-- 헤드 -->
 					<li>Female_Average_1</li>
 					<li>Male_Average_1</li>
-					<!-- <li>BabyF_Average_1</li>
-					<li>BabyM_Average_1</li> -->
+					<!-- <li>Baby_Average_1</li> -->
 				</headTypes>
 				<bodyTypes><!-- 바디 -->
 					<li>GiantF</li>
@@ -383,7 +382,10 @@
 			<li>
 				<key>BeardDef</key>
 				<value>
-					<hasStyle>false</hasStyle>
+					<hasStyle>true</hasStyle>
+					<styleTagsOverride>
+						<li>GIbeard</li>
+					</styleTagsOverride>
 				</value>
 			</li>
 			<li>
@@ -457,8 +459,8 @@
 				<li>GI_Coverall</li>
 				<li>GI_Mechashell</li>
 				<li MayRequire="Ludeon.RimWorld.Biotech">GI_ChildApp</li>
-				<!-- <li MayRequire="Ludeon.RimWorld.Biotech">GI_ChildParka</li>
-				<li MayRequire="Ludeon.RimWorld.Biotech">GI_ChildPotHelmet</li> -->
+				<li MayRequire="Ludeon.RimWorld.Biotech">GI_ChildWinterCloak</li>
+				<li MayRequire="Ludeon.RimWorld.Biotech">GI_ChildPotHelmet</li>
 			</apparelList>
 			<whiteApparelList>
 				<li>Apparel_ShieldBelt</li>
@@ -477,6 +479,7 @@
 				<li>GI_ThrumboSpineBlade</li>
 				<li>GI_Cleaver</li>
 				<li>GI_Hammer</li>
+				<li>GI_Jackstones</li>
 				<li>GI_Jackstones_granite</li>
 				<li>GI_Jackstones_limestone</li>
 				<li>GI_Javelin</li>
@@ -488,6 +491,7 @@
 				<li>GI_Lightningjavelin</li>
 				<li>GI_Drill</li>
 				<li>GI_GiantSlugCannon</li>
+				<li>GI_ThrowingShot</li>
 				<li MayRequire="Ludeon.RimWorld.Biotech">Apparel_HeavyShield</li>
 				<li MayRequire="Ludeon.RimWorld.Biotech">Apparel_PackControl</li>
 				<li MayRequire="Ludeon.RimWorld.Biotech">Apparel_PackBandwidth</li>

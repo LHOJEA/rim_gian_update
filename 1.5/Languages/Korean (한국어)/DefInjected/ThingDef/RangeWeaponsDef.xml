@@ -1,15 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
 
-	<GI_Jackstones_granite.label>화강암 공깃돌</GI_Jackstones_granite.label>
-	<GI_Jackstones_granite.description>화강암으로 만든 거인들의 공깃돌입니다. 작은 종족들에겐 머리만한 돌덩이 입니다.</GI_Jackstones_granite.description>
+	<GI_Jackstones.label>공깃돌</GI_Jackstones.label>
+	<GI_Jackstones.description>석재를 적당히 가공해 만든 거인들의 공깃돌입니다. 작은 종족들에겐 머리만한 돌덩이 입니다.</GI_Jackstones.description>
+	<GI_Jackstones_Thrown.label>공깃돌</GI_Jackstones_Thrown.label>
+	<GI_Jackstones.tools.0.label>돌주먹</GI_Jackstones.tools.0.label>
+
+
+
+	<GI_Jackstones_granite.label>고급 화강암 공깃돌</GI_Jackstones_granite.label>
+	<GI_Jackstones_granite.description>화강암을 잘 가공해 만든 질 좋은 공깃돌입니다. 작은 종족들에겐 머리만한 돌덩이 입니다.</GI_Jackstones_granite.description>
 	<GI_Jackstones_granite_Thrown.label>공깃돌</GI_Jackstones_granite_Thrown.label>
 	<GI_Jackstones_granite.tools.0.label>돌주먹</GI_Jackstones_granite.tools.0.label>
 	
 	
 	
-	<GI_Jackstones_limestone.label>석회암 공깃돌</GI_Jackstones_limestone.label>
-	<GI_Jackstones_limestone.description>석회암으로 만든 거인들의 공깃돌입니다. 작은 종족들에겐 머리만한 돌덩이 입니다.</GI_Jackstones_limestone.description>
+	<GI_Jackstones_limestone.label>고급 석회암 공깃돌</GI_Jackstones_limestone.label>
+	<GI_Jackstones_limestone.description>석회암을 잘 가공해 만든 질 좋은 공깃돌입니다. 작은 종족들에겐 머리만한 돌덩이 입니다.</GI_Jackstones_limestone.description>
 	<GI_Jackstones_limestone_Thrown.label>공깃돌</GI_Jackstones_limestone_Thrown.label>
 	<GI_Jackstones_limestone.tools.0.label>돌주먹</GI_Jackstones_limestone.tools.0.label>
 	
@@ -50,6 +57,12 @@
 	<GI_Lightningjavelin.tools.0.label>장대</GI_Lightningjavelin.tools.0.label>
 	<GI_Lightningjavelin.tools.1.label>창끝</GI_Lightningjavelin.tools.1.label>
 	
+
+
+	<GI_ThrowingShot.label>투척용 포환</GI_ThrowingShot.label>
+	<GI_ThrowingShot.description>금속으로 만들어진 작은 종족들의 포탄. 거인에게는 던지기 좋은 포환입니다.</GI_ThrowingShot.description>
+	<GI_ThrowingShot_Thrown.label>포환</GI_ThrowingShot_Thrown.label>
+	<GI_ThrowingShot.tools.0.label>포환 주먹</GI_ThrowingShot.tools.0.label>
 	
 	
 

@@ -73,7 +73,7 @@
 		<graphicData>
 			<texPath>Giant/Weapons/Spacer/GI_GiantSlugCannon</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>3.0</drawSize>
+			<drawSize>3.5</drawSize>
 		</graphicData>
 		<uiIconScale>0.62</uiIconScale>
 		<costList>
@@ -93,7 +93,7 @@
 			<AccuracyShort>0.4</AccuracyShort>
 			<AccuracyMedium>0.5</AccuracyMedium>
 			<AccuracyLong>0.72</AccuracyLong>
-			<RangedWeapon_Cooldown>10</RangedWeapon_Cooldown>
+			<RangedWeapon_Cooldown>7</RangedWeapon_Cooldown>
 		</statBases>
 		<equippedStatOffsets>
 			<MoveSpeed>-1.4</MoveSpeed>
@@ -104,7 +104,7 @@
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_TurretSniper</defaultProjectile>
 				<burstShotCount>1</burstShotCount>
-				<warmupTime>5</warmupTime>
+				<warmupTime>3.8</warmupTime>
 				<minRange>6</minRange>
 				<range>50</range>
 				<soundCast>Shot_TurretSniper</soundCast>

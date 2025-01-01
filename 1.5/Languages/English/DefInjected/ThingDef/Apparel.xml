@@ -45,8 +45,8 @@
   <GI_ChildApp.label>giant baby Clothes</GI_ChildApp.label>
   <GI_ChildApp.description>Sturdy clothing for a giant baby. No matter how strong a giant is, they still need protection in their early years.</GI_ChildApp.description>
   
-  <GI_ChildParka.label>giant kid parka</GI_ChildParka.label>
-  <GI_ChildParka.description>A parka for giant child, suitable for cold weather. It is made with several thick layers of fabric to ensure good protection.</GI_ChildParka.description>
+  <GI_ChildWinterCloak.label>giant kid winter cloak</GI_ChildWinterCloak.label>
+  <GI_ChildWinterCloak.description>A cloak for giant child, suitable for cold weather. It is made with several thick layers of fabric to ensure good protection.</GI_ChildWinterCloak.description>
 
   <GI_ChildPotHelmet.label>giant kid helmet</GI_ChildPotHelmet.label>
   <GI_ChildPotHelmet.description>A helmet made from a wide pot used by small race for cooking, perfectly fitting the head of a giant child.</GI_ChildPotHelmet.description>

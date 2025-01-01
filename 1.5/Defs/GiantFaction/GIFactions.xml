@@ -209,9 +209,5 @@
     <permanentEnemy>true</permanentEnemy>
   </FactionDef>
 
-  <StyleItemCategoryDef>
-    <defName>GIhair</defName>
-    <label>Giant hair</label>
-  </StyleItemCategoryDef>
 
 </Defs>

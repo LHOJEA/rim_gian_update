@@ -76,7 +76,8 @@
         </li>
 		<li Class="ScenPart_StartingThing_Defined">
           <def>StartingThing_Defined</def>
-          <thingDef>GI_Jackstones_granite</thingDef>
+          <!-- <thingDef>GI_Jackstones_granite</thingDef> -->
+          <thingDef>GI_Jackstones</thingDef>
         </li>
 		<li Class="ScenPart_StartingAnimal">
           <def>StartingAnimal</def>

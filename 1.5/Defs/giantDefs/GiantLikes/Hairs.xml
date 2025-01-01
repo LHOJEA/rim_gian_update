@@ -2,6 +2,17 @@
 <Defs>
 
   <HairDef>
+    <defName>GIbald</defName>
+    <label>Stonehead</label>
+    <styleGender>Any</styleGender>
+    <category>GIhair</category>
+    <noGraphic>true</noGraphic>
+    <styleTags>
+      <li>GIhair</li>
+    </styleTags>
+  </HairDef>
+
+  <HairDef>
     <defName>GIhair_A</defName>
     <label>Longhair</label>
     <styleGender>Female</styleGender>
@@ -55,5 +66,58 @@
         <li>GIhair</li>
     </styleTags>
   </HairDef>
+
+  <StyleItemCategoryDef>
+    <defName>GIhair</defName>
+    <label>Giant hair</label>
+  </StyleItemCategoryDef>
+
+  <BeardDef>
+    <defName>GInoBeard</defName>
+    <label>no beard giant</label>
+    <noGraphic>true</noGraphic>
+    <category>GIbeard</category>
+    <styleTags>
+      <li>GIbeard</li>
+    </styleTags>
+  </BeardDef>
+
+  <!-- <BeardDef>
+    <defName>GIbeard_A</defName>
+    <label>FullBeard</label>
+    <texPath>Giant/Giantlike/Beards/GIbeard_A</texPath>
+    <styleGender>Male</styleGender>
+    <category>GIbeard</category>
+    <styleTags>
+      <li>GIbeard</li>
+    </styleTags>
+  </BeardDef>
+
+  <BeardDef>
+    <defName>GIbeard_B</defName>
+    <label>GiantMustache</label>
+    <texPath>Giant/Giantlike/Beards/GIbeard_B</texPath>
+    <styleGender>Male</styleGender>
+    <category>GIbeard</category>
+    <styleTags>
+      <li>GIbeard</li>
+    </styleTags>
+  </BeardDef>
+
+  <BeardDef>
+    <defName>GIbeard_C</defName>
+    <label>WildlyBeard</label>
+    <texPath>Giant/Giantlike/Beards/GIbeard_C</texPath>
+    <styleGender>Male</styleGender>
+    <category>GIbeard</category>
+    <styleTags>
+      <li>GIbeard</li>
+    </styleTags>
+  </BeardDef> -->
+
+  <StyleItemCategoryDef>
+    <defName>GIbeard</defName>
+    <label>Giant beard</label>
+  </StyleItemCategoryDef>
   
 </Defs>

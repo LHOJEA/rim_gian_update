@@ -44,7 +44,7 @@
 	  <color>(155,145,147)</color>
     </graphicData>
     <soundInteract>Interact_BeatFire</soundInteract>
-	<costList>
+	  <costList>
       <BlocksGranite>25</BlocksGranite>
     </costList>
     <statBases>
@@ -191,6 +191,88 @@
       <stoppingPower>3.2</stoppingPower>
       <armorPenetrationBase>0.16</armorPenetrationBase>
       <speed>32</speed>
+    </projectile>
+  </ThingDef>
+
+  <!-- 일반 석재 공깃돌 -->
+  <ThingDef ParentName="GiantBaseRange">
+    <defName>GI_Jackstones</defName>
+    <label>crude jackstones</label>
+    <description>Jackstones of giants made of stony. A stone the size of the head of a small race.</description>
+    <graphicData>
+      <texPath>Giant/Weapons/Neolithic/GI_CrudeJackstones</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>2.6</drawSize>
+	  <!-- <color>(155,145,147)</color> -->
+    </graphicData>
+    <soundInteract>Interact_BeatFire</soundInteract>
+	  <stuffCategories>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>25</costStuffCount>
+    <statBases>
+      <WorkToMake>500</WorkToMake>
+      <Mass>4.8</Mass>
+      <AccuracyTouch>0.56</AccuracyTouch>
+      <AccuracyShort>0.41</AccuracyShort>
+      <AccuracyMedium>0.18</AccuracyMedium>
+      <AccuracyLong>0.08</AccuracyLong>
+      <RangedWeapon_Cooldown>3</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>Giant_Ranged</li>
+	  <li>GiantWild</li>
+    </weaponTags>
+    <recipeMaker>
+        <recipeUsers>
+		    <li>CraftingSpot</li>
+	    </recipeUsers>
+    </recipeMaker>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>GI_CrudeJackstones_Thrown</defaultProjectile>
+        <warmupTime>2.25</warmupTime>
+        <range>28.6</range>
+        <soundCast>Interact_BeatFire</soundCast>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stone fist</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>23</power>
+         <cooldownTime>2.8</cooldownTime>
+		 <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>25</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+    </tools>
+  </ThingDef>
+  <ThingDef ParentName="BaseProjectileNeolithic">
+    <defName>GI_CrudeJackstones_Thrown</defName>
+    <label>Jackstones</label>
+    <graphicData>
+      <texPath>Giant/Weapons/Neolithic/GI_CrudeJackstones_Thrown</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>1.0</drawSize>
+	  <!-- <color>(155,145,147)</color> -->
+    </graphicData>
+    <projectile>
+      <damageDef>RangedBlunt</damageDef>
+      <damageAmountBase>18</damageAmountBase>
+      <stoppingPower>3.2</stoppingPower>
+      <armorPenetrationBase>0.20</armorPenetrationBase>
+      <speed>34</speed>
     </projectile>
   </ThingDef>
   
@@ -522,6 +604,92 @@
       <stoppingPower>8.5</stoppingPower>
       <armorPenetrationBase>0.7</armorPenetrationBase>
       <speed>24</speed>
+    </projectile>
+  </ThingDef>
+
+  <!-- 거인 포환 -->
+  <ThingDef ParentName="GiantBaseRange">
+    <defName>GI_ThrowingShot</defName>
+    <label>throwing shot</label>
+    <description>Metallic shells made for smaller races. For giants, these serve as suitable projectiles to throw.</description>
+    <graphicData>
+      <texPath>Giant/Weapons/Medieval/GI_ThrowingShot</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>2.6</drawSize>
+	  <!-- <color>(155,145,147)</color> -->
+    </graphicData>
+    <soundInteract>Interact_BeatFire</soundInteract>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <costStuffCount>50</costStuffCount>
+    <statBases>
+      <WorkToMake>500</WorkToMake>
+      <Mass>6</Mass>
+      <AccuracyTouch>0.65</AccuracyTouch>
+      <AccuracyShort>0.50</AccuracyShort>
+      <AccuracyMedium>0.24</AccuracyMedium>
+      <AccuracyLong>0.11</AccuracyLong>
+      <RangedWeapon_Cooldown>3</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>Giant_Ranged</li>
+	    <li>GiantHunter</li>
+    </weaponTags>
+    <recipeMaker>
+      <researchPrerequisite>Smithing</researchPrerequisite>
+      <recipeUsers>
+        <li>FueledSmithy</li>
+      </recipeUsers>
+      <skillRequirements>
+			    <Crafting>5</Crafting>
+			</skillRequirements>
+    </recipeMaker>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>GI_ThrowingShot_Thrown</defaultProjectile>
+        <warmupTime>2.4</warmupTime>
+        <range>24.3</range>
+        <soundCast>Interact_BeatFire</soundCast>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>Shot fist</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>25</power>
+        <cooldownTime>2.8</cooldownTime>
+		    <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>25</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+    </tools>
+  </ThingDef>
+  <ThingDef ParentName="BaseProjectileNeolithic">
+    <defName>GI_ThrowingShot_Thrown</defName>
+    <label>Throwing Shat</label>
+    <graphicData>
+      <texPath>Giant/Weapons/Medieval/GI_ThrowingShot_Thrown</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>1.0</drawSize>
+	  <!-- <color>(155,145,147)</color> -->
+    </graphicData>
+    <projectile>
+      <damageDef>RangedBlunt</damageDef>
+      <damageAmountBase>32</damageAmountBase>
+      <stoppingPower>4.2</stoppingPower>
+      <armorPenetrationBase>0.45</armorPenetrationBase>
+      <speed>34</speed>
     </projectile>
   </ThingDef>
   
