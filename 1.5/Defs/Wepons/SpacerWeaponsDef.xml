@@ -69,7 +69,7 @@
 		<defName>GI_GiantSlugCannon</defName>
 		<label>giant SlugCannon</label>
 		<techLevel>Spacer</techLevel>
-		<description>A giant cannon built exclusively for giants. Smaller races modified heavy automatic turrets to create it. It takes a long time to fire, has terrible accuracy, and is quite cumbersome, but once it starts shooting, it can destroy anything.</description>
+		<description>A giant uranium slug cannon made exclusively for giants. Smaller races have modified the uranium slug cannon turret. \n\nIt's excessively large and heavy, making it difficult to use even for skilled giant marksmen, but once it hits, it can destroy anything.</description>
 		<graphicData>
 			<texPath>Giant/Weapons/Spacer/GI_GiantSlugCannon</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -114,7 +114,7 @@
 		</verbs>
 		<tools>
 			<li>
-				<label>handle</label>
+				<label>Cannon handle</label>
 				<capacities>
 				<li>Blunt</li>
 				</capacities>
@@ -122,7 +122,7 @@
 				<cooldownTime>3.2</cooldownTime>
 			</li>
 			<li>
-				<label>barrel</label>
+				<label>Cannon barrel</label>
 				<capacities>
 				<li>Blunt</li>
 				<li>Poke</li>
