@@ -5,9 +5,10 @@
 	<GIhair_A.label>롱헤어</GIhair_A.label>
 	<GIhair_B.label>포니테일</GIhair_B.label>
 	<GIhair_C.label>숏헤어</GIhair_C.label>
-	<GIhair_D.label>더벅머리</GIhair_D.label>
-	<GIhair_E.label>드레드록스</GIhair_E.label>
-	
+	<GIhair_D.label>사이드컷</GIhair_D.label>
+	<GIhair_X.label>와일드컷</GIhair_X.label>
+	<GIhair_Y.label>드레드록스</GIhair_Y.label>
+	<GIhair_Z.label>더벅머리</GIhair_Z.label>
 	
 	
 </LanguageData>

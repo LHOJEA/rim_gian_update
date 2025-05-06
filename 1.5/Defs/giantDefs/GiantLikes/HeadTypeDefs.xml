@@ -1,25 +1,44 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
     <HeadTypeDef ParentName="AverageBase">
-        <defName>Female_Average_1</defName>
-        <graphicPath>Giant/Giantlike/Heads/Female_Average_1</graphicPath>
+        <defName>Female_Average1</defName>
+        <graphicPath>Giant/Giantlike/Heads/Female_Average</graphicPath>
         <gender>Female</gender>
-    </HeadTypeDef>
-    
-    <HeadTypeDef ParentName="AverageBase">
-        <defName>Male_Average_1</defName>
-        <graphicPath>Giant/Giantlike/Heads/Male_Average_1</graphicPath>
-        <gender>Male</gender>
     </HeadTypeDef>
 
     <HeadTypeDef ParentName="AverageBase">
-        <defName>Baby_Average_1</defName>
-        <graphicPath>Giant/Giantlike/Heads/Baby/Baby_Average_1</graphicPath>
+        <defName>Female_Average2</defName>
+        <graphicPath>Giant/Giantlike/Heads/Female_Average1</graphicPath>
+        <gender>Female</gender>
     </HeadTypeDef>
 
     <!-- <HeadTypeDef ParentName="AverageBase">
-        <defName>BabyM_Average_1</defName>
-        <graphicPath>Giant/Giantlike/Heads/Baby/Baby_Average_1</graphicPath>
+        <defName>Female_Average_Child_1</defName>
+        <graphicPath>Giant/Giantlike/Heads/Child/Female_Average_1_Child</graphicPath>
+        <gender>Female</gender>
+    </HeadTypeDef> -->
+    
+    <HeadTypeDef ParentName="AverageBase">
+        <defName>Male_Average1</defName>
+        <graphicPath>Giant/Giantlike/Heads/Male_Average</graphicPath>
         <gender>Male</gender>
+    </HeadTypeDef>
+
+    <HeadTypeDef ParentName="AverageBase">
+        <defName>Male_Average2</defName>
+        <graphicPath>Giant/Giantlike/Heads/Male_Average1</graphicPath>
+        <gender>Male</gender>
+    </HeadTypeDef>
+
+    <!-- <HeadTypeDef ParentName="AverageBase">
+        <defName>Male_Average_Child_1</defName>
+        <graphicPath>Giant/Giantlike/Heads/Child/Male_Average_1_Child</graphicPath>
+        <gender>Male</gender>
+    </HeadTypeDef> -->
+
+    <!-- <HeadTypeDef ParentName="AverageBase">
+        <defName>Baby_Average_1</defName>
+        <graphicPath>Giant/Giantlike/Heads/Baby/Baby_Average_1</graphicPath>
+        <gender>None</gender>
     </HeadTypeDef> -->
 </Defs>

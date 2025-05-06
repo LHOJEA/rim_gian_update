@@ -14,11 +14,11 @@
         <parts>
 
         <!-- Config pages -->
-            <li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
-                <def>ConfigPage_ConfigureStartingPawns</def>
-                <pawnCount>3</pawnCount>
-                <pawnChoiceCount>8</pawnChoiceCount>
-            </li>
+        <li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
+          <def>ConfigPage_ConfigureStartingPawns</def>
+          <pawnCount>3</pawnCount>
+          <pawnChoiceCount>8</pawnChoiceCount>
+        </li>
 
         <!-- Player starting stuff spawn method-->
         <li Class="ScenPart_PlayerPawnsArriveMethod">
@@ -26,7 +26,7 @@
           <method>Standing</method>
         </li>
 		
-		<!-- Player pawns modifiers -->
+		    <!-- Player pawns modifiers -->
         <li Class="ScenPart_ForcedHediff">
           <def>ForcedHediff</def>
           <visible>false</visible>
@@ -35,6 +35,7 @@
           <hediff>Malnutrition</hediff>
           <severityRange>0.2~0.4</severityRange>
         </li>
+
         <li Class="ScenPart_SetNeedLevel">
           <def>SetNeedLevel</def>
           <visible>false</visible>
@@ -50,17 +51,18 @@
           <thingDef>Silver</thingDef>
           <count>200</count>
         </li>
+        
         <li Class="ScenPart_StartingThing_Defined">
           <def>StartingThing_Defined</def>
           <thingDef>Pemmican</thingDef>
           <count>400</count>
         </li>
-		<li Class="ScenPart_StartingThing_Defined">
+		    <li Class="ScenPart_StartingThing_Defined">
           <def>StartingThing_Defined</def>
           <thingDef>StoneSoup</thingDef>
           <count>25</count>
         </li>
-		<li Class="ScenPart_StartingThing_Defined">
+		    <li Class="ScenPart_StartingThing_Defined">
           <def>StartingThing_Defined</def>
           <thingDef>WoodenJerky</thingDef>
           <count>75</count>
@@ -74,17 +76,17 @@
           <def>StartingThing_Defined</def>
           <thingDef>GI_GiantClub</thingDef>
         </li>
-		<li Class="ScenPart_StartingThing_Defined">
+		    <li Class="ScenPart_StartingThing_Defined">
           <def>StartingThing_Defined</def>
-          <!-- <thingDef>GI_Jackstones_granite</thingDef> -->
-          <thingDef>GI_Jackstones</thingDef>
+          <thingDef>GI_Jackstones_granite</thingDef>
+          <!-- <thingDef>GI_Jackstones</thingDef> -->
         </li>
-		<li Class="ScenPart_StartingAnimal">
+		    <li Class="ScenPart_StartingAnimal">
           <def>StartingAnimal</def>
           <animalKind>HC_WoollyMammoth</animalKind>
           <count>1</count>
+          <bondToRandomPlayerPawnChance>1</bondToRandomPlayerPawnChance>
         </li>
-
         <!-- Scatter some things near player start -->
         <li Class="ScenPart_ScatterThingsNearPlayerStart">
           <def>ScatterThingsNearPlayerStart</def>
@@ -92,14 +94,13 @@
           <count>500</count>
         </li>
 
-		<!-- Game start dialog -->
+		    <!-- Game start dialog -->
         <li Class="ScenPart_GameStartDialog">
           <def>GameStartDialog</def>
           <text>New Giant Tribal.</text>
           <closeSound>GameStartSting</closeSound>
         </li>
  
-
       </parts>
     </scenario>
   </ScenarioDef>

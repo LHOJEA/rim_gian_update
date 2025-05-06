@@ -608,7 +608,6 @@
 				</capacities>
 				<power>53</power>
 				<cooldownTime>3</cooldownTime>
-
 			</li>
 		</tools>
 		<recipeMaker>
@@ -623,6 +622,90 @@
 		</recipeMaker>
 	</ThingDef>	
 
-	
+	<!-- 요툰 해머 -->
+	<ThingDef ParentName="GiantBaseMelee_Quality">
+		<defName>GI_JotunHammer</defName>
+		<label>JotunHammer</label>
+		<techLevel>Industrial</techLevel>
+		<description>It is a colossal warhammer forged with industrial smithing techniques. So massive, thick, and heavy that only a giant could wield it—its spiked head delivers unparalleled piercing power.산업 단조 기술로 제작된 초대형 워해머입니다. 거인밖에 못 쓸 정도로 거대하고, 두껍고, 무거우며, 헤드 스파이크의 관통력은 타의 추종을 불허합니다.</description>
+		<graphicData>
+			<texPath>Giant/Weapons/Industrial/GI_JotunHammer</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>2.8</drawSize>
+		</graphicData>
+		<uiIconScale>0.7</uiIconScale>
+		<costList>
+			 <Uranium>200</Uranium>
+			 <Plasteel>200</Plasteel>
+		</costList>
+		<weaponTags>
+			<li>Giant_Melee</li>
+		</weaponTags>
+		<statBases>
+			<WorkToMake>65000</WorkToMake>
+			<Mass>22</Mass>
+			<MaxHitPoints>300</MaxHitPoints>
+			<Flammability>0</Flammability>
+		</statBases>
+		<equippedStatOffsets>
+			<MiningSpeed>0.2</MiningSpeed>
+			<MiningYield>0.07</MiningYield>
+			<IncomingDamageFactor>-0.03</IncomingDamageFactor>
+			<MeleeDodgeChance>1.5</MeleeDodgeChance>
+		</equippedStatOffsets>
+		<equippedAngleOffset>-37</equippedAngleOffset>
+		<burnableByRecipe>true</burnableByRecipe>
+		<tools>
+			<li>
+				<label>head</label>
+				<labelUsedInLogging>false</labelUsedInLogging>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>45</power>
+				<cooldownTime>3.2</cooldownTime>
+				<surpriseAttack>
+                <extraMeleeDamages>
+                    <li>
+                      <def>Stun</def>
+                      <amount>16</amount>
+                    </li>
+                </extraMeleeDamages>
+                </surpriseAttack>
+			</li>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Poke</li>
+				</capacities>
+				<power>19</power>
+				<cooldownTime>2.6</cooldownTime>
+                <extraMeleeDamages>
+                    <li>
+                      <def>Stun</def>
+                      <amount>10</amount>
+                    </li>
+                </extraMeleeDamages>
+			</li>
+			<li>
+				<label>point</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>55</power>
+				<cooldownTime>3</cooldownTime>
+			</li>
+		</tools>
+		<recipeMaker>
+			<researchPrerequisite>Machining</researchPrerequisite>
+			<recipeUsers>
+				<li>ElectricSmithy</li>
+                <li>FueledSmithy</li>
+			</recipeUsers>
+			<skillRequirements>
+			    <Crafting>12</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+	</ThingDef>	
 	
 </Defs>

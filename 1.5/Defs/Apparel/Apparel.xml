@@ -173,7 +173,7 @@
         </apparel>
     </ThingDef>
 	
-	<!--- 거인 두정갑 -->
+<!--- 거인 두정갑 -->
     <ThingDef ParentName="GI_ApparelBase">
         <defName>GI_Brigandine</defName>
         <description>A huge armor finished with a thick iron plate attached to a sturdy leather armor.</description>
@@ -243,7 +243,7 @@
         </apparel>
     </ThingDef>
 	
-	<!--- 거인 커버올 -->
+<!--- 거인 커버올 -->
     <ThingDef ParentName="GI_ApparelBase">
         <defName>GI_Coverall</defName>
         <description>It's a full body suit for work. Large work clothes that fit the giant introduces excellent processing technology for temperature adaptation.</description>
@@ -297,10 +297,95 @@
             </tags>
         </apparel>
     </ThingDef>
+
+<!-- 요툰 그란트쉴드 -->
+	<ThingDef ParentName="GI_ApparelBase">
+        <defName>GI_JotunShield</defName>
+        <description>요툰쉴드. 화염방사기 동봉</description>
+        <label>Giant JotunShield</label>
+		<recipeMaker>
+            <unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
+            <researchPrerequisite>PlateArmor</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>10</Crafting>
+            </skillRequirements>
+			<recipeUsers Inherit="false">
+			    <li>ElectricSmithy</li>
+                <li>FueledSmithy</li>
+			</recipeUsers>
+		</recipeMaker>
+        <graphicData>
+            <texPath>Giant/Apparel/Shield/GI_JotunShield</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>1.5</drawSize>
+        </graphicData>
+        <uiIconScale>1.6</uiIconScale>
+		<techLevel>Industrial</techLevel>
+        <stuffCategories>
+            <li>Metallic</li>
+        </stuffCategories>
+        <costStuffCount>200</costStuffCount>
+        <costList>
+            <ComponentIndustrial>5</ComponentIndustrial>
+            <Steel>250</Steel>
+            <Uranium>50</Uranium>
+        </costList>
+        <statBases>
+            <MaxHitPoints>1200</MaxHitPoints>
+            <WorkToMake>9</WorkToMake>
+            <Mass>10.3</Mass>
+			<Flammability>0</Flammability>
+            <StuffEffectMultiplierArmor>1.2</StuffEffectMultiplierArmor>
+			<ArmorRating_Sharp>0.13</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.24</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.4</ArmorRating_Heat>
+            <EquipDelay>6</EquipDelay>
+            <!-- <StuffEffectMultiplierArmor>0.99</StuffEffectMultiplierArmor>
+			<ArmorRating_Sharp>0.12</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.21</ArmorRating_Blunt>
+            <Insulation_Cold>8</Insulation_Cold>
+            <Insulation_Heat>4.5</Insulation_Heat>
+			<EquipDelay>15</EquipDelay> -->
+        </statBases>
+		<equippedStatOffsets>
+            <SocialImpact>0.1</SocialImpact>
+            <MoveSpeed>-0.1</MoveSpeed>
+            <MeleeDodgeChance>-1.5</MeleeDodgeChance>
+            <IncomingDamageFactor>-0.70</IncomingDamageFactor>
+		    <Flammability>-0.50</Flammability>
+		</equippedStatOffsets>
+		<thingCategories>
+		    <li>ApparelArmor</li>
+		</thingCategories>
+        <apparel>
+            <countsAsClothingForNudity>false</countsAsClothingForNudity>
+            <careIfWornByCorpse>false</careIfWornByCorpse>
+            <wearPerDay>0</wearPerDay>
+            <bodyPartGroups>
+                <!-- <li>Shoulders</li>
+				<li>Torso</li> -->
+                <li>Torso</li>
+                <li>Neck</li>
+                <li>Shoulders</li>
+                <li>Arms</li>
+                <li>Legs</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Giant/Apparel/Shield/GI_JotunShield</wornGraphicPath>
+            <layers>
+                <li>GI_Shield</li>
+            </layers>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+            <tags>
+                <li>GiantStory</li>
+            </tags>
+        </apparel>
+    </ThingDef>
 	
 ----------------------------------------------------모자-------------------------------------------------
 	
-	<!-- 거인 그늘막 -->
+<!-- 거인 그늘막 -->
 	<ThingDef ParentName="GI_HatBase">
         <defName>GI_Shadehat</defName>
         <description>It protects the giant's head in the hot sun.</description>
@@ -360,7 +445,7 @@
     </ThingDef>
 
 
-    <!-- 거인 솥뚜껑 -->
+<!-- 거인 솥뚜껑 -->
 	<ThingDef ParentName="GI_HatBase">
         <defName>GI_Potlid</defName>
         <description>The lid of the giant cauldron for feeding many small race fits perfectly on the giant's head.</description>
@@ -418,7 +503,7 @@
         </apparel>
     </ThingDef>
 
-    <!-- 트럼보두개골 -->
+<!-- 트럼보두개골 -->
 	<ThingDef ParentName="GI_HatBase">
         <defName>GI_Thrumboskull</defName>
         <description>The great creature Thrumbo's skull is awe-inspiring and terrifying.</description>
@@ -479,7 +564,7 @@
         </apparel>
     </ThingDef>
 
-    <!-- 마스크 앤 헬름여 -->
+<!-- 마스크 앤 헬름여 -->
 	<ThingDef ParentName="GI_HatBase">
         <defName>GI_MaskandhelmF</defName>
         <description>It's a huge helmet with a mask modeled after a beautiful woman's face.</description>
@@ -542,7 +627,7 @@
     </ThingDef>
 
 
-    <!-- 마스크 앤 헬름남 -->
+<!-- 마스크 앤 헬름남 -->
 	<ThingDef ParentName="GI_HatBase">
         <defName>GI_MaskandhelmM</defName>
         <description>It's a huge helmet with a mask modeled after a beautiful man's face.</description>
@@ -606,7 +691,7 @@
   
   ----------------------------------------------------장식-------------------------------------------------
   
-  <!-- 인장 -->
+<!-- 인장 -->
 	<ThingDef ParentName="GI_HatBase">
         <defName>GI_Insignia</defName>
         <description>Many giants dress up the flag of a small captured race like an ornament.</description>
@@ -667,7 +752,7 @@
         </apparel>
     </ThingDef>
 	
-	<!-- 뼈장식 -->
+<!-- 뼈장식 -->
 	<ThingDef ParentName="GI_HatBase">
         <defName>GI_Bonepauldron</defName>
         <description>The bones and ivory of hard animals create fear.</description>
@@ -729,7 +814,7 @@
         </apparel>
     </ThingDef>
 	
-	<!-- 전리품 -->
+<!-- 전리품 -->
 	<ThingDef ParentName="GI_HatBase">
         <defName>GI_Booty</defName>
         <description>The metal taken from the small race has a fairly effective defense effect.</description>
@@ -786,7 +871,7 @@
         </apparel>
     </ThingDef>
 	
-	<!-- 견갑 -->
+<!-- 견갑 -->
 	<ThingDef ParentName="GI_HatBase">
         <defName>GI_Pauldron</defName>
         <description>Thick, huge, and majestic giant's shoulder armor.</description>
@@ -848,7 +933,7 @@
     </ThingDef>
 	
 	
-	<!-- 벌레껍질 -->
+<!-- 벌레껍질 -->
 	<ThingDef ParentName="GI_HatBase">
         <defName>GI_Mechashell</defName>
         <description>It's a metal skirt that follows the shell shape of a giant mechanoid.</description>
@@ -910,7 +995,5 @@
             </tags>
         </apparel>
     </ThingDef>
-	
-    
 
 </Defs>

@@ -2,17 +2,9 @@
 <LanguageData>
 
 
-	<!-- <GI_Drill.label>Gigantic Drill</GI_Drill.label>
+	<GI_Drill.label>Gigantic Drill</GI_Drill.label>
 	<GI_Drill.dedication>Oversized handheld drill designed for Giants. Combat-ready shield can effectively block attacks.</GI_Drill.dedication>
-	<GI_Drill.tools.0.label>Drill head</GI_Drill.tools.0.label> -->
-	<GI_Drill.label>Giant drill</GI_Drill.label>
-	<GI_Drill.description>A giant hand drill designed exclusively for giants. Shields attached for use in combat effectively prevent attacks.</GI_Drill.description>
-	<GI_Drill.tools.0.label>drill bit</GI_Drill.tools.0.label>
-
-	<GI_GiantSlugCannon.label>GI_GiantSlugCannon</GI_GiantSlugCannon.label>
-	<GI_GiantSlugCannon.description>A giant uranium slug cannon made exclusively for giants. Smaller races have modified the uranium slug cannon turret. \n\nIt's excessively large and heavy, making it difficult to use even for skilled giant marksmen, but once it hits, it can destroy anything.</GI_GiantSlugCannon.description>
-	<GI_GiantSlugCannon.tools.0.label>Cannon handle</GI_GiantSlugCannon.tools.0.label>
-	<GI_GiantSlugCannon.tools.1.label>Cannon barrel</GI_GiantSlugCannon.tools.1.label>
+	<GI_Drill.tools.0.label>Drill head</GI_Drill.tools.0.label>
 	
 
 </LanguageData>
