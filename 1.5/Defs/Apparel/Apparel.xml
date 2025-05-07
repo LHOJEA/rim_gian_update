@@ -301,7 +301,7 @@
 <!-- 요툰 그란트쉴드 -->
 	<ThingDef ParentName="GI_ApparelBase">
         <defName>GI_JotunShield</defName>
-        <description>요툰쉴드. 화염방사기 동봉</description>
+        <description>It is a giant’s shield engraved with the likeness of a dragon’s face. With this shield equipped, the giant can withstand even cannon-fired boulders without faltering. It is fitted with a device that sprays flammable fuel under high pressure, unleashing a blaze like a dragon’s breath.용의 얼굴을 본뜬 조형이 새겨진 거인의 방패입니다. 이 방패를 장비한 거인은 대포로 쏘아진 바위를 맞아도 버티고 설 수 있습니다. 인화성 연료를 고압으로 분사하는 장치가 탑재되어 용의 숨결 같은 화염을 뿌릴 수도 있습니다.</description>
         <label>Giant JotunShield</label>
 		<recipeMaker>
             <unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
@@ -340,12 +340,6 @@
 			<ArmorRating_Blunt>0.24</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.4</ArmorRating_Heat>
             <EquipDelay>6</EquipDelay>
-            <!-- <StuffEffectMultiplierArmor>0.99</StuffEffectMultiplierArmor>
-			<ArmorRating_Sharp>0.12</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.21</ArmorRating_Blunt>
-            <Insulation_Cold>8</Insulation_Cold>
-            <Insulation_Heat>4.5</Insulation_Heat>
-			<EquipDelay>15</EquipDelay> -->
         </statBases>
 		<equippedStatOffsets>
             <SocialImpact>0.1</SocialImpact>
