@@ -3,11 +3,12 @@
 
 
 	<GIhair_A.label>Long</GIhair_A.label>
-	<GIhair_B.label>Shaggy cuts</GIhair_B.label>
-	<GIhair_C.label>Ponytail</GIhair_C.label>
-	<GIhair_D.label>Dreadlocks</GIhair_D.label>
-	<GIhair_E.label>Short cuts</GIhair_E.label>
-	
+	<GIhair_B.label>Ponytail</GIhair_B.label>
+	<GIhair_C.label>Short cuts</GIhair_C.label>
+	<GIhair_D.label>Side cuts</GIhair_D.label>
+	<GIhair_X.label>Wild cuts</GIhair_X.label>
+	<GIhair_Y.label>Dreadlocks</GIhair_Y.label>
+	<GIhair_Z.label>Shaggy cuts</GIhair_Z.label>
 	
 	
 </LanguageData>

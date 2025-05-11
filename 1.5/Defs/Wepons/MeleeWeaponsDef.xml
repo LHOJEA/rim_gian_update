@@ -622,38 +622,43 @@
 		</recipeMaker>
 	</ThingDef>	
 
-	<!-- 요툰 해머 -->
+	<!-- 요툰 해머와 실드 -->
 	<ThingDef ParentName="GiantBaseMelee_Quality">
-		<defName>GI_JotunHammer</defName>
-		<label>JotunHammer</label>
-		<techLevel>Industrial</techLevel>
-		<description>It is a colossal warhammer forged with industrial smithing techniques. So massive, thick, and heavy that only a giant could wield it—its spiked head delivers unparalleled piercing power.산업 단조 기술로 제작된 초대형 워해머입니다. 거인밖에 못 쓸 정도로 거대하고, 두껍고, 무거우며, 헤드 스파이크의 관통력은 타의 추종을 불허합니다.</description>
+		<defName>GI_JotunHammerAndShield</defName>
+		<label>JotunHammer and Shield</label>
+		<techLevel>Medieval</techLevel>
+		<description>A massive warhammer and shield set designed for giants. The spiked head of the warhammer delivers unmatched piercing force. The shield, engraved with a dragon's face, allows the bearer to endure direct hits from bombard boulders.</description>
 		<graphicData>
-			<texPath>Giant/Weapons/Industrial/GI_JotunHammer</texPath>
+			<texPath>Giant/Weapons/Medieval/GI_JotunHammer</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>2.8</drawSize>
+			<drawSize>4.5</drawSize>
 		</graphicData>
 		<uiIconScale>0.7</uiIconScale>
+		<stuffCategories>
+            <li>Metallic</li>
+        </stuffCategories>
+        <costStuffCount>150</costStuffCount>
 		<costList>
-			 <Uranium>200</Uranium>
-			 <Plasteel>200</Plasteel>
+			 <Uranium>220</Uranium>
+			 <Plasteel>170</Plasteel>
 		</costList>
 		<weaponTags>
 			<li>Giant_Melee</li>
 		</weaponTags>
 		<statBases>
 			<WorkToMake>65000</WorkToMake>
-			<Mass>22</Mass>
-			<MaxHitPoints>300</MaxHitPoints>
+			<Mass>40</Mass>
+			<MaxHitPoints>550</MaxHitPoints>
 			<Flammability>0</Flammability>
 		</statBases>
 		<equippedStatOffsets>
-			<MiningSpeed>0.2</MiningSpeed>
+			<MoveSpeed>-0.3</MoveSpeed>
+			<MiningSpeed>0.15</MiningSpeed>
 			<MiningYield>0.07</MiningYield>
-			<IncomingDamageFactor>-0.03</IncomingDamageFactor>
-			<MeleeDodgeChance>1.5</MeleeDodgeChance>
+			<IncomingDamageFactor>-0.30</IncomingDamageFactor>
+			<MeleeDodgeChance>-1.5</MeleeDodgeChance>
 		</equippedStatOffsets>
-		<equippedAngleOffset>-37</equippedAngleOffset>
+		<equippedAngleOffset>-55</equippedAngleOffset>
 		<burnableByRecipe>true</burnableByRecipe>
 		<tools>
 			<li>
@@ -662,8 +667,9 @@
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>45</power>
-				<cooldownTime>3.2</cooldownTime>
+				<power>64</power>
+				<armorPenetration>0.90</armorPenetration>
+				<cooldownTime>3.8</cooldownTime>
 				<surpriseAttack>
                 <extraMeleeDamages>
                     <li>
@@ -674,30 +680,32 @@
                 </surpriseAttack>
 			</li>
 			<li>
-				<label>handle</label>
+				<label>blade</label>
 				<capacities>
-					<li>Poke</li>
+					<li>Cut</li>
 				</capacities>
-				<power>19</power>
-				<cooldownTime>2.6</cooldownTime>
+				<power>28</power>
+				<armorPenetration>0.38</armorPenetration>
+				<cooldownTime>1.7</cooldownTime>
+			</li>
+			<li>
+				<label>Bash</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>38</power>
+				<cooldownTime>3.0</cooldownTime>
+				<armorPenetration>0.46</armorPenetration>
                 <extraMeleeDamages>
                     <li>
                       <def>Stun</def>
-                      <amount>10</amount>
+                      <amount>30</amount>
                     </li>
                 </extraMeleeDamages>
 			</li>
-			<li>
-				<label>point</label>
-				<capacities>
-					<li>Stab</li>
-				</capacities>
-				<power>55</power>
-				<cooldownTime>3</cooldownTime>
-			</li>
 		</tools>
 		<recipeMaker>
-			<researchPrerequisite>Machining</researchPrerequisite>
+			<researchPrerequisite>PlateArmor</researchPrerequisite>
 			<recipeUsers>
 				<li>ElectricSmithy</li>
                 <li>FueledSmithy</li>

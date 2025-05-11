@@ -50,6 +50,16 @@
 	<GI_Ram.description>An battering ram, which would be considered a oversized siege weapon for mankind. The head is shaped after mammoth skull, and war painted to terrify those who face it. Its massive case provides extra protection.</GI_Ram.description>
 	<GI_Ram.tools.0.label>Body</GI_Ram.tools.0.label>
 	<GI_Ram.tools.1.label>Ramming head</GI_Ram.tools.1.label>
-	
+
+
+	<GI_JotunHammerAndShield.label>JotunHammer and Shield</GI_JotunHammerAndShield.label>
+	<GI_JotunHammerAndShield.description>A massive warhammer and shield set designed for giants. The spiked head of the warhammer delivers unmatched piercing force. The shield, engraved with a dragon's face, allows the bearer to endure direct hits from bombard boulders.</GI_JotunHammerAndShield.description>
+	<GI_JotunHammerAndShield.tools.0.label>head</GI_JotunHammerAndShield.tools.0.label>
+	<GI_JotunHammerAndShield.tools.1.label>blade</GI_JotunHammerAndShield.tools.1.label>
+	<GI_JotunHammerAndShield.tools.2.label>Bash</GI_JotunHammerAndShield.tools.2.label>
+
+
+	<JotunShieldBurner.label>jotun shield burner</JotunShieldBurner.label>
+	<JotunShieldBurner.description>Expend a pressurized flammable fuel charge to create a massive cone of flame.</JotunShieldBurner.description>
 
 </LanguageData>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-    <ApparelLayerDef>
+    <!-- <ApparelLayerDef>
         <defName>GI_Shield</defName>
         <label>GiantShield</label>
         <drawOrder>190</drawOrder>
-    </ApparelLayerDef>
+    </ApparelLayerDef> -->
   
 </Defs>

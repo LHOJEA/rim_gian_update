@@ -299,9 +299,9 @@
     </ThingDef>
 
 <!-- 요툰 그란트쉴드 -->
-	<ThingDef ParentName="GI_ApparelBase">
+	<!-- <ThingDef ParentName="GI_ApparelBase">
         <defName>GI_JotunShield</defName>
-        <description>It is a giant’s shield engraved with the likeness of a dragon’s face. With this shield equipped, the giant can withstand even cannon-fired boulders without faltering. It is fitted with a device that sprays flammable fuel under high pressure, unleashing a blaze like a dragon’s breath.용의 얼굴을 본뜬 조형이 새겨진 거인의 방패입니다. 이 방패를 장비한 거인은 대포로 쏘아진 바위를 맞아도 버티고 설 수 있습니다. 인화성 연료를 고압으로 분사하는 장치가 탑재되어 용의 숨결 같은 화염을 뿌릴 수도 있습니다.</description>
+        <description>It is a giant’s shield engraved with the likeness of a dragon’s face. With this shield equipped, the giant can withstand even cannon-fired boulders without faltering. It is fitted with a device that sprays flammable fuel under high pressure, unleashing a blaze like a dragon’s breath.</description>
         <label>Giant JotunShield</label>
 		<recipeMaker>
             <unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
@@ -345,7 +345,7 @@
             <SocialImpact>0.1</SocialImpact>
             <MoveSpeed>-0.1</MoveSpeed>
             <MeleeDodgeChance>-1.5</MeleeDodgeChance>
-            <IncomingDamageFactor>-0.70</IncomingDamageFactor>
+            <IncomingDamageFactor>-0.7</IncomingDamageFactor>
 		    <Flammability>-0.50</Flammability>
 		</equippedStatOffsets>
 		<thingCategories>
@@ -356,8 +356,6 @@
             <careIfWornByCorpse>false</careIfWornByCorpse>
             <wearPerDay>0</wearPerDay>
             <bodyPartGroups>
-                <!-- <li>Shoulders</li>
-				<li>Torso</li> -->
                 <li>Torso</li>
                 <li>Neck</li>
                 <li>Shoulders</li>
@@ -375,7 +373,118 @@
                 <li>GiantStory</li>
             </tags>
         </apparel>
+        <comps Inherit="False">
+            <li Class="CompProperties_EquippableAbilityReloadable">
+                <abilityDef>IncineratorBurner</abilityDef>
+                <maxCharges>1</maxCharges>
+                <soundReload>Standard_Reload</soundReload>
+                <chargeNoun>burner charge</chargeNoun>
+                <ammoDef>Bioferrite</ammoDef>
+                <ammoCountPerCharge>10</ammoCountPerCharge>
+                <baseReloadTicks>60</baseReloadTicks>
+            </li>
+            <li Class="CompProperties_Forbiddable"/>
+            <li Class="CompProperties_Styleable"/>
+        </comps>
+        <verbs>
+            <li>
+                <verbClass>Verb_ArcSprayIncinerator</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <warmupTime>1.2</warmupTime>
+                <range>18.9</range>
+                <minRange>6.9</minRange>
+                <beamFullWidthRange>11</beamFullWidthRange>
+                <burstShotCount>20</burstShotCount>
+                <showBurstShotStats>false</showBurstShotStats>
+                <requireLineOfSight>true</requireLineOfSight>
+                <beamWidth>6</beamWidth>
+                <ticksBetweenBurstShots>2</ticksBetweenBurstShots>
+                <beamDamageDef>Flame</beamDamageDef>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+                <soundCastBeam>Flamethrower_Firing</soundCastBeam>
+                <beamGroundFleckDef>Fleck_IncineratorBeamBurn</beamGroundFleckDef>
+                <beamFleckChancePerTick>0.32</beamFleckChancePerTick>
+                <beamMaxDeviation>0.5</beamMaxDeviation>
+                <beamCurvature>0</beamCurvature>
+                <beamEndEffecterDef>IncineratorBeam_End</beamEndEffecterDef> 
+                <beamChanceToStartFire>0.85</beamChanceToStartFire>
+                <beamFireSizeRange>0.55~0.85</beamFireSizeRange>
+                <beamStartOffset>.5</beamStartOffset>
+                <beamHitsNeighborCells>true</beamHitsNeighborCells>
+                <beamCantHitWithinMinRange>true</beamCantHitWithinMinRange>
+                <beamHitsNeighborCellsRequiresLOS>true</beamHitsNeighborCellsRequiresLOS>
+                <beamSetsGroundOnFire>true</beamSetsGroundOnFire>
+                <ai_BeamIsIncendiary>true</ai_BeamIsIncendiary>
+                <beamLineFleckDef>Fleck_IncineratorBeamSmoke</beamLineFleckDef>
+                <highlightColor>(180, 60, 10)</highlightColor>
+                <secondaryHighlightColor>(220, 210, 20)</secondaryHighlightColor>
+                <beamLineFleckChanceCurve>
+                <points>
+                    <li>(0, 0)</li>
+                    <li>(0.65, 0.02)</li>
+                    <li>(1, .5)</li>
+                </points>
+                </beamLineFleckChanceCurve>
+                <targetParams>
+                <canTargetLocations>true</canTargetLocations>
+                </targetParams>
+                <flammabilityAttachFireChanceCurve>
+                <points>
+                    <li>(0.6, 0)</li>
+                    <li>(0.7, 0.2)</li>
+                    <li>(1.2, 0.8)</li>
+                </points>
+                </flammabilityAttachFireChanceCurve>
+                <rangedFireRulepack>Combat_RangedFlamethrower</rangedFireRulepack>
+            </li>
+        </verbs>
     </ThingDef>
+
+    <AbilityDef>
+        <defName>JotunShieldBurner</defName>
+        <label>jotun shield burner</label>
+        <description>Expend a pressurized flammable fuel charge to create a massive cone of flame.</description>
+        <iconPath>UI/Abilities/Burner</iconPath>
+        <aiCanUse>true</aiCanUse>
+        <ai_IsIncendiary>true</ai_IsIncendiary>
+        <warmupStartSound>FireSpew_Warmup</warmupStartSound>
+        <verbProperties>
+        <verbClass>Verb_CastAbility</verbClass>
+        <range>18.9</range>
+        <warmupTime>1.2</warmupTime>
+        <soundCast>FireSpew_Resolve</soundCast>
+        <targetParams>
+            <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <flammabilityAttachFireChanceCurve>
+            <points>
+            <li>(0.2, 0)</li>
+            <li>(1, 1)</li>
+            </points>
+        </flammabilityAttachFireChanceCurve>
+        </verbProperties>
+        <comps>
+        <li Class="CompProperties_AbilityFireSpew">
+            <range>18.9</range>
+            <lineWidthEnd>7</lineWidthEnd>
+            <filthDef>Filth_Ash</filthDef>
+            <damAmount>16</damAmount>
+            <canHitFilledCells>true</canHitFilledCells>
+        </li>
+        <li Class="CompProperties_AbilityBurner">
+            <numStreams>21</numStreams>
+            <range>20</range>
+            <coneSizeDegrees>16</coneSizeDegrees>
+            <moteDef>Mote_IncineratorBurst</moteDef>
+            <barrelOffsetDistance>8</barrelOffsetDistance>
+            <sizeReductionDistanceThreshold>10</sizeReductionDistanceThreshold>
+            <lifespanNoise>40</lifespanNoise>
+            <rangeNoise>.4</rangeNoise>
+            <effecterDef>BurnerUsed</effecterDef>
+        </li>
+        </comps>
+    </AbilityDef> -->
 	
 ----------------------------------------------------모자-------------------------------------------------
 	

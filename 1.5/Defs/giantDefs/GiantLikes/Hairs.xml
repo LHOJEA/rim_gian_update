@@ -4,7 +4,7 @@
   <HairDef>
     <defName>GIbald</defName>
     <label>Stonehead</label>
-    <styleGender>Any</styleGender>
+    <styleGender>Male</styleGender>
     <category>GIhair</category>
     <noGraphic>true</noGraphic>
     <styleTags>
@@ -113,9 +113,9 @@
     <styleTags>
       <li>GIbeard</li>
     </styleTags>
-  </BeardDef>
+  </BeardDef> -->
 
-  <BeardDef>
+  <!-- <BeardDef>
     <defName>GIbeard_B</defName>
     <label>GiantMustache</label>
     <texPath>Giant/Giantlike/Beards/GIbeard_B</texPath>

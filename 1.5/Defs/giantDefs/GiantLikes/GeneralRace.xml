@@ -437,7 +437,7 @@
 				<li>GI_Powerhelmet</li>
 				<li>GI_Coverall</li>
 				<li>GI_Mechashell</li>
-				<li>GI_JotunShield</li>
+				<!-- <li>GI_JotunShield</li> -->
 				<li MayRequire="Ludeon.RimWorld.Biotech">GI_ChildApp</li>
 				<li MayRequire="Ludeon.RimWorld.Biotech">GI_ChildWinterCloak</li>
 				<li MayRequire="Ludeon.RimWorld.Biotech">GI_ChildPotHelmet</li>
@@ -468,7 +468,7 @@
 				<li>GI_Rockpillar_Marble</li>
 				<li>GI_Ram</li>
 				<li>GI_Titansword</li>
-				<li>GI_JotunHammer</li>
+				<li>GI_JotunHammerAndShield</li>
 				<li>GI_Lightningjavelin</li>
 				<li>GI_Drill</li>
 				<li>GI_GiantSlugCannon</li>

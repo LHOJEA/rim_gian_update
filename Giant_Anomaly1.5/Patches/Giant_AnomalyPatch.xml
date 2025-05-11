@@ -1,81 +1,48 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
+
 	<Operation Class="PatchOperationFindMod">
 		<mods>
 			<li>Anomaly</li>
 		</mods>
-		<match Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName = "GI_JotunShield"]</xpath>
-			<value>
-				<comps>
-					<li Class="CompProperties_AbilityFireSpew">
-						<range>18.9</range>
-						<lineWidthEnd>7</lineWidthEnd>
-						<filthDef>Filth_Ash</filthDef>
-						<damAmount>16</damAmount>
-						<canHitFilledCells>true</canHitFilledCells>
-					</li>
-					<li Class="CompProperties_AbilityBurner">
-						<explosiveRadius>4.5</explosiveRadius>
-						<explosiveDamageType>Bomb</explosiveDamageType>
-						<requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
-					</li>
-				</comps>
-				<verbs>
-					<li>
-						<label>Cyclops Mortar launch</label>
-						<verbClass>Verb_LaunchProjectileStatic</verbClass>
-						<hasStandardCommand>true</hasStandardCommand>
-						<onlyManualCast>True</onlyManualCast>
-						<requireLineOfSight>false</requireLineOfSight>
-						<minRange>12.6</minRange>
-						<range>500</range>
-						<forcedMissRadius>12</forcedMissRadius>
-						<warmupTime>4.5</warmupTime>
-						<noiseRadius>8</noiseRadius>
-						<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
-						<soundCast>Mortar_LaunchA</soundCast>
-						<soundCastTail>GunTail_Heavy</soundCastTail>
-						<muzzleFlashScale>16</muzzleFlashScale>
-						<drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
-						<targetParams>
-							<canTargetLocations>true</canTargetLocations>
-						</targetParams>
-						<defaultProjectile>Proj_Cyclops_Mortar</defaultProjectile>
-					</li>
-				</verbs>
-			</value>
-		</match>
-	</Operation>
-
-	<Operation Class="PatchOperationFindMod">
-		<mods>
-			<li>Royalty</li>
-		</mods>
-		<match Class="PatchOperationAdd">
-			<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="HC_Giant"]/alienRace/raceRestriction/apparelList</xpath>
-			<value>
-				<li>GI_Megajetpack</li>
-			</value>
-		</match>
-	</Operation>
-
-	<!-- 거인을 부족 초집중 유형에 추가.
-	Artistic 제한은 X, 기본 Tribal 배경과 예술품 초집중은 양립 불가라 함. 거인이 Tribal은 아니지만 오류 여부는 확인 필요. -> 안 나는듯
-	거인의 정신 감응력(PsychicSensitivity)은 기본 0이긴 하지만 로열티 임플란트트 초능력 증진기는 감응력을 +25% 상승시켜서 거인도 사이캐스터가 될 수 있게 된다.
-	바이오테크가 있을 경우 거인의 정신 감응력 설정이 유전자로 대체됨. -->
-	<Operation Class="PatchOperationFindMod">
-		<mods>
-			<li>Royalty</li>
-		</mods>
-		<match Class="PatchOperationAdd">
-			<xpath>Defs/MeditationFocusDef[defName="Natural"]/requiredBackstoriesAny</xpath>
-			<value>
-				<li>
-					<categoryName>GiantStory</categoryName>
-					<slot>Childhood</slot>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName = "GI_JotunHammerAndShield"]/description</xpath>
+					<value>
+						<description>A massive warhammer and shield set designed for giants. The spiked head of the warhammer delivers unmatched piercing force. The shield, engraved with a dragon's face, allows the bearer to endure direct hits from bombard boulders.\n\nIt also includes a high-pressure fuel sprayer that emits flame similar to a dragon's breath.</description>
+					</value>
 				</li>
-			</value>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "GI_JotunHammerAndShield"]</xpath>
+					<value>
+						<comps Inherit="False">
+							<li Class="CompProperties_EquippableAbilityReloadable">
+								<abilityDef>JotunShieldBurner</abilityDef>
+								<maxCharges>10</maxCharges>
+								<soundReload>Standard_Reload</soundReload>
+								<chargeNoun>burner charge</chargeNoun>
+								<ammoDef>Chemfuel</ammoDef>
+								<ammoCountPerCharge>100</ammoCountPerCharge>
+								<baseReloadTicks>60</baseReloadTicks>
+							</li>
+							<li Class="CompProperties_Forbiddable"/>
+							<li Class="CompProperties_Styleable"/>
+							<li Class="CompProperties_Biocodable"/>
+							<li>
+								<compClass>CompQuality</compClass>
+							</li>
+							<li Class="CompProperties_Art">
+								<nameMaker>NamerArtWeaponGun</nameMaker>
+								<descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+								<minQualityForArtistic>Excellent</minQualityForArtistic>
+							</li>
+						</comps>
+					</value>
+				</li>
+			</operations>
 		</match>
 	</Operation>
+
+
 </Patch>

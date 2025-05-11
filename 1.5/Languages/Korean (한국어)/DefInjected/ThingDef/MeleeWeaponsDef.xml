@@ -57,6 +57,17 @@
 	<GI_Titansword.0.label>몸체</GI_Titansword.0.label>
 	<GI_Titansword.1.label>칼날</GI_Titansword.1.label>
 	<GI_Titansword.2.label>칼끝</GI_Titansword.2.label>
+
+
+	<GI_JotunHammerAndShield.label>요툰 해머 실드</GI_JotunHammerAndShield.label>
+	<GI_JotunHammerAndShield.description>거인 전용의 초대형 워해머와 방패 세트입니다. 거대하고, 두껍고, 무거우며, 워해머 스파이크의 관통력은 타의 추종을 불허합니다. 용의 형상을 본뜬 조형이 새겨진 방패는 착용자를 용처럼 튼튼하게 만들어, 대포의 바윗돌을 맞아도 버티고 설 수 있습니다.</GI_JotunHammerAndShield.description>
+	<GI_JotunHammerAndShield.tools.0.label>머리</GI_JotunHammerAndShield.tools.0.label>
+	<GI_JotunHammerAndShield.tools.1.label>칼날</GI_JotunHammerAndShield.tools.1.label>
+	<GI_JotunHammerAndShield.tools.2.label>배쉬</GI_JotunHammerAndShield.tools.2.label>
 	
+	
+	<JotunShieldBurner.label>요툰 실드 화염방사</JotunShieldBurner.label>
+	<JotunShieldBurner.description>충전된 가연성 연료를 고압으로 분사하여 거대한 원추형의 불꽃을 일으킵니다.</JotunShieldBurner.description>
+
 
 </LanguageData>
