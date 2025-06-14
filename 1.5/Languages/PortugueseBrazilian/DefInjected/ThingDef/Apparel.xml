@@ -42,6 +42,25 @@
   <GI_Pauldron.label>Pauldron Gigante</GI_Pauldron.label>
   <GI_Pauldron.description>Gigantesca e majestosa Armadura de ombro para Gigantes.</GI_Pauldron.description>
   
+  <GI_ChildApp.label>Roupas de bebê gigante</GI_ChildApp.label>
+  <GI_ChildApp.description>Roupas resistentes para um bebê gigante. Não importa o quão forte seja, ainda precisa de proteção nos primeiros anos.</GI_ChildApp.description>
+  
+  <GI_ChildWinterCloak.label>Capote de inverno para criança gigante</GI_ChildWinterCloak.label>
+  <GI_ChildWinterCloak.description>Um capote feito para uma criança gigante, adequado para o clima frio. Várias camadas grossas de tecido garantem boa proteção.</GI_ChildWinterCloak.description>
 
+  <GI_ChildPotHelmet.label>Capacete de panela gigante</GI_ChildPotHelmet.label>
+  <GI_ChildPotHelmet.description>Um capacete improvisado feito de uma grande panela usada por pequenas pessoas. Encaixa-se perfeitamente na cabeça de uma criança gigante.</GI_ChildPotHelmet.description>
+
+  <GI_JotunArmor.label>Armadura Jotun</GI_JotunArmor.label>
+  <GI_JotunArmor.description>Uma armadura gigantesca forjada com placas sobrepostas, como escamas de dragão. O peitoral é dezenas de vezes mais pesado que o das pessoas pequenas e oferece resistência excepcional a quase todos os ataques e ao fogo.</GI_JotunArmor.description>
+
+  <GI_JotunHelmetF.label>Elmo Jotun feminino</GI_JotunHelmetF.label>
+  <GI_JotunHelmetF.description>Um elmo de gigante feito com placas em forma de escamas, moldado na imagem de um dragão. Seu design impressionante inspira admiração em todos que o veem.\n\nProjetado para mulheres.</GI_JotunHelmetF.description>
+
+  <GI_JotunHelmetM.label>Elmo Jotun masculino</GI_JotunHelmetM.label>
+  <GI_JotunHelmetM.description>Um elmo de gigante feito com placas em forma de escamas, moldado na imagem de um dragão. Seu design impressionante inspira admiração em todos que o veem. \n\nProjetado para homens.</GI_JotunHelmetM.description>
+
+  <GI_JotunPauldron.label>Ombreira Jotun</GI_JotunPauldron.label>
+  <GI_JotunPauldron.description>Par de ombreiras majestosas feitas de placas espessas. Espinhos pontiagudos se erguem como garras e presas de dragão, aumentando a imponência do usuário e fornecendo defesa eficaz.</GI_JotunPauldron.description>
   
 </LanguageData>

@@ -437,6 +437,10 @@
 				<li>GI_Powerhelmet</li>
 				<li>GI_Coverall</li>
 				<li>GI_Mechashell</li>
+				<li>GI_JotunArmor</li>
+				<li>GI_JotunHelmetF</li>
+				<li>GI_JotunHelmetM</li>
+				<li>GI_JotunPauldron</li>
 				<!-- <li>GI_JotunShield</li> -->
 				<li MayRequire="Ludeon.RimWorld.Biotech">GI_ChildApp</li>
 				<li MayRequire="Ludeon.RimWorld.Biotech">GI_ChildWinterCloak</li>

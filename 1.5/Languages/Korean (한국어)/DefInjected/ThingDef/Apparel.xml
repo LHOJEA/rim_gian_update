@@ -57,4 +57,16 @@
   <GI_ChildPotHelmet.label>거인 아이 헬멧</GI_ChildPotHelmet.label>
   <GI_ChildPotHelmet.description>소인종들이 요리할 때 사용하는 넓은 냄비를 뒤집어쓴 헬멧입니다. 거인 아이의 머리에 알맞습니다.</GI_ChildPotHelmet.description>
 
+  <GI_JotunArmor.label>요툰 그란트아머</GI_JotunArmor.label>
+  <GI_JotunArmor.description>판금을 용의 비늘처럼 겹쳐 만든 거인 갑옷입니다. 작은 종족들의 갑옷보다 수십 배나 더 무거운 흉갑은 장대한 크기만큼이나 두터워 거의 모든 공격을 효과적으로 차단하고 불에 대해서도 높은 방어력을 갖추고 있습니다.</GI_JotunArmor.description>
+
+  <GI_JotunHelmetF.label>요툰 여성 그란트헬멧</GI_JotunHelmetF.label>
+  <GI_JotunHelmetF.description>판금을 비늘처럼 겹치고 형상을 새겨 용의 얼굴을 흉내낸 거인 투구입니다. 정교한 용의 외형은 보는 이들의 경외심을 사기 충분합니다.\n\n여성용입니다.</GI_JotunHelmetF.description>
+
+  <GI_JotunHelmetM.label>요툰 남성 그란트헬멧</GI_JotunHelmetM.label>
+  <GI_JotunHelmetM.description>판금을 비늘처럼 겹치고 형상을 새겨 용의 얼굴을 흉내낸 거인 투구입니다. 정교한 용의 외형은 보는 이들의 경외심을 사기 충분합니다.\n\n남성용입니다.</GI_JotunHelmetM.description>
+
+  <GI_JotunPauldron.label>요툰 그란트아머 견갑</GI_JotunPauldron.label>
+  <GI_JotunPauldron.description>두터운 판금으로 만들어진 장엄한 거인 견갑입니다. 용의 발톱과 이빨처럼 솟은 가시 장식은 착용자를 더욱 위압적이게 하며 방어에도 효과적입니다.</GI_JotunPauldron.description>
+
 </LanguageData>

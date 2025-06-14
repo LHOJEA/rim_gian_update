@@ -51,5 +51,16 @@
   <GI_ChildPotHelmet.label>giant kid helmet</GI_ChildPotHelmet.label>
   <GI_ChildPotHelmet.description>A helmet made from a wide pot used by small race for cooking, perfectly fitting the head of a giant child.</GI_ChildPotHelmet.description>
 
+  <GI_JotunArmor.label>Jotun Armor</GI_JotunArmor.label>
+  <GI_JotunArmor.description>A suit of giant armor forged from overlapping plates, layered like a dragon’s scales. Its breastplate is dozens of times heavier than the armor of smaller races, and just as massive in scale—thick enough to deflect nearly any attack and offering exceptional resistance to fire.</GI_JotunArmor.description>
+
+  <GI_JotunHelmetF.label>Jotun Female Helmet</GI_JotunHelmetF.label>
+  <GI_JotunHelmetF.description>A giant’s helm crafted from layered plates shaped like scales, molded into the visage of a dragon. Its intricate design commands awe from all who behold it.\n\nDesigned for female wearers.</GI_JotunHelmetF.description>
+
+  <GI_JotunHelmetM.label>Jotun Male Helmet</GI_JotunHelmetM.label>
+  <GI_JotunHelmetM.description>A giant’s helm crafted from layered plates shaped like scales, molded into the visage of a dragon. Its intricate design commands awe from all who behold it.\n\nDesigned for male wearers.</GI_JotunHelmetM.description>
+
+  <GI_JotunPauldron.label>Jotun Pauldron</GI_JotunPauldron.label>
+  <GI_JotunPauldron.description>A majestic pair of giant pauldrons forged from thick plate armor. Adorned with jagged spikes that rise like a dragon’s claws and fangs, they enhance the wearer’s imposing presence while also serving as effective defense.</GI_JotunPauldron.description>
   
 </LanguageData>

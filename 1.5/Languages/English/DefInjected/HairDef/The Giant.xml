@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <LanguageData>
 
-
 	<GIhair_A.label>Long</GIhair_A.label>
 	<GIhair_B.label>Ponytail</GIhair_B.label>
 	<GIhair_C.label>Short cuts</GIhair_C.label>
-	<GIhair_D.label>Side cuts</GIhair_D.label>
-	<GIhair_X.label>Wild cuts</GIhair_X.label>
-	<GIhair_Y.label>Dreadlocks</GIhair_Y.label>
-	<GIhair_Z.label>Shaggy cuts</GIhair_Z.label>
-	
+	<GIhair_D.label>Shaggy cuts</GIhair_D.label>
+	<GIhair_E.label>Dreadlocks</GIhair_E.label>
+	<GIhair_F.label>Side cuts</GIhair_F.label>
+	<GIhair_G.label>Wild cuts</GIhair_G.label>
 	
 </LanguageData>

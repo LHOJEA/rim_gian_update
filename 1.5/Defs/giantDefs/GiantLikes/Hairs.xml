@@ -47,20 +47,9 @@
 
   <HairDef>
     <defName>GIhair_D</defName>
-    <label>SidecutHair</label>
-    <styleGender>Female</styleGender>
-    <texPath>Giant/Giantlike/Hairs/Female/GIhair_D</texPath>
-    <category>GIhair</category> <!--StyleItemCategoryDef-->
-    <styleTags>
-        <li>GIhair</li>
-    </styleTags>
-  </HairDef>
-
-  <HairDef>
-    <defName>GIhair_Z</defName>
     <label>MopHair</label>
     <styleGender>Male</styleGender>
-    <texPath>Giant/Giantlike/Hairs/Male/GIhair_Z</texPath>
+    <texPath>Giant/Giantlike/Hairs/Male/GIhair_D</texPath>
     <category>GIhair</category> <!--StyleItemCategoryDef-->
     <styleTags>
         <li>GIhair</li>
@@ -68,10 +57,10 @@
   </HairDef>
 
   <HairDef>
-    <defName>GIhair_Y</defName>
+    <defName>GIhair_E</defName>
     <label>Dreadlocks</label>
     <styleGender>Male</styleGender>
-    <texPath>Giant/Giantlike/Hairs/Male/GIhair_Y</texPath>
+    <texPath>Giant/Giantlike/Hairs/Male/GIhair_E</texPath>
     <category>GIhair</category> <!--StyleItemCategoryDef-->
     <styleTags>
         <li>GIhair</li>
@@ -79,10 +68,21 @@
   </HairDef>
 
   <HairDef>
-    <defName>GIhair_X</defName>
+    <defName>GIhair_F</defName>
+    <label>SidecutHair</label>
+    <styleGender>Female</styleGender>
+    <texPath>Giant/Giantlike/Hairs/Female/GIhair_F</texPath>
+    <category>GIhair</category> <!--StyleItemCategoryDef-->
+    <styleTags>
+        <li>GIhair</li>
+    </styleTags>
+  </HairDef>
+
+  <HairDef>
+    <defName>GIhair_G</defName>
     <label>Wildcut</label>
     <styleGender>Male</styleGender>
-    <texPath>Giant/Giantlike/Hairs/Male/GIhair_X</texPath>
+    <texPath>Giant/Giantlike/Hairs/Male/GIhair_G</texPath>
     <category>GIhair</category> <!--StyleItemCategoryDef-->
     <styleTags>
         <li>GIhair</li>

@@ -485,6 +485,80 @@
         </li>
         </comps>
     </AbilityDef> -->
+
+<!-- 요툰 그란트아머 -->
+    <ThingDef ParentName="GI_ApparelBase">
+        <defName>GI_JotunArmor</defName>
+        <description>A suit of giant armor forged from overlapping plates, layered like a dragon’s scales. Its breastplate is dozens of times heavier than the armor of smaller races, and just as massive in scale—thick enough to deflect nearly any attack and offering exceptional resistance to fire.</description>
+        <label>Jotun Armor</label>
+		<recipeMaker>
+            <unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
+            <researchPrerequisite>PlateArmor</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>12</Crafting>
+            </skillRequirements>
+			<recipeUsers Inherit="false">
+			    <li>ElectricSmithy</li>
+                <li>FueledSmithy</li>
+			</recipeUsers>
+		</recipeMaker>
+        <graphicData>
+            <texPath>Giant/Apparel/JotunArmor/GI_JotunArmor</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.5</drawSize>
+        </graphicData>
+		<techLevel>Medieval</techLevel>
+        <costList>
+            <Steel>300</Steel>
+            <Plasteel>150</Plasteel>
+            <Uranium>50</Uranium>
+        </costList>
+        <statBases>
+            <MaxHitPoints>1080</MaxHitPoints>
+            <WorkToMake>120000</WorkToMake>
+            <Mass>24.8</Mass>
+            <Flammability>0.2</Flammability>
+			<ArmorRating_Sharp>1.31</ArmorRating_Sharp>
+			<ArmorRating_Blunt>1.03</ArmorRating_Blunt>
+			<ArmorRating_Heat>1.65</ArmorRating_Heat>
+            <Insulation_Cold>24</Insulation_Cold>
+            <Insulation_Heat>50</Insulation_Heat>
+			<EquipDelay>30</EquipDelay>
+            <Beauty>2</Beauty>
+        </statBases>
+		<thingSetMakerTags>
+		    <li>RewardStandardLowFreq</li>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+		<equippedStatOffsets>
+		    <MoveSpeed>-0.4</MoveSpeed>
+            <SocialImpact>0.5</SocialImpact>
+            <Flammability>-0.5</Flammability>
+		</equippedStatOffsets>
+		<thingCategories>
+		    <li>ApparelArmor</li>
+		</thingCategories>
+        <apparel>
+            <bodyPartGroups>
+                <li>Torso</li>
+                <li>Neck</li>
+                <li>Shoulders</li>
+                <li>Arms</li>
+                <li>Legs</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Giant/Apparel/JotunArmor/GI_JotunArmor</wornGraphicPath>
+            <useWornGraphicMask>true</useWornGraphicMask>
+            <layers>
+                <li>Middle</li>
+            </layers>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+            <tags>
+                <li>GiantStory</li>
+            </tags>
+        </apparel>
+    </ThingDef>
 	
 ----------------------------------------------------모자-------------------------------------------------
 	
@@ -791,7 +865,193 @@
             </tags>
         </apparel>
     </ThingDef>
-  
+
+<!-- 요툰 그란트헬멧 -->
+    <ThingDef ParentName="GI_HatBase">
+        <defName>GI_JotunHelmetF</defName>
+        <description>A giant’s helm crafted from layered plates shaped like scales, molded into the visage of a dragon. Its intricate design commands awe from all who behold it.\n\nDesigned for female wearers.</description>
+        <label>Jotun Female Helmet</label>
+		<recipeMaker>
+            <researchPrerequisite>PlateArmor</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>12</Crafting>
+            </skillRequirements>
+			<recipeUsers Inherit="false">
+			    <li>ElectricSmithy</li>
+                <li>FueledSmithy</li>
+			</recipeUsers>
+		</recipeMaker>
+        <graphicData>
+            <texPath>Giant/Apparel/JotunHelmet/JotunHelmetF/GI_JotunHelmet</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <uiIconScale>1.3</uiIconScale>
+		<techLevel>Medieval</techLevel>
+        <costList>
+            <Plasteel>100</Plasteel>
+            <Steel>160</Steel>
+        </costList>
+        <statBases>
+            <MaxHitPoints>950</MaxHitPoints>
+            <WorkToMake>35000</WorkToMake>
+            <Mass>8.4</Mass>
+            <Flammability>0.5</Flammability>
+            <ArmorRating_Sharp>1.31</ArmorRating_Sharp>
+			<ArmorRating_Blunt>1.03</ArmorRating_Blunt>
+			<ArmorRating_Heat>1.65</ArmorRating_Heat>
+            <Insulation_Cold>24</Insulation_Cold>
+            <Insulation_Heat>50</Insulation_Heat>
+            <EquipDelay>2</EquipDelay>
+        </statBases>
+		<equippedStatOffsets>
+			<PawnBeauty>0.5</PawnBeauty>
+            <SocialImpact>0.25</SocialImpact>
+		</equippedStatOffsets>
+		<thingCategories>
+		    <li>Headgear</li>
+		</thingCategories>
+        <apparel>
+            <bodyPartGroups>
+                <li>FullHead</li>
+				<li>Neck</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Giant/Apparel/JotunHelmet/JotunHelmetF/GI_JotunHelmet</wornGraphicPath>
+            <useWornGraphicMask>true</useWornGraphicMask>
+            <layers>
+                <li>Overhead</li>
+            </layers>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+            <tags>
+                <li>GiantStory</li>
+            </tags>
+        </apparel>
+    </ThingDef>
+
+    <ThingDef ParentName="GI_HatBase">
+        <defName>GI_JotunHelmetM</defName>
+        <description>A giant’s helm crafted from layered plates shaped like scales, molded into the visage of a dragon. Its intricate design commands awe from all who behold it.\n\nDesigned for male wearers.</description>
+        <label>Jotun Male Helmet</label>
+		<recipeMaker>
+            <researchPrerequisite>PlateArmor</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>12</Crafting>
+            </skillRequirements>
+			<recipeUsers Inherit="false">
+			    <li>ElectricSmithy</li>
+                <li>FueledSmithy</li>
+			</recipeUsers>
+		</recipeMaker>
+        <graphicData>
+            <texPath>Giant/Apparel/JotunHelmet/JotunHelmetM/GI_JotunHelmet</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <uiIconScale>1.3</uiIconScale>
+		<techLevel>Medieval</techLevel>
+        <costList>
+            <Plasteel>100</Plasteel>
+            <Steel>160</Steel>
+        </costList>
+        <statBases>
+            <MaxHitPoints>950</MaxHitPoints>
+            <WorkToMake>35000</WorkToMake>
+            <Mass>8.4</Mass>
+            <Flammability>0.5</Flammability>
+            <ArmorRating_Sharp>1.31</ArmorRating_Sharp>
+			<ArmorRating_Blunt>1.03</ArmorRating_Blunt>
+			<ArmorRating_Heat>1.65</ArmorRating_Heat>
+            <Insulation_Cold>24</Insulation_Cold>
+            <Insulation_Heat>50</Insulation_Heat>
+            <EquipDelay>2</EquipDelay>
+        </statBases>
+		<equippedStatOffsets>
+			<PawnBeauty>0.5</PawnBeauty>
+            <SocialImpact>0.25</SocialImpact>
+		</equippedStatOffsets>
+		<thingCategories>
+		    <li>Headgear</li>
+		</thingCategories>
+        <apparel>
+            <bodyPartGroups>
+                <li>FullHead</li>
+				<li>Neck</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Giant/Apparel/JotunHelmet/JotunHelmetM/GI_JotunHelmet</wornGraphicPath>
+            <useWornGraphicMask>true</useWornGraphicMask>
+            <layers>
+                <li>Overhead</li>
+            </layers>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+            <tags>
+                <li>GiantStory</li>
+            </tags>
+        </apparel>
+    </ThingDef>
+
+    <!-- <ThingDef ParentName="GI_HatBase">
+        <defName>GI_JotunHelmet</defName>
+        <description>요툰 헬멧. 상세 값 작업 필요.</description>
+        <label>요툰 그란트헬멧</label>
+		<recipeMaker>
+            <researchPrerequisite>PlateArmor</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>12</Crafting>
+            </skillRequirements>
+			<recipeUsers Inherit="false">
+			    <li>ElectricSmithy</li>
+                <li>FueledSmithy</li>
+			</recipeUsers>
+		</recipeMaker>
+        <graphicData>
+            <texPath>Giant/Apparel/JotunHelmet/GI_JotunHelmet</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <uiIconScale>1.3</uiIconScale>
+		<techLevel>Medieval</techLevel>
+        <costList>
+            <ComponentIndustrial>3</ComponentIndustrial>
+            <Plasteel>100</Plasteel>
+            <Steel>160</Steel>
+        </costList>
+        <statBases>
+            <MaxHitPoints>690</MaxHitPoints>
+            <WorkToMake>28000</WorkToMake>
+            <Mass>8.4</Mass>
+            <StuffEffectMultiplierArmor>0.76</StuffEffectMultiplierArmor>
+			<ArmorRating_Sharp>0.13</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.16</ArmorRating_Blunt>
+            <StuffEffectMultiplierInsulation_Cold>0.25</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.50</StuffEffectMultiplierInsulation_Heat>
+            <EquipDelay>2</EquipDelay>
+			<Beauty>3</Beauty>
+        </statBases>
+		<equippedStatOffsets>
+		    <ArrestSuccessChance>0.2</ArrestSuccessChance>
+		</equippedStatOffsets>
+		<thingCategories>
+		    <li>Headgear</li>
+		</thingCategories>
+        <apparel>
+            <bodyPartGroups>
+                <li>FullHead</li>
+				<li>Neck</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Giant/Apparel/JotunHelmet/GI_JotunHelmet</wornGraphicPath>
+            <layers>
+                <li>Overhead</li>
+            </layers>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+            <tags>
+                <li>GiantStory</li>
+            </tags>
+        </apparel>
+    </ThingDef> -->
+
   ----------------------------------------------------장식-------------------------------------------------
   
 <!-- 인장 -->
@@ -1087,6 +1347,75 @@
 				<li>Legs</li>
             </bodyPartGroups>
             <wornGraphicPath>Giant/Apparel/Mechashell/GI_Mechashell</wornGraphicPath>
+            <layers>
+                <li>Shell</li>
+            </layers>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+            <tags>
+                <li>GiantStory</li>
+            </tags>
+        </apparel>
+    </ThingDef>
+
+<!-- 요툰 그란트아머 풀드런(견갑) -->
+    <ThingDef ParentName="GI_HatBase">
+        <defName>GI_JotunPauldron</defName>
+        <description>두터운 판금으로 만들어진 장엄한 거인 견갑입니다. 용의 발톱과 이빨처럼 솟은 가시 장식은 착용자를 더욱 위압적이게 하며 방어에도 효과적입니다.</description>
+        <label>Jotun Pauldron</label>
+		<recipeMaker>
+            <unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
+            <researchPrerequisite>PlateArmor</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>12</Crafting>
+            </skillRequirements>
+			<recipeUsers Inherit="false">
+			    <li>ElectricSmithy</li>
+                <li>FueledSmithy</li>
+			</recipeUsers>
+		</recipeMaker>
+        <graphicData>
+            <texPath>Giant/Apparel/JotunPauldron/GI_JotunPauldron</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <uiIconScale>1.6</uiIconScale>
+		<techLevel>Medieval</techLevel>
+        <costList>
+            <Steel>180</Steel>
+            <Plasteel>80</Plasteel>
+            <Uranium>20</Uranium>
+            <Cloth>150</Cloth>
+        </costList>
+        <statBases>
+            <MaxHitPoints>940</MaxHitPoints>
+            <WorkToMake>68000</WorkToMake>
+            <Mass>10.2</Mass>
+            <Flammability>0.5</Flammability>
+            <ArmorRating_Sharp>0.97</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.66</ArmorRating_Blunt>
+			<ArmorRating_Heat>1.20</ArmorRating_Heat>
+            <Insulation_Heat>35</Insulation_Heat>
+            <Insulation_Cold>10</Insulation_Cold>
+            <EquipDelay>9</EquipDelay>
+            <Beauty>5</Beauty>
+        </statBases>
+		<equippedStatOffsets>
+		    <SocialImpact>0.25</SocialImpact>
+            <Flammability>-0.3</Flammability>
+		</equippedStatOffsets>
+		<thingCategories>
+		    <li>ApparelArmor</li>
+		</thingCategories>
+        <apparel>
+            <bodyPartGroups>
+                <li>Torso</li>
+                <li>Neck</li>
+                <li>Shoulders</li>
+                <li>Arms</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Giant/Apparel/JotunPauldron/GI_JotunPauldron</wornGraphicPath>
+            <useWornGraphicMask>true</useWornGraphicMask>
             <layers>
                 <li>Shell</li>
             </layers>

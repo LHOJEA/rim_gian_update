@@ -634,13 +634,9 @@
 			<drawSize>4.5</drawSize>
 		</graphicData>
 		<uiIconScale>0.7</uiIconScale>
-		<stuffCategories>
-            <li>Metallic</li>
-        </stuffCategories>
-        <costStuffCount>150</costStuffCount>
 		<costList>
-			 <Uranium>220</Uranium>
-			 <Plasteel>170</Plasteel>
+			 <Uranium>300</Uranium>
+			 <Plasteel>250</Plasteel>
 		</costList>
 		<weaponTags>
 			<li>Giant_Melee</li>
@@ -699,7 +695,7 @@
                 <extraMeleeDamages>
                     <li>
                       <def>Stun</def>
-                      <amount>30</amount>
+                      <amount>26</amount>
                     </li>
                 </extraMeleeDamages>
 			</li>
